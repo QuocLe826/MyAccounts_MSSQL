@@ -7,12 +7,13 @@ create procedure AccountType_DeleteData(@code varchar(10))
 as
 begin
 
-	if exists(select 1 from AccountManagement where AccGroup = @code)
+	if exists(select 1 from AccountManagement where AccType = @code)
 	begin
-		select 'This account group is used'
+		select 'This account type has been used!'
 		return
 	end
 
 	delete from AccountType where Code = @code
-	select @@ROWCOUNT
+	select ''
 end
+

@@ -28,14 +28,5 @@ namespace MyAccounts.Libraries.Enums
             NoProvider = -1,
             MSSQL = 1
         }
-
-        /// <summary>
-        /// Enum Authentication type
-        /// </summary>
-        public enum AuthenticationType
-        {
-            WindowsAuthentication = 1,
-            SQLServerAuthentication = 2
-        }
     }
 }

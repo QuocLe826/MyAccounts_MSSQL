@@ -20,7 +20,7 @@ namespace MyAccounts.Forms
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            if (File.Exists(GlobalData.CONFIG_FILE))
+            if (File.Exists(GlobalData.CONFIG_PATH))
             {
                 Application.Run(new frm_Login());
             }

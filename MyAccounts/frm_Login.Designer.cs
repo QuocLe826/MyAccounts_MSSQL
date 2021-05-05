@@ -30,6 +30,7 @@ namespace MyAccounts.Forms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Login));
+            DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::MyAccounts.Forms.frm_SplashScreen), false, false);
             this.pic_Logo = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.txt_Username = new DevExpress.XtraEditors.TextEdit();
@@ -68,6 +69,7 @@ namespace MyAccounts.Forms
             // 
             this.txt_Username.Location = new System.Drawing.Point(152, 31);
             this.txt_Username.Name = "txt_Username";
+            this.txt_Username.Properties.MaxLength = 50;
             this.txt_Username.Size = new System.Drawing.Size(275, 20);
             this.txt_Username.TabIndex = 1;
             // 
@@ -109,6 +111,10 @@ namespace MyAccounts.Forms
             this.btn_Exit.TabIndex = 4;
             this.btn_Exit.Text = "Exit";
             this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
+            // 
+            // splashScreenManager1
+            // 
+            splashScreenManager1.ClosingDelay = 100;
             // 
             // frm_Login
             // 

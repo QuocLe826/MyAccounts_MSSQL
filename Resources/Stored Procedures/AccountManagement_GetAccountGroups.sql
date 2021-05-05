@@ -6,6 +6,9 @@ go
 create procedure AccountManagement_GetAccountGroups
 as
 begin
-	select Code, Name from AccountGroups where Status = 'Y'
-	order by Code
+	select Code, Name from AccountGroups 
+	union 
+	select '', '' from AccountGroups
+	where Status = 'Y'
+	order by Name
 end

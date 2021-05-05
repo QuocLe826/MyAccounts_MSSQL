@@ -57,12 +57,12 @@ namespace MyAccounts.Services.Categories
                     new SqlParameter("@name", Functions.ToString(dt.Rows[0]["Name"])),
                     new SqlParameter("@status", Functions.ToString(dt.Rows[0]["Status"])),
                     new SqlParameter("@descriptions", Functions.ToString(dt.Rows[0]["Descriptions"])),
-                    new SqlParameter("actionType", actionType));
+                    new SqlParameter("@actionType", actionType));
                 if (dtResult.Rows.Count > 0)
                 {
                     return "";
                 }
-                return "Save failed!";
+                return actionType.Equals("A") ?  "Data added failed!" : "Data update failed!";
             }
             catch (Exception ex)
             {
@@ -75,10 +75,10 @@ namespace MyAccounts.Services.Categories
             try
             {
                 var query = "AccountGroups_DeleteData";
-                var res = ExecuteNonQuery(query, CommandType.StoredProcedure, new SqlParameter("@code", code));
-                if (res > 0)
+                var dt = ExecuteDataTable(query, CommandType.StoredProcedure, new SqlParameter("@code", code));
+                if (dt.Rows.Count > 0)
                 {
-                    return "";
+                    return Functions.ToString(dt.Rows[0][0]);
                 }
                 return "Delete failed!";
             }

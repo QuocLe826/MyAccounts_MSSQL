@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Threading;
 using System.Windows.Forms;
 using MyAccounts.Api.Commons;
 using MyAccounts.Libraries.Enums;
@@ -27,12 +28,7 @@ namespace MyAccounts.Forms
         {
             try
             {
-                if (!File.Exists(GlobalData.CONFIG_FILE))
-                {
-                    WinCommons.ShowMessageDialog("Could not find config file", MessageTitle.SystemError, Enums.MessageBoxType.Error);
-                    return;
-                }
-                var fileData = File.ReadAllText(GlobalData.CONFIG_FILE);
+                var fileData = File.ReadAllText(GlobalData.CONFIG_PATH);
                 if (string.IsNullOrEmpty(fileData))
                 {
                     WinCommons.ShowMessageDialog("Load config failed!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
@@ -82,6 +78,7 @@ namespace MyAccounts.Forms
                 if (!string.IsNullOrEmpty(result))
                 {
                     WinCommons.ShowMessageDialog(result, MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                    WinCommons.CloseProcessing();
                     return;
                 }
 
@@ -89,6 +86,7 @@ namespace MyAccounts.Forms
                 if (dtInfo.Rows.Count == 0)
                 {
                     WinCommons.ShowMessageDialog("Login failed!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                    WinCommons.CloseProcessing();
                     return;
                 }
                 GlobalData.UserId = Functions.ParseInteger(dtInfo.Rows[0]["UserID"]);
@@ -124,6 +122,20 @@ namespace MyAccounts.Forms
 
         private void frm_Login_Load(object sender, EventArgs e)
         {
+            var resourcesExists = File.Exists("System//Images//add.svg") && File.Exists("System//Images//edit.svg");
+            var dbExists = File.Exists("System//config//initserver.bak");
+
+            for (int i = 0; i < 50; i++)
+            {
+                Thread.Sleep(50);
+            }
+            if (!resourcesExists || !dbExists)
+            {
+                WinCommons.ShowMessageDialog("System files cannot be found!", "Error", Enums.MessageBoxType.Error);
+                this.Dispose();
+                Application.Exit();
+                return;
+            }
             LoadConfigurations();
         }
     }

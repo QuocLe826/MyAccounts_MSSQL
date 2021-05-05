@@ -6,6 +6,9 @@ go
 create procedure AccountManagement_GetAccountType
 as
 begin
-	select Code, Name from AccountType where Status = 'Y'
-	order by Code
+	select Code, Name from AccountType 
+	union 
+	select '', '' from AccountType
+	where Status = 'Y'
+	order by Name
 end

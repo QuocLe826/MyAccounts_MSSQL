@@ -1,15 +1,8 @@
 ﻿using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.Utils.Extensions;
+using DevExpress.Utils.Svg;
 using MyAccounts.Api.Categories;
 using MyAccounts.Libraries.Constants;
 using MyAccounts.Libraries.Enums;
@@ -24,13 +17,13 @@ namespace MyAccounts.Forms.Categories
         private AccountManagementController _accManagementApi = new AccountManagementController();
         private string _actionType = string.Empty;
         private string _accCode = string.Empty;
-        private bool _useSystemPassword = false;
         public bool IsSuccess = false;
 
         public frm_AddUpdateAccount(string actionType)
         {
             InitializeComponent();
             this.Text = @"Add New Account";
+            this.IconOptions.SvgImage = SvgImage.FromFile("System//images//add.svg");
             txt_Code.ReadOnly = false;
             _actionType = actionType;
         }
@@ -38,7 +31,9 @@ namespace MyAccounts.Forms.Categories
         public frm_AddUpdateAccount(string code, string actionType)
         {
             InitializeComponent();
+
             this.Text = @"Edit Account";
+            this.IconOptions.SvgImage = SvgImage.FromFile("System//images//edit.svg");
             txt_Code.ReadOnly = true;
             _actionType = actionType;
             _accCode = code;
@@ -109,14 +104,14 @@ namespace MyAccounts.Forms.Categories
                     txt_Code.Focus();
                     return;
                 }
-                if (lk_AccountGroup.ItemIndex == -1)
+                if (string.IsNullOrEmpty(Functions.ToString(lk_AccountGroup.EditValue)))
                 {
                     WinCommons.ShowMessageDialog("Account Group cannot be empty value!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
                     lk_AccountGroup.Focus();
                     return;
                 }
 
-                if (lk_AccountType.ItemIndex == -1)
+                if (string.IsNullOrEmpty(Functions.ToString(lk_AccountType.EditValue)))
                 {
                     WinCommons.ShowMessageDialog("Account Type cannot be empty value!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
                     lk_AccountType.Focus();
@@ -160,21 +155,18 @@ namespace MyAccounts.Forms.Categories
         {
             try
             {
-                var imgShowPassword = DevExpress.Images.ImageResourceCache.Default.GetImage("images/actions/show_16x16.png");
-                var imgHidePassword = DevExpress.Images.ImageResourceCache.Default.GetImage("images/actions/hide_16x16.png");
-
                 if (e.Button.Index == 0)
                 {
                     if (txt_Password.Properties.UseSystemPasswordChar)
                     {
                         txt_Password.Properties.UseSystemPasswordChar = false;
-                        e.Button.Image = imgHidePassword;
+                        e.Button.ImageOptions.SvgImage = SvgImage.FromFile("System//images//hide.svg");
                         e.Button.ToolTip = "Hide Password";
                     }
                     else
                     {
                         txt_Password.Properties.UseSystemPasswordChar = true;
-                        e.Button.Image = imgShowPassword;
+                        e.Button.ImageOptions.SvgImage = SvgImage.FromFile("System//images//show.svg");
                         e.Button.ToolTip = "Show Password";
                     }
                 }
@@ -184,7 +176,6 @@ namespace MyAccounts.Forms.Categories
                 Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
                 WinCommons.ShowMessageDialog(ex.Message, MessageTitle.SystemError, Enums.MessageBoxType.Error);
             }
-            
         }
     }
 }

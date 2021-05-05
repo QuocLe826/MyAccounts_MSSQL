@@ -70,10 +70,10 @@ namespace MyAccounts.Services.Categories
             try
             {
                 var query = "AccountType_DeleteData";
-                var res = ExecuteNonQuery(query, CommandType.StoredProcedure, new SqlParameter("@code", code));
-                if (res > 0)
+                var dt = ExecuteDataTable(query, CommandType.StoredProcedure, new SqlParameter("@code", code));
+                if (dt.Rows.Count > 0)
                 {
-                    return "";
+                    return Functions.ToString(dt.Rows[0][0]);
                 }
                 return "Delete failed!";
             }

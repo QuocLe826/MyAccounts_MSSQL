@@ -49,7 +49,7 @@ namespace MyAccounts.Forms.Home
                         WinCommons.ShowMessageDialog(result, MessageTitle.SystemError, Enums.MessageBoxType.Error);
                         return;
                     }
-                    WinCommons.ShowMessageDialog("Change password successfully", MessageTitle.SystemInformation, Enums.MessageBoxType.Information);
+                    WinCommons.ShowMessageDialog("Password changed successfully", MessageTitle.SystemInformation, Enums.MessageBoxType.Information);
                     this.Close();
                     Application.Restart();
                 }

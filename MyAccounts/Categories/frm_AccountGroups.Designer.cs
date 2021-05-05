@@ -332,9 +332,9 @@ namespace MyAccounts.Forms.Categories
             // btn_Search
             // 
             this.btn_Search.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Search.ImageOptions.Image")));
-            this.btn_Search.Location = new System.Drawing.Point(575, 53);
+            this.btn_Search.Location = new System.Drawing.Point(575, 41);
             this.btn_Search.Name = "btn_Search";
-            this.btn_Search.Size = new System.Drawing.Size(75, 23);
+            this.btn_Search.Size = new System.Drawing.Size(75, 20);
             this.btn_Search.TabIndex = 5;
             this.btn_Search.Text = "Search";
             this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);

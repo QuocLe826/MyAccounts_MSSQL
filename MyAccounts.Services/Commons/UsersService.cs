@@ -25,7 +25,7 @@ namespace MyAccounts.Services.Commons
                     var passDecrypt = RSASecurity.Decrypt(Functions.ToString(dt.Rows[0]["Password"]));
                     if (!password.Equals(passDecrypt))
                     {
-                        return "Login failed!";
+                        return "Incorrect Username or Password!";
                     }
                     query = @"update Users set LastLogin = GETDATE() where UserCode = @username and Status = 'Y'";
                     var res = ExecuteNonQuery(query, CommandType.Text, new SqlParameter("@username", username), new SqlParameter("@password", password));
@@ -48,8 +48,7 @@ namespace MyAccounts.Services.Commons
             try
             {
                 var query = "Users_GetUserInfo";
-                var dt = ExecuteDataTable(query, CommandType.StoredProcedure, new SqlParameter("@username", username));
-                return dt;
+                return ExecuteDataTable(query, CommandType.StoredProcedure, new SqlParameter("@username", username));
             }
             catch (Exception e)
             {
@@ -61,24 +60,24 @@ namespace MyAccounts.Services.Commons
         {
             try
             {
-                var query = "select UserCode, Password from Users where UserCode = @username and Status = 'Y'";
+                var query = @"select UserCode, Password from Users where UserCode = @username and Status = 'Y'";
                 var dt = ExecuteDataTable(query, CommandType.Text, new SqlParameter("@username", username));
                 if (dt.Rows.Count > 0)
                 {
                     var passDecrypt = RSASecurity.Decrypt(Functions.ToString(dt.Rows[0]["Password"]));
                     if (!curPassword.Equals(passDecrypt))
                     {
-                        return "Incorrect Current Password";
+                        return "Incorrect Current password";
                     }
                     if (!newPassword.Equals(confirmPassword))
                     {
-                        return "Confirm Password is Incorrect";
+                        return "Incorrect Confirm password";
                     }
                     query = "Update Users set Password = @password where UserCode = @username and Status = 'Y'";
                     var res = ExecuteNonQuery(query, CommandType.Text, new SqlParameter("@username", username), new SqlParameter("@password", RSASecurity.Encrypt(newPassword)));
                     if (res <= 0)
                     {
-                        return "Change password failed!";
+                        return "Password change failed!";
                     }
                 }
                 return string.Empty;

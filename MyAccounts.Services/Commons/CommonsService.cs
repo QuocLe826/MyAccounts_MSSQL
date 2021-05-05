@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MyAccounts.Libraries.Helpers;
 using MyAccounts.Services.BaseServices;
 
 namespace MyAccounts.Services.Commons
@@ -14,28 +15,6 @@ namespace MyAccounts.Services.Commons
         public CommonsService(string connectionString)
         {
             ConnectionString = connectionString;
-        }
-
-        public string InitDatabase()
-        {
-            try
-            {
-                var query = @"if not exists(select 1 from sys.databases where name = 'MYACCOUNTS')
-                            begin
-                                create database MYACCOUNTS
-                            end";
-                var res = ExecuteNonQuery(query);
-                if (res == -1)
-                {
-                    return "";
-                }
-
-                return "Cannot create database";
-            }
-            catch (Exception ex)
-            {
-                return "Cannot create database\\r\\nError: " + ex.Message;
-            }
         }
 
         public string InsertUserInfo(string firstName, string lastName, string userName, string password)
@@ -78,9 +57,17 @@ namespace MyAccounts.Services.Commons
         {
             try
             {
-                var query = string.Format(@"RESTORE DATABASE MYACCOUNTS FROM DISK = '{0}'", path);
-                var res = ExecuteNonQuery(query);
-                return "";
+                var query = string.Format(@"RESTORE DATABASE MYACCOUNTS FROM DISK = '{0}'
+                                            IF EXISTS(SELECT 1 FROM SYS.DATABASES WHERE NAME = 'MYACCOUNTS')
+                                            BEGIN
+	                                            SELECT 1
+                                            END", path);
+                var dt = ExecuteDataTable(query);
+                if (dt.Rows.Count > 0 && Functions.ParseInteger(dt.Rows[0][0]) == 1)
+                {
+                    return "";
+                }
+                return "Initialized system failed!";
             }
             catch (Exception ex)
             {

@@ -24,15 +24,39 @@ namespace MyAccounts.Forms
 
         #endregion
 
+        private bool WriteConfig(string databaseName)
+        {
+            try
+            {
+                if (File.Exists(GlobalData.CONFIG_PATH))
+                {
+                    File.Delete(GlobalData.CONFIG_PATH);
+                }
+                var dicData = new Dictionary<string, string>();
+                dicData.Add("ServerName", RSASecurity.Encrypt(txt_ServerName.Text.Trim()));
+                dicData.Add("Authentication", RSASecurity.Encrypt(Functions.ToString(lk_Authentication.EditValue)));
+                dicData.Add("ServerUser", RSASecurity.Encrypt(txt_ServerUser.Text.Trim()));
+                dicData.Add("ServerPassword", RSASecurity.Encrypt(txt_ServerPassword.Text.Trim()));
+                dicData.Add("DatabaseProvider", RSASecurity.Encrypt("MSSQL"));
+                dicData.Add("DatabaseName", RSASecurity.Encrypt(databaseName));
+                dicData.Add("LastUserSign", RSASecurity.Encrypt("empty"));
+
+                var jsonData = JsonConvert.SerializeObject(dicData);
+                File.WriteAllText(GlobalData.CONFIG_PATH, jsonData);
+                return File.Exists(GlobalData.CONFIG_PATH);
+            }
+            catch (Exception ex)
+            {
+                Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
+                return false;
+            }
+        }
+
         #region Events
 
         private void frm_SystemInitialization_Load(object sender, EventArgs e)
         {
-            lk_Authentication.Properties.DataSource = new Dictionary<string,string>()
-            {
-                {"WinAuth", "Windows Authentication" },
-                {"ServerAuth", "Server Authentication" }
-            };
+            lk_Authentication.Properties.DataSource = CommonConstants.DicAuthentications;
         }
 
         private void btn_Cancel_Click(object sender, EventArgs e)
@@ -93,41 +117,49 @@ namespace MyAccounts.Forms
                     return;
                 }
 
-
+                WinCommons.OpenProcessing("Connecting to server...");
                 var serverConnected = lk_Authentication.ItemIndex == 0
-                        ? WinCommons.CheckConnection(txt_ServerName.Text, "master")
-                        : WinCommons.CheckConnection(txt_ServerName.Text, txt_ServerUser.Text, txt_ServerPassword.Text, "master");
+                        ? WinCommons.CheckConnection(txt_ServerName.Text)
+                        : WinCommons.CheckConnection(txt_ServerName.Text, txt_ServerUser.Text, txt_ServerPassword.Text);
                 if (!serverConnected)
                 {
                     WinCommons.ShowMessageDialog("Connect to Server failed!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                    WinCommons.CloseProcessing();
                     return;
                 }
+                WinCommons.CloseProcessing();
 
-                WinCommons.OpenProcessing("Initialize System...");
-                var dicData = new Dictionary<string, string>();
-                dicData.Add("ServerName", RSASecurity.Encrypt(txt_ServerName.Text.Trim()));
-                dicData.Add("Authentication", RSASecurity.Encrypt(Functions.ToString(lk_Authentication.EditValue)));
-                dicData.Add("ServerUser", RSASecurity.Encrypt(txt_ServerUser.Text.Trim()));
-                dicData.Add("ServerPassword", RSASecurity.Encrypt(txt_ServerPassword.Text.Trim()));
-                dicData.Add("DatabaseProvider", RSASecurity.Encrypt("MSSQL"));
-                dicData.Add("DatabaseName", RSASecurity.Encrypt("MYACCOUNTS"));
-                dicData.Add("LastUserSign", RSASecurity.Encrypt("empty"));
-
-                var jsonData = JsonConvert.SerializeObject(dicData);
-                File.WriteAllText(GlobalData.CONFIG_FILE, jsonData);
-                if (File.Exists(GlobalData.CONFIG_FILE))
+                WinCommons.OpenProcessing("Initializing System...");
+                if (WriteConfig("master"))
                 {
+                    var path = string.Format(@"{0}//System//config//initserver.bak", Application.StartupPath);
                     var api = new CommonsController();
-                    var result = api.InsertUserInfo(txt_FirstName.Text.Trim(), txt_LastName.Text.Trim(), txt_UserLogin.Text.Trim(), RSASecurity.Encrypt(txt_Password.Text.Trim()));
+                    var result = api.RestoreDatabase(path);
                     if (!string.IsNullOrEmpty(result))
                     {
                         WinCommons.ShowMessageDialog(result, MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                        File.Delete(GlobalData.CONFIG_PATH);
+                        WinCommons.CloseProcessing();
                         return;
                     }
-                    this.Hide();
-                    var frm = new frm_Login();
-                    frm.StartPosition = FormStartPosition.CenterScreen;
-                    frm.ShowDialog(this);
+
+                    if (WriteConfig("MYACCOUNTS"))
+                    {
+                        api = new CommonsController();
+                        result = api.InsertUserInfo(txt_FirstName.Text.Trim(), txt_LastName.Text.Trim(), txt_UserLogin.Text.Trim(), RSASecurity.Encrypt(txt_Password.Text.Trim()));
+                        if (!string.IsNullOrEmpty(result))
+                        {
+                            WinCommons.ShowMessageDialog(result, MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                            File.Delete(GlobalData.CONFIG_PATH);
+                            WinCommons.CloseProcessing();
+                            return;
+                        }
+                        WinCommons.CloseProcessing();
+                        this.Hide();
+                        var frm = new frm_Login();
+                        frm.StartPosition = FormStartPosition.CenterScreen;
+                        frm.ShowDialog(this);
+                    }
                 }
             }
             catch (Exception ex)

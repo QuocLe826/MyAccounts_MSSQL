@@ -139,6 +139,17 @@
     <Compile Include="frm_Login.Designer.cs">
       <DependentUpon>frm_Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinCommons.cs" />
     <EmbeddedResource Include="Categories\frm_AccountGroups.resx">
       <DependentUpon>frm_AccountGroups.cs</DependentUpon>
@@ -179,14 +190,12 @@
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -198,10 +207,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\add.svg" />
+    <None Include="Resources\backup.svg" />
+    <None Include="Resources\cancel.svg" />
+    <None Include="Resources\close.svg" />
+    <None Include="Resources\delete.svg" />
+    <None Include="Resources\edit.svg" />
+    <None Include="Resources\group.svg" />
+    <None Include="Resources\lock.svg" />
+    <None Include="Resources\logout.svg" />
+    <None Include="Resources\refresh.svg" />
+    <None Include="Resources\restore.svg" />
+    <None Include="Resources\save.svg" />
+    <None Include="Resources\setting.svg" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="program.ico" />
-    <Content Include="responsive.ico" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyAccounts.Api\MyAccounts.Api.csproj">
@@ -213,6 +234,7 @@
       <Name>MyAccounts.Libraries</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

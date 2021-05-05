@@ -4,7 +4,8 @@ namespace MyAccounts.Forms
 {
     public static class GlobalData
     {
-        public static string CONFIG_FILE = "Config.json";
+        public static string CONFIG_FILE = "serverconfig.json";
+        public static string CONFIG_PATH = "System//config//" + CONFIG_FILE;
 
         /// <summary>
         /// Biến lưu Server kết nối hệ thống
