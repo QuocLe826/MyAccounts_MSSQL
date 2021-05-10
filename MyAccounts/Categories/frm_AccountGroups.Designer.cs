@@ -102,163 +102,157 @@ namespace MyAccounts.Forms.Categories
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btn_Refresh, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
             this.bar1.OptionsBar.DrawBorder = false;
             this.bar1.OptionsBar.UseWholeRow = true;
-            this.bar1.Text = "Tools";
+            resources.ApplyResources(this.bar1, "bar1");
             // 
             // btn_AddNew
             // 
-            this.btn_AddNew.Caption = "Add New";
+            resources.ApplyResources(this.btn_AddNew, "btn_AddNew");
             this.btn_AddNew.Id = 0;
+            this.btn_AddNew.ImageOptions.ImageIndex = ((int)(resources.GetObject("btn_AddNew.ImageOptions.ImageIndex")));
+            this.btn_AddNew.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btn_AddNew.ImageOptions.LargeImageIndex")));
             this.btn_AddNew.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_AddNew.ImageOptions.SvgImage")));
             this.btn_AddNew.Name = "btn_AddNew";
             this.btn_AddNew.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_AddNew_ItemClick);
             // 
             // btn_Edit
             // 
-            this.btn_Edit.Caption = "Edit";
+            resources.ApplyResources(this.btn_Edit, "btn_Edit");
             this.btn_Edit.Id = 1;
+            this.btn_Edit.ImageOptions.ImageIndex = ((int)(resources.GetObject("btn_Edit.ImageOptions.ImageIndex")));
+            this.btn_Edit.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btn_Edit.ImageOptions.LargeImageIndex")));
             this.btn_Edit.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Edit.ImageOptions.SvgImage")));
             this.btn_Edit.Name = "btn_Edit";
             this.btn_Edit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_Edit_ItemClick);
             // 
             // btn_Save
             // 
-            this.btn_Save.Caption = "Save";
+            resources.ApplyResources(this.btn_Save, "btn_Save");
             this.btn_Save.Id = 2;
+            this.btn_Save.ImageOptions.ImageIndex = ((int)(resources.GetObject("btn_Save.ImageOptions.ImageIndex")));
+            this.btn_Save.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btn_Save.ImageOptions.LargeImageIndex")));
             this.btn_Save.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Save.ImageOptions.SvgImage")));
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_Save_ItemClick);
             // 
             // btn_Cancel
             // 
-            this.btn_Cancel.Caption = "Cancel";
+            resources.ApplyResources(this.btn_Cancel, "btn_Cancel");
             this.btn_Cancel.Id = 3;
+            this.btn_Cancel.ImageOptions.ImageIndex = ((int)(resources.GetObject("btn_Cancel.ImageOptions.ImageIndex")));
+            this.btn_Cancel.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btn_Cancel.ImageOptions.LargeImageIndex")));
             this.btn_Cancel.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Cancel.ImageOptions.SvgImage")));
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_Cancel_ItemClick);
             // 
             // btn_Delete
             // 
-            this.btn_Delete.Caption = "Delete";
+            resources.ApplyResources(this.btn_Delete, "btn_Delete");
             this.btn_Delete.Id = 4;
+            this.btn_Delete.ImageOptions.ImageIndex = ((int)(resources.GetObject("btn_Delete.ImageOptions.ImageIndex")));
+            this.btn_Delete.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btn_Delete.ImageOptions.LargeImageIndex")));
             this.btn_Delete.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Delete.ImageOptions.SvgImage")));
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_Delete_ItemClick);
             // 
             // btn_Refresh
             // 
-            this.btn_Refresh.Caption = "Refresh";
+            resources.ApplyResources(this.btn_Refresh, "btn_Refresh");
             this.btn_Refresh.Id = 5;
+            this.btn_Refresh.ImageOptions.ImageIndex = ((int)(resources.GetObject("btn_Refresh.ImageOptions.ImageIndex")));
+            this.btn_Refresh.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btn_Refresh.ImageOptions.LargeImageIndex")));
             this.btn_Refresh.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Refresh.ImageOptions.SvgImage")));
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_Refresh_ItemClick);
             // 
             // barDockControlTop
             // 
+            resources.ApplyResources(this.barDockControlTop, "barDockControlTop");
             this.barDockControlTop.CausesValidation = false;
-            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(806, 28);
             // 
             // barDockControlBottom
             // 
+            resources.ApplyResources(this.barDockControlBottom, "barDockControlBottom");
             this.barDockControlBottom.CausesValidation = false;
-            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 471);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(806, 0);
             // 
             // barDockControlLeft
             // 
+            resources.ApplyResources(this.barDockControlLeft, "barDockControlLeft");
             this.barDockControlLeft.CausesValidation = false;
-            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 28);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 443);
             // 
             // barDockControlRight
             // 
+            resources.ApplyResources(this.barDockControlRight, "barDockControlRight");
             this.barDockControlRight.CausesValidation = false;
-            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(806, 28);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 443);
             // 
             // lbl_Code
             // 
-            this.lbl_Code.Location = new System.Drawing.Point(12, 44);
+            resources.ApplyResources(this.lbl_Code, "lbl_Code");
             this.lbl_Code.Name = "lbl_Code";
-            this.lbl_Code.Size = new System.Drawing.Size(25, 13);
-            this.lbl_Code.TabIndex = 0;
-            this.lbl_Code.Text = "Code";
             // 
             // txt_Code
             // 
-            this.txt_Code.Location = new System.Drawing.Point(52, 41);
+            resources.ApplyResources(this.txt_Code, "txt_Code");
             this.txt_Code.MenuManager = this.barManager1;
             this.txt_Code.Name = "txt_Code";
             this.txt_Code.Properties.MaxLength = 20;
-            this.txt_Code.Size = new System.Drawing.Size(203, 20);
-            this.txt_Code.TabIndex = 1;
             // 
             // lbl_Status
             // 
-            this.lbl_Status.Location = new System.Drawing.Point(12, 70);
+            resources.ApplyResources(this.lbl_Status, "lbl_Status");
             this.lbl_Status.Name = "lbl_Status";
-            this.lbl_Status.Size = new System.Drawing.Size(31, 13);
-            this.lbl_Status.TabIndex = 0;
-            this.lbl_Status.Text = "Status";
             // 
             // lbl_Name
             // 
-            this.lbl_Name.Location = new System.Drawing.Point(297, 44);
+            resources.ApplyResources(this.lbl_Name, "lbl_Name");
             this.lbl_Name.Name = "lbl_Name";
-            this.lbl_Name.Size = new System.Drawing.Size(27, 13);
-            this.lbl_Name.TabIndex = 0;
-            this.lbl_Name.Text = "Name";
             // 
             // lbl_Desc
             // 
-            this.lbl_Desc.Location = new System.Drawing.Point(297, 70);
+            resources.ApplyResources(this.lbl_Desc, "lbl_Desc");
             this.lbl_Desc.Name = "lbl_Desc";
-            this.lbl_Desc.Size = new System.Drawing.Size(58, 13);
-            this.lbl_Desc.TabIndex = 0;
-            this.lbl_Desc.Text = "Descriptions";
             // 
             // txt_Name
             // 
-            this.txt_Name.Location = new System.Drawing.Point(366, 41);
+            resources.ApplyResources(this.txt_Name, "txt_Name");
             this.txt_Name.Name = "txt_Name";
             this.txt_Name.Properties.MaxLength = 254;
-            this.txt_Name.Size = new System.Drawing.Size(203, 20);
-            this.txt_Name.TabIndex = 2;
             // 
             // txt_Desc
             // 
-            this.txt_Desc.Location = new System.Drawing.Point(366, 67);
+            resources.ApplyResources(this.txt_Desc, "txt_Desc");
             this.txt_Desc.Name = "txt_Desc";
             this.txt_Desc.Properties.MaxLength = 2000;
-            this.txt_Desc.Size = new System.Drawing.Size(203, 20);
-            this.txt_Desc.TabIndex = 4;
             // 
             // grd_AccountGroups
             // 
-            this.grd_AccountGroups.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.grd_AccountGroups.Location = new System.Drawing.Point(3, 93);
+            resources.ApplyResources(this.grd_AccountGroups, "grd_AccountGroups");
+            this.grd_AccountGroups.EmbeddedNavigator.AccessibleDescription = resources.GetString("grd_AccountGroups.EmbeddedNavigator.AccessibleDescription");
+            this.grd_AccountGroups.EmbeddedNavigator.AccessibleName = resources.GetString("grd_AccountGroups.EmbeddedNavigator.AccessibleName");
+            this.grd_AccountGroups.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("grd_AccountGroups.EmbeddedNavigator.AllowHtmlTextInToolTip")));
+            this.grd_AccountGroups.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("grd_AccountGroups.EmbeddedNavigator.Anchor")));
+            this.grd_AccountGroups.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("grd_AccountGroups.EmbeddedNavigator.BackgroundImage")));
+            this.grd_AccountGroups.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("grd_AccountGroups.EmbeddedNavigator.BackgroundImageLayout")));
+            this.grd_AccountGroups.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("grd_AccountGroups.EmbeddedNavigator.ImeMode")));
+            this.grd_AccountGroups.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("grd_AccountGroups.EmbeddedNavigator.MaximumSize")));
+            this.grd_AccountGroups.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("grd_AccountGroups.EmbeddedNavigator.TextLocation")));
+            this.grd_AccountGroups.EmbeddedNavigator.ToolTip = resources.GetString("grd_AccountGroups.EmbeddedNavigator.ToolTip");
+            this.grd_AccountGroups.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("grd_AccountGroups.EmbeddedNavigator.ToolTipIconType")));
+            this.grd_AccountGroups.EmbeddedNavigator.ToolTipTitle = resources.GetString("grd_AccountGroups.EmbeddedNavigator.ToolTipTitle");
             this.grd_AccountGroups.MainView = this.gv_AccountGroups;
             this.grd_AccountGroups.MenuManager = this.barManager1;
             this.grd_AccountGroups.Name = "grd_AccountGroups";
             this.grd_AccountGroups.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.rep_Status});
-            this.grd_AccountGroups.Size = new System.Drawing.Size(798, 374);
-            this.grd_AccountGroups.TabIndex = 6;
             this.grd_AccountGroups.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gv_AccountGroups});
             // 
             // gv_AccountGroups
             // 
+            resources.ApplyResources(this.gv_AccountGroups, "gv_AccountGroups");
             this.gv_AccountGroups.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gc_Code,
             this.gc_Name,
@@ -273,77 +267,70 @@ namespace MyAccounts.Forms.Categories
             // 
             // gc_Code
             // 
-            this.gc_Code.Caption = "Code";
+            resources.ApplyResources(this.gc_Code, "gc_Code");
             this.gc_Code.FieldName = "Code";
             this.gc_Code.Name = "gc_Code";
-            this.gc_Code.Visible = true;
-            this.gc_Code.VisibleIndex = 0;
+            this.gc_Code.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem()});
             // 
             // gc_Name
             // 
-            this.gc_Name.Caption = "Name";
+            resources.ApplyResources(this.gc_Name, "gc_Name");
             this.gc_Name.FieldName = "Name";
             this.gc_Name.Name = "gc_Name";
-            this.gc_Name.Visible = true;
-            this.gc_Name.VisibleIndex = 1;
+            this.gc_Name.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem()});
             // 
             // gc_Status
             // 
-            this.gc_Status.Caption = "Status";
+            resources.ApplyResources(this.gc_Status, "gc_Status");
             this.gc_Status.ColumnEdit = this.rep_Status;
             this.gc_Status.FieldName = "Status";
             this.gc_Status.Name = "gc_Status";
-            this.gc_Status.Visible = true;
-            this.gc_Status.VisibleIndex = 2;
+            this.gc_Status.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem()});
             // 
             // rep_Status
             // 
-            this.rep_Status.AutoHeight = false;
+            resources.ApplyResources(this.rep_Status, "rep_Status");
             this.rep_Status.BestFitMode = DevExpress.XtraEditors.Controls.BestFitMode.BestFitResizePopup;
             this.rep_Status.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("rep_Status.Buttons"))))});
             this.rep_Status.DisplayMember = "Value";
             this.rep_Status.Name = "rep_Status";
-            this.rep_Status.NullText = "";
             this.rep_Status.ShowHeader = false;
             this.rep_Status.ValueMember = "Key";
             // 
             // gc_Desc
             // 
-            this.gc_Desc.Caption = "Descriptions";
+            resources.ApplyResources(this.gc_Desc, "gc_Desc");
             this.gc_Desc.FieldName = "Descriptions";
             this.gc_Desc.Name = "gc_Desc";
-            this.gc_Desc.Visible = true;
-            this.gc_Desc.VisibleIndex = 3;
+            this.gc_Desc.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem()});
             // 
             // lk_Status
             // 
-            this.lk_Status.Location = new System.Drawing.Point(52, 67);
+            resources.ApplyResources(this.lk_Status, "lk_Status");
             this.lk_Status.MenuManager = this.barManager1;
             this.lk_Status.Name = "lk_Status";
             this.lk_Status.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lk_Status.Properties.Buttons"))))});
             this.lk_Status.Properties.DisplayMember = "Value";
-            this.lk_Status.Properties.NullText = "";
+            this.lk_Status.Properties.NullText = resources.GetString("lk_Status.Properties.NullText");
             this.lk_Status.Properties.ValueMember = "Key";
-            this.lk_Status.Size = new System.Drawing.Size(203, 20);
-            this.lk_Status.TabIndex = 3;
             // 
             // btn_Search
             // 
+            resources.ApplyResources(this.btn_Search, "btn_Search");
             this.btn_Search.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Search.ImageOptions.Image")));
-            this.btn_Search.Location = new System.Drawing.Point(575, 41);
             this.btn_Search.Name = "btn_Search";
-            this.btn_Search.Size = new System.Drawing.Size(75, 20);
-            this.btn_Search.TabIndex = 5;
-            this.btn_Search.Text = "Search";
             this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
             // 
             // frm_AccountGroups
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(806, 471);
             this.Controls.Add(this.btn_Search);
             this.Controls.Add(this.lk_Status);
             this.Controls.Add(this.grd_AccountGroups);
@@ -359,7 +346,6 @@ namespace MyAccounts.Forms.Categories
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.Name = "frm_AccountGroups";
-            this.Text = "Account Groups";
             this.Load += new System.EventHandler(this.frm_AccountGroups_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Code.Properties)).EndInit();

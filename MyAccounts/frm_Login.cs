@@ -1,9 +1,11 @@
 ﻿using DevExpress.XtraEditors;
-using MyAccounts.Libraries.Constants;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
+using System.Globalization;
 using System.IO;
+using System.Resources;
 using System.Threading;
 using System.Windows.Forms;
 using MyAccounts.Api.Commons;
@@ -18,41 +20,53 @@ namespace MyAccounts.Forms
     public partial class frm_Login : XtraForm
     {
         private UsersController _loginApi = new UsersController();
+        private ResourceManager _resources = new ResourceManager(typeof(frm_Login));
         
         public frm_Login()
         {
             InitializeComponent();
+            ChangeLanguage(GlobalData.DefaultLanguage);
         }
 
-        private void LoadConfigurations()
+        private void ChangeLanguage(string language)
         {
             try
             {
-                var fileData = File.ReadAllText(GlobalData.CONFIG_PATH);
-                if (string.IsNullOrEmpty(fileData))
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
+                foreach (Control control in this.Controls)
                 {
-                    WinCommons.ShowMessageDialog("Load config failed!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
-                    return;
+                    ComponentResourceManager resource = new ComponentResourceManager(typeof(frm_Login));
+                    resource.ApplyResources(control, control.Name, new CultureInfo(language));
                 }
-
-                var dicData = JsonConvert.DeserializeObject<Dictionary<string, string>>(fileData);
-                if (dicData.Count == 0 || dicData.Count != 7)
-                {
-                    WinCommons.ShowMessageDialog("Load config failed!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
-                    return;
-                }
-
-                GlobalData.ServerName = Functions.ToString(RSASecurity.Decrypt(dicData["ServerName"]));
-                GlobalData.DatabaseName = Functions.ToString(RSASecurity.Decrypt(dicData["DatabaseName"]));
-                GlobalData.DatabaseUserName = Functions.ToString(RSASecurity.Decrypt(dicData["ServerUser"]));
-                GlobalData.DatabasePassword = Functions.ToString(RSASecurity.Decrypt(dicData["ServerPassword"]));
-                GlobalData.DatabaseProvider = Functions.ToString(RSASecurity.Decrypt(dicData["DatabaseProvider"])) == "MSSQL" ? Enums.DatabaseSystemType.MSSQL : Enums.DatabaseSystemType.NoProvider;
-                GlobalData.ServerAuthentication = Functions.ToString(RSASecurity.Decrypt(dicData["Authentication"]));
+                GlobalData.DefaultLanguage = language;
             }
             catch (Exception ex)
             {
                 Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
-                WinCommons.ShowMessageDialog(ex.Message, MessageTitle.SystemError, Enums.MessageBoxType.Error);
+            }
+        }
+
+        private void WriteLanguageConfig(string language)
+        {
+            try
+            {
+                var fileData = File.ReadAllText(GlobalData.CONFIG_PATH);
+                if (!string.IsNullOrEmpty(fileData))
+                {
+                    var dicData = JsonConvert.DeserializeObject<Dictionary<string, string>>(fileData);
+                    if (dicData != null && dicData.Count > 0)
+                    {
+                        dicData["DefaultLanguage"] = RSASecurity.Encrypt(language);
+                        var json = JsonConvert.SerializeObject(dicData);
+                        File.Delete(GlobalData.CONFIG_PATH);
+                        File.WriteAllText(GlobalData.CONFIG_PATH, json);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
+
             }
         }
 
@@ -62,31 +76,31 @@ namespace MyAccounts.Forms
             {
                 if (string.IsNullOrEmpty(txt_Username.Text))
                 {
-                    WinCommons.ShowMessageDialog("Username cannot be empty value!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                    WinCommons.ShowMessageDialog(_resources.GetString("UsernameCannotBeEmptyValue"),  Enums.MessageBoxType.Error);
                     txt_Username.Focus();
                     return;
                 }
                 if (string.IsNullOrEmpty(txt_Password.Text))
                 {
-                    WinCommons.ShowMessageDialog("Password cannot be empty value!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                    WinCommons.ShowMessageDialog(_resources.GetString("PasswordCannotBeEmptyValue"),  Enums.MessageBoxType.Error);
                     txt_Password.Focus();
                     return;
                 }
 
-                WinCommons.OpenProcessing("");
+                WinCommons.OpenCursorProcessing(this);
                 var result = _loginApi.Login(txt_Username.Text.Trim(), txt_Password.Text.Trim());
                 if (!string.IsNullOrEmpty(result))
                 {
-                    WinCommons.ShowMessageDialog(result, MessageTitle.SystemError, Enums.MessageBoxType.Error);
-                    WinCommons.CloseProcessing();
+                    WinCommons.ShowMessageDialog(_resources.GetString("IncorrectUserNameOrPassword"),  Enums.MessageBoxType.Error);
+                    WinCommons.CloseCursorProcessing(this);
                     return;
                 }
 
                 var dtInfo = _loginApi.GetUserInfo(txt_Username.Text.Trim());
                 if (dtInfo.Rows.Count == 0)
                 {
-                    WinCommons.ShowMessageDialog("Login failed!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
-                    WinCommons.CloseProcessing();
+                    WinCommons.ShowMessageDialog(_resources.GetString("LoginFailed"),  Enums.MessageBoxType.Error);
+                    WinCommons.CloseCursorProcessing(this);
                     return;
                 }
                 GlobalData.UserId = Functions.ParseInteger(dtInfo.Rows[0]["UserID"]);
@@ -94,6 +108,7 @@ namespace MyAccounts.Forms
                 GlobalData.FirstName = Functions.ToString(dtInfo.Rows[0]["FirstName"]);
                 GlobalData.LastName = Functions.ToString(dtInfo.Rows[0]["LastName"]);
 
+                WinCommons.CloseCursorProcessing(this);
                 this.Hide();
                 var frm = new frm_Main();
                 frm.StartPosition = FormStartPosition.CenterScreen;
@@ -102,9 +117,9 @@ namespace MyAccounts.Forms
             catch (Exception ex)
             {
                 Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
-                WinCommons.ShowMessageDialog(ex.Message, MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                WinCommons.ShowMessageDialog(ex.Message,  Enums.MessageBoxType.Error);
             }
-            WinCommons.CloseProcessing();
+            WinCommons.CloseCursorProcessing(this);;
         }
 
         private void txt_Password_KeyDown(object sender, KeyEventArgs e)
@@ -117,26 +132,63 @@ namespace MyAccounts.Forms
 
         private void btn_Exit_Click(object sender, EventArgs e)
         {
+            this.Dispose();
             Application.Exit();
         }
 
         private void frm_Login_Load(object sender, EventArgs e)
         {
-            var resourcesExists = File.Exists("System//Images//add.svg") && File.Exists("System//Images//edit.svg");
-            var dbExists = File.Exists("System//config//initserver.bak");
+            try
+            {
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo(GlobalData.DefaultLanguage);
+                var resourcesExists = File.Exists("System//Images//add.svg") && File.Exists("System//Images//edit.svg");
+                var dbExists = File.Exists("System//config//initserver");
 
-            for (int i = 0; i < 50; i++)
-            {
-                Thread.Sleep(50);
+                for (int i = 0; i < 50; i++)
+                {
+                    Thread.Sleep(50);
+                }
+
+                if (!resourcesExists || !dbExists)
+                {
+                    WinCommons.ShowMessageDialog(_resources.GetString("SystemFilesCannotBeFound"), Enums.MessageBoxType.Error);
+                    this.Dispose();
+                    Application.Exit();
+                    return;
+                }
+                if (GlobalData.DefaultLanguage == "en-US")
+                {
+                    chk_English.Checked = true;
+                    chk_Vietnamese.Checked = false;
+                }
+                else
+                {
+                    chk_English.Checked = false;
+                    chk_Vietnamese.Checked = true;
+                }
             }
-            if (!resourcesExists || !dbExists)
+            catch (Exception ex)
             {
-                WinCommons.ShowMessageDialog("System files cannot be found!", "Error", Enums.MessageBoxType.Error);
-                this.Dispose();
-                Application.Exit();
-                return;
+                Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
+                WinCommons.ShowMessageDialog(ex.Message,  Enums.MessageBoxType.Error);
             }
-            LoadConfigurations();
+            
+        }
+
+        private void chk_English_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            chk_English.Checked = true;
+            chk_Vietnamese.Checked = false;
+            ChangeLanguage("en-US");
+            WriteLanguageConfig("en-US");
+        }
+
+        private void chk_Vietnamese_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            chk_English.Checked = false;
+            chk_Vietnamese.Checked = true;
+            ChangeLanguage("vi-VN");
+            WriteLanguageConfig("vi-VN");
         }
     }
 }

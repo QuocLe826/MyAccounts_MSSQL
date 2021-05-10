@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Linq;
+using System.Resources;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using DevExpress.XtraTabbedMdi;
 using MyAccounts.Forms.Categories;
 using MyAccounts.Forms.Home;
 using MyAccounts.Libraries.Constants;
@@ -12,6 +15,9 @@ namespace MyAccounts.Forms
 {
     public partial class frm_Main : XtraForm
     {
+
+        private ResourceManager _resources = new ResourceManager(typeof(frm_Main));
+
         public frm_Main()
         {
             InitializeComponent();
@@ -28,7 +34,7 @@ namespace MyAccounts.Forms
             catch (Exception ex)
             {
                 Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
-                WinCommons.ShowMessageDialog(ex.Message, MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                WinCommons.ShowMessageDialog(ex.Message,  Enums.MessageBoxType.Error);
             }
         }
 
@@ -36,15 +42,21 @@ namespace MyAccounts.Forms
         {
             try
             {
+                var tabForm = xtraTabbedMdiManager.Pages.AsEnumerable().FirstOrDefault(r => r.MdiChild.Text == form.Text);
+                if (tabForm != null)
+                {
+                    xtraTabbedMdiManager.SelectedPage = tabForm;
+                    return;
+                }
                 form.TopLevel = true;
                 form.MdiParent = this;
                 form.ShowInTaskbar = false;
                 form.Show();
             }
             catch (Exception ex)
-            {
+            { 
                 Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
-                WinCommons.ShowMessageDialog(ex.Message, MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                WinCommons.ShowMessageDialog(ex.Message,  Enums.MessageBoxType.Error);
             }
         }
 
@@ -72,13 +84,13 @@ namespace MyAccounts.Forms
         {
             try
             {
-                lbl_Server.Caption = string.Format(@"Server: {0}", GlobalData.ServerName);
-                lbl_User.Caption = string.Format(@"User: {0} {1}", GlobalData.LastName, GlobalData.FirstName);
+                lbl_Server.Caption = string.Format(@"{0} {1}",_resources.GetString("Server"), GlobalData.ServerName);
+                lbl_User.Caption = string.Format(@"{0} {1} {2}", _resources.GetString("User"),  GlobalData.LastName, GlobalData.FirstName);
             }
             catch (Exception ex)
             {
                 Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
-                WinCommons.ShowMessageDialog(ex.Message, MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                WinCommons.ShowMessageDialog(ex.Message,  Enums.MessageBoxType.Error);
             }
         }
 
@@ -89,6 +101,7 @@ namespace MyAccounts.Forms
 
         private void btn_Exit_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            this.Dispose();
             Application.Exit();
         }
 

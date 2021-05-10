@@ -49,100 +49,74 @@ namespace MyAccounts.Forms.Categories
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl1.Appearance.Font")));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(12, 14);
+            resources.ApplyResources(this.labelControl1, "labelControl1");
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(33, 14);
-            this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "Name";
             // 
             // labelControl2
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl2.Appearance.Font")));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(12, 67);
+            resources.ApplyResources(this.labelControl2, "labelControl2");
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(59, 14);
-            this.labelControl2.TabIndex = 0;
-            this.labelControl2.Text = "Username";
             // 
             // labelControl3
             // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl3.Appearance.Font")));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(12, 93);
+            resources.ApplyResources(this.labelControl3, "labelControl3");
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(59, 14);
-            this.labelControl3.TabIndex = 0;
-            this.labelControl3.Text = "Password";
             // 
             // txt_Name
             // 
-            this.txt_Name.Location = new System.Drawing.Point(93, 12);
+            resources.ApplyResources(this.txt_Name, "txt_Name");
             this.txt_Name.Name = "txt_Name";
             this.txt_Name.Properties.ReadOnly = true;
-            this.txt_Name.Size = new System.Drawing.Size(252, 20);
-            this.txt_Name.TabIndex = 1;
             // 
             // txt_Username
             // 
-            this.txt_Username.Location = new System.Drawing.Point(93, 65);
+            resources.ApplyResources(this.txt_Username, "txt_Username");
             this.txt_Username.Name = "txt_Username";
             this.txt_Username.Properties.ReadOnly = true;
-            this.txt_Username.Size = new System.Drawing.Size(252, 20);
-            this.txt_Username.TabIndex = 3;
             // 
             // txt_Password
             // 
-            this.txt_Password.Location = new System.Drawing.Point(93, 91);
+            resources.ApplyResources(this.txt_Password, "txt_Password");
             this.txt_Password.Name = "txt_Password";
             this.txt_Password.Properties.ReadOnly = true;
-            this.txt_Password.Size = new System.Drawing.Size(252, 20);
-            this.txt_Password.TabIndex = 4;
             // 
             // labelControl4
             // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl4.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl4.Appearance.Font")));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(12, 40);
+            resources.ApplyResources(this.labelControl4, "labelControl4");
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(29, 14);
-            this.labelControl4.TabIndex = 0;
-            this.labelControl4.Text = "Type";
             // 
             // txt_Type
             // 
-            this.txt_Type.Location = new System.Drawing.Point(93, 38);
+            resources.ApplyResources(this.txt_Type, "txt_Type");
             this.txt_Type.Name = "txt_Type";
             this.txt_Type.Properties.ReadOnly = true;
-            this.txt_Type.Size = new System.Drawing.Size(252, 20);
-            this.txt_Type.TabIndex = 2;
             // 
             // mno_Desc
             // 
-            this.mno_Desc.Location = new System.Drawing.Point(93, 117);
+            resources.ApplyResources(this.mno_Desc, "mno_Desc");
             this.mno_Desc.Name = "mno_Desc";
             this.mno_Desc.Properties.ReadOnly = true;
             this.mno_Desc.Properties.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.mno_Desc.Size = new System.Drawing.Size(252, 96);
-            this.mno_Desc.TabIndex = 5;
             // 
             // labelControl5
             // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl5.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl5.Appearance.Font")));
             this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(12, 118);
+            resources.ApplyResources(this.labelControl5, "labelControl5");
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(75, 14);
-            this.labelControl5.TabIndex = 0;
-            this.labelControl5.Text = "Descriptions";
             // 
             // frm_ShowAccountInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(353, 221);
             this.Controls.Add(this.mno_Desc);
             this.Controls.Add(this.txt_Password);
             this.Controls.Add(this.txt_Username);
@@ -159,8 +133,6 @@ namespace MyAccounts.Forms.Categories
             this.MinimizeBox = false;
             this.Name = "frm_ShowAccountInfo";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Account Information";
             this.Load += new System.EventHandler(this.frm_ShowAccountInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txt_Name.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Username.Properties)).EndInit();

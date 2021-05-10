@@ -2,7 +2,6 @@
 using DevExpress.XtraSplashScreen;
 using MyAccounts.Libraries.Enums;
 using MyAccounts.Libraries.Logging;
-using MyAccounts.Forms.Commons;
 using System;
 using System.Data;
 using System.Data.SqlClient;
@@ -13,23 +12,16 @@ namespace MyAccounts.Forms
 {
     public static class WinCommons
     {
-        /// <summary>
-        /// Open Processing dialog
-        /// </summary>
-        /// <param name="description"></param>
-        public static void OpenProcessing(string description)
+        public static void OpenCursorProcessing(XtraForm form)
         {
-            Processing.Descriptions = description;
-            SplashScreenManager.ShowForm(typeof(Processing));
+            form.Cursor = Cursors.WaitCursor;
         }
 
-        /// <summary>
-        /// Close Processing dialog
-        /// </summary>
-        public static void CloseProcessing()
+        public static void CloseCursorProcessing(XtraForm form)
         {
-            SplashScreenManager.CloseForm(false);
+            form.Cursor = Cursors.Default;
         }
+
         /// <summary>
         /// Show Message Box Dialog
         /// </summary>
@@ -37,35 +29,35 @@ namespace MyAccounts.Forms
         /// <param name="messageTitle"></param>
         /// <param name="messageType"></param>
         /// <returns></returns>
-        public static DialogResult ShowMessageDialog(string messageContent, string messageTitle, Enums.MessageBoxType messageType)
+        public static DialogResult ShowMessageDialog(string messageContent, Enums.MessageBoxType messageType)
         {
             try
             {
-
+                var messageTitle = string.Empty;
                 var messageButton = MessageBoxButtons.OK;
                 var messageIcon = MessageBoxIcon.Information;
 
                 switch (messageType)
                 {
                     case Enums.MessageBoxType.Information:
+                        messageTitle = GlobalData.DefaultLanguage == "en-US" ? @"Information" : @"Thông báo";
                         messageButton = MessageBoxButtons.OK;
                         messageIcon = MessageBoxIcon.Information;
                         break;
                     case Enums.MessageBoxType.Error:
+                        messageTitle = GlobalData.DefaultLanguage == "en-US" ? @"Error" : @"Lỗi";
                         messageButton = MessageBoxButtons.OK;
                         messageIcon = MessageBoxIcon.Error;
                         break;
                     case Enums.MessageBoxType.Warnings:
+                        messageTitle = GlobalData.DefaultLanguage == "en-US" ? @"Warning" : @"Cảnh báo";
                         messageButton = MessageBoxButtons.OK;
                         messageIcon = MessageBoxIcon.Warning;
                         break;
                     case Enums.MessageBoxType.Question:
+                        messageTitle = GlobalData.DefaultLanguage == "en-US" ? @"Confirm" : @"Xác nhận";
                         messageButton = MessageBoxButtons.YesNo;
                         messageIcon = MessageBoxIcon.Question;
-                        break;
-                    case Enums.MessageBoxType.Retry:
-                        messageButton = MessageBoxButtons.RetryCancel;
-                        messageIcon = MessageBoxIcon.Error;
                         break;
                 }
                 return XtraMessageBox.Show(messageContent, messageTitle, messageButton, messageIcon);

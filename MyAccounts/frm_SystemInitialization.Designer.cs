@@ -49,6 +49,8 @@ namespace MyAccounts.Forms
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.txt_FirstName = new DevExpress.XtraEditors.TextEdit();
             this.txt_LastName = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.rd_Languages = new DevExpress.XtraEditors.RadioGroup();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_ServerName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_ServerUser.Properties)).BeginInit();
@@ -58,12 +60,12 @@ namespace MyAccounts.Forms
             ((System.ComponentModel.ISupportInitialize)(this.lk_Authentication.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_FirstName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_LastName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rd_Languages.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureEdit1
             // 
-            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
-            this.pictureEdit1.Location = new System.Drawing.Point(5, 67);
+            resources.ApplyResources(this.pictureEdit1, "pictureEdit1");
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
@@ -71,198 +73,153 @@ namespace MyAccounts.Forms
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit1.Properties.ShowMenu = false;
             this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
-            this.pictureEdit1.Size = new System.Drawing.Size(281, 232);
-            this.pictureEdit1.TabIndex = 0;
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl1.Appearance.Font")));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(292, 12);
+            resources.ApplyResources(this.labelControl1, "labelControl1");
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(73, 13);
-            this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "Server Name";
             // 
             // txt_ServerName
             // 
-            this.txt_ServerName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_ServerName.Location = new System.Drawing.Point(292, 31);
+            resources.ApplyResources(this.txt_ServerName, "txt_ServerName");
             this.txt_ServerName.Name = "txt_ServerName";
-            this.txt_ServerName.Size = new System.Drawing.Size(308, 20);
-            this.txt_ServerName.TabIndex = 1;
             // 
             // labelControl2
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl2.Appearance.Font")));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(292, 57);
+            resources.ApplyResources(this.labelControl2, "labelControl2");
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(84, 13);
-            this.labelControl2.TabIndex = 0;
-            this.labelControl2.Text = "Authentication";
             // 
             // lbl_ServerUser
             // 
-            this.lbl_ServerUser.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ServerUser.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("lbl_ServerUser.Appearance.Font")));
             this.lbl_ServerUser.Appearance.Options.UseFont = true;
-            this.lbl_ServerUser.Location = new System.Drawing.Point(292, 102);
+            resources.ApplyResources(this.lbl_ServerUser, "lbl_ServerUser");
             this.lbl_ServerUser.Name = "lbl_ServerUser";
-            this.lbl_ServerUser.Size = new System.Drawing.Size(67, 13);
-            this.lbl_ServerUser.TabIndex = 0;
-            this.lbl_ServerUser.Text = "Server User";
             // 
             // txt_ServerUser
             // 
-            this.txt_ServerUser.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_ServerUser.Location = new System.Drawing.Point(292, 121);
+            resources.ApplyResources(this.txt_ServerUser, "txt_ServerUser");
             this.txt_ServerUser.Name = "txt_ServerUser";
-            this.txt_ServerUser.Size = new System.Drawing.Size(308, 20);
-            this.txt_ServerUser.TabIndex = 3;
             // 
             // lbl_ServerPassword
             // 
-            this.lbl_ServerPassword.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ServerPassword.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("lbl_ServerPassword.Appearance.Font")));
             this.lbl_ServerPassword.Appearance.Options.UseFont = true;
-            this.lbl_ServerPassword.Location = new System.Drawing.Point(292, 147);
+            resources.ApplyResources(this.lbl_ServerPassword, "lbl_ServerPassword");
             this.lbl_ServerPassword.Name = "lbl_ServerPassword";
-            this.lbl_ServerPassword.Size = new System.Drawing.Size(95, 13);
-            this.lbl_ServerPassword.TabIndex = 0;
-            this.lbl_ServerPassword.Text = "Server Password";
             // 
             // txt_ServerPassword
             // 
-            this.txt_ServerPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_ServerPassword.Location = new System.Drawing.Point(292, 166);
+            resources.ApplyResources(this.txt_ServerPassword, "txt_ServerPassword");
             this.txt_ServerPassword.Name = "txt_ServerPassword";
             this.txt_ServerPassword.Properties.UseSystemPasswordChar = true;
-            this.txt_ServerPassword.Size = new System.Drawing.Size(308, 20);
-            this.txt_ServerPassword.TabIndex = 4;
             // 
             // labelControl5
             // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl5.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl5.Appearance.Font")));
             this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(292, 281);
+            resources.ApplyResources(this.labelControl5, "labelControl5");
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(59, 13);
-            this.labelControl5.TabIndex = 0;
-            this.labelControl5.Text = "User Login";
             // 
             // txt_UserLogin
             // 
-            this.txt_UserLogin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_UserLogin.Location = new System.Drawing.Point(292, 300);
+            resources.ApplyResources(this.txt_UserLogin, "txt_UserLogin");
             this.txt_UserLogin.Name = "txt_UserLogin";
-            this.txt_UserLogin.Size = new System.Drawing.Size(308, 20);
-            this.txt_UserLogin.TabIndex = 7;
             // 
             // labelControl6
             // 
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl6.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl6.Appearance.Font")));
             this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(292, 326);
+            resources.ApplyResources(this.labelControl6, "labelControl6");
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(54, 13);
-            this.labelControl6.TabIndex = 0;
-            this.labelControl6.Text = "Password";
             // 
             // txt_Password
             // 
-            this.txt_Password.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_Password.Location = new System.Drawing.Point(292, 345);
+            resources.ApplyResources(this.txt_Password, "txt_Password");
             this.txt_Password.Name = "txt_Password";
             this.txt_Password.Properties.UseSystemPasswordChar = true;
-            this.txt_Password.Size = new System.Drawing.Size(308, 20);
-            this.txt_Password.TabIndex = 8;
             // 
             // btn_OK
             // 
             this.btn_OK.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_OK.ImageOptions.Image")));
-            this.btn_OK.Location = new System.Drawing.Point(447, 371);
+            resources.ApplyResources(this.btn_OK, "btn_OK");
             this.btn_OK.Name = "btn_OK";
-            this.btn_OK.Size = new System.Drawing.Size(75, 23);
-            this.btn_OK.TabIndex = 9;
-            this.btn_OK.Text = "OK";
             this.btn_OK.Click += new System.EventHandler(this.btn_OK_Click);
             // 
             // btn_Cancel
             // 
             this.btn_Cancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancel.ImageOptions.Image")));
-            this.btn_Cancel.Location = new System.Drawing.Point(525, 371);
+            resources.ApplyResources(this.btn_Cancel, "btn_Cancel");
             this.btn_Cancel.Name = "btn_Cancel";
-            this.btn_Cancel.Size = new System.Drawing.Size(75, 23);
-            this.btn_Cancel.TabIndex = 10;
-            this.btn_Cancel.Text = "Cancel";
             this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
             // 
             // lk_Authentication
             // 
-            this.lk_Authentication.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lk_Authentication.Location = new System.Drawing.Point(292, 76);
+            resources.ApplyResources(this.lk_Authentication, "lk_Authentication");
             this.lk_Authentication.Name = "lk_Authentication";
             this.lk_Authentication.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lk_Authentication.Properties.Buttons"))))});
             this.lk_Authentication.Properties.DisplayMember = "Value";
-            this.lk_Authentication.Properties.NullText = "Select Authentication";
+            this.lk_Authentication.Properties.NullText = resources.GetString("lk_Authentication.Properties.NullText");
             this.lk_Authentication.Properties.ValueMember = "Key";
-            this.lk_Authentication.Size = new System.Drawing.Size(308, 20);
-            this.lk_Authentication.TabIndex = 2;
             this.lk_Authentication.EditValueChanged += new System.EventHandler(this.lk_Authentication_EditValueChanged);
             // 
             // labelControl7
             // 
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl7.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl7.Appearance.Font")));
             this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(292, 192);
+            resources.ApplyResources(this.labelControl7, "labelControl7");
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(60, 13);
-            this.labelControl7.TabIndex = 0;
-            this.labelControl7.Text = "First Name";
             // 
             // labelControl8
             // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl8.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl8.Appearance.Font")));
             this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(292, 237);
+            resources.ApplyResources(this.labelControl8, "labelControl8");
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(59, 13);
-            this.labelControl8.TabIndex = 0;
-            this.labelControl8.Text = "Last Name";
             // 
             // txt_FirstName
             // 
-            this.txt_FirstName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_FirstName.Location = new System.Drawing.Point(292, 211);
+            resources.ApplyResources(this.txt_FirstName, "txt_FirstName");
             this.txt_FirstName.Name = "txt_FirstName";
-            this.txt_FirstName.Size = new System.Drawing.Size(308, 20);
-            this.txt_FirstName.TabIndex = 5;
             this.txt_FirstName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_FirstName_KeyPress);
             // 
             // txt_LastName
             // 
-            this.txt_LastName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_LastName.Location = new System.Drawing.Point(292, 256);
+            resources.ApplyResources(this.txt_LastName, "txt_LastName");
             this.txt_LastName.Name = "txt_LastName";
-            this.txt_LastName.Size = new System.Drawing.Size(308, 20);
-            this.txt_LastName.TabIndex = 6;
             this.txt_LastName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_LastName_KeyPress);
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl3.Appearance.Font")));
+            this.labelControl3.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.labelControl3, "labelControl3");
+            this.labelControl3.Name = "labelControl3";
+            // 
+            // rd_Languages
+            // 
+            resources.ApplyResources(this.rd_Languages, "rd_Languages");
+            this.rd_Languages.Name = "rd_Languages";
+            this.rd_Languages.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.rd_Languages.Properties.Appearance.Options.UseBackColor = true;
+            this.rd_Languages.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.rd_Languages.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("rd_Languages.Properties.Items"))), resources.GetString("rd_Languages.Properties.Items1")),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("rd_Languages.Properties.Items2"))), resources.GetString("rd_Languages.Properties.Items3"))});
+            this.rd_Languages.SelectedIndexChanged += new System.EventHandler(this.rd_Languages_SelectedIndexChanged);
             // 
             // frm_SystemInitialization
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(609, 406);
+            this.Controls.Add(this.rd_Languages);
             this.Controls.Add(this.lk_Authentication);
             this.Controls.Add(this.btn_Cancel);
             this.Controls.Add(this.btn_OK);
@@ -280,13 +237,12 @@ namespace MyAccounts.Forms
             this.Controls.Add(this.lbl_ServerPassword);
             this.Controls.Add(this.lbl_ServerUser);
             this.Controls.Add(this.labelControl2);
+            this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.pictureEdit1);
             this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("frm_SystemInitialization.IconOptions.SvgImage")));
             this.MaximizeBox = false;
             this.Name = "frm_SystemInitialization";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "System Initialization";
             this.Load += new System.EventHandler(this.frm_SystemInitialization_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_ServerName.Properties)).EndInit();
@@ -297,6 +253,7 @@ namespace MyAccounts.Forms
             ((System.ComponentModel.ISupportInitialize)(this.lk_Authentication.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_FirstName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_LastName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rd_Languages.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -323,5 +280,7 @@ namespace MyAccounts.Forms
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.TextEdit txt_FirstName;
         private DevExpress.XtraEditors.TextEdit txt_LastName;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.RadioGroup rd_Languages;
     }
 }

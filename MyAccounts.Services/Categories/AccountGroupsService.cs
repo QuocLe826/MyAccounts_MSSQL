@@ -47,7 +47,7 @@ namespace MyAccounts.Services.Categories
             }
         }
 
-        public string ProcessAccountGroups(DataTable dt, string actionType)
+        public Tuple<string, string> ProcessAccountGroups(DataTable dt, string actionType)
         {
             try
             {
@@ -60,17 +60,19 @@ namespace MyAccounts.Services.Categories
                     new SqlParameter("@actionType", actionType));
                 if (dtResult.Rows.Count > 0)
                 {
-                    return "";
+                    return new Tuple<string, string>("", "");
                 }
-                return actionType.Equals("A") ?  "Data added failed!" : "Data update failed!";
+                return actionType.Equals("A")
+                    ? new Tuple<string, string>("Data added failed!", "Thêm dữ liệu thất bại!")
+                    : new Tuple<string, string>("Data update failed!", "Cập nhật dữ liệu thất bại!");
             }
             catch (Exception ex)
             {
-                return ex.Message;
+                return new Tuple<string, string>(ex.Message, ex.Message);
             }
         }
 
-        public string DeleteAccountGroups(string code)
+        public Tuple<string, string> DeleteAccountGroups(string code)
         {
             try
             {
@@ -78,13 +80,13 @@ namespace MyAccounts.Services.Categories
                 var dt = ExecuteDataTable(query, CommandType.StoredProcedure, new SqlParameter("@code", code));
                 if (dt.Rows.Count > 0)
                 {
-                    return Functions.ToString(dt.Rows[0][0]);
+                    return new Tuple<string, string>(Functions.ToString(dt.Rows[0][0]), Functions.ToString(dt.Rows[0][1]));
                 }
-                return "Delete failed!";
+                return new Tuple<string, string>("Delete failed!", "Xóa thất bại!");
             }
             catch (Exception ex)
             {
-                return ex.Message;
+                return new Tuple<string, string>(ex.Message, ex.Message);
             }
         }
     }

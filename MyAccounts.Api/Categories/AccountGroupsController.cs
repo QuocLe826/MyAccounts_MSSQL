@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using System;
+using System.Data;
 using MyAccounts.Services.Categories;
 
 namespace MyAccounts.Api.Categories
@@ -22,12 +23,12 @@ namespace MyAccounts.Api.Categories
             return _service.SearchAccountGroup(code, name, status, descriptions);
         }
 
-        public string ProcessAccountGroups(DataTable dt, string actionType)
+        public Tuple<string, string> ProcessAccountGroups(DataTable dt, string actionType)
         {
             return _service.ProcessAccountGroups(dt, actionType);
         }
 
-        public string DeleteAccountGroups(string code)
+        public Tuple<string, string> DeleteAccountGroups(string code)
         {
             return _service.DeleteAccountGroups(code);
         }

@@ -23,10 +23,16 @@ namespace MyAccounts.Libraries.Constants
             { "ServerAuth", "Server Authentication"}
         };
 
-        public static Dictionary<string, string> DicStatus = new Dictionary<string, string>()
+        public static Dictionary<string, string> DicStatus_EN = new Dictionary<string, string>()
         {
             { "Y", "Active" },
             { "N", "Inactive"}
+        };
+
+        public static Dictionary<string, string> DicStatus_VN = new Dictionary<string, string>()
+        {
+            { "Y", "Hoạt động" },
+            { "N", "Không hoạt động"}
         };
     }
 }

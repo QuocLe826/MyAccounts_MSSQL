@@ -63,13 +63,13 @@ namespace MyAccounts.Forms
         public static string DefaultLanguage = string.Empty;
 
         /// <summary>
-        /// Biến lưu chuỗi kết nối hệ thống
-        /// </summary>
-        public static string ConnectionString = string.Empty;
-
-        /// <summary>
         /// Biến lưu server authentication
         /// </summary>
         public static string ServerAuthentication = string.Empty;
+
+        /// <summary>
+        /// Biến lưu Culture Info của hệ thống
+        /// </summary>
+        public static string CutureInfo = string.Empty;
     }
 }

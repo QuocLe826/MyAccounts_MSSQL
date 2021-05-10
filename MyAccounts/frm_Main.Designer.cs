@@ -81,7 +81,7 @@ namespace MyAccounts.Forms
             this.lbl_Server,
             this.lbl_User});
             this.barManager.MainMenu = this.bar2;
-            this.barManager.MaxItemId = 14;
+            this.barManager.MaxItemId = 15;
             this.barManager.StatusBar = this.bar3;
             // 
             // bar2
@@ -98,12 +98,15 @@ namespace MyAccounts.Forms
             this.bar2.OptionsBar.DrawDragBorder = false;
             this.bar2.OptionsBar.MultiLine = true;
             this.bar2.OptionsBar.UseWholeRow = true;
-            this.bar2.Text = "Main menu";
+            resources.ApplyResources(this.bar2, "bar2");
             // 
             // barSubItem1
             // 
-            this.barSubItem1.Caption = "Home";
+            resources.ApplyResources(this.barSubItem1, "barSubItem1");
             this.barSubItem1.Id = 1;
+            this.barSubItem1.ImageOptions.ImageIndex = ((int)(resources.GetObject("barSubItem1.ImageOptions.ImageIndex")));
+            this.barSubItem1.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barSubItem1.ImageOptions.LargeImageIndex")));
+            this.barSubItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barSubItem1.ImageOptions.SvgImage")));
             this.barSubItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btn_Backup, DevExpress.XtraBars.BarItemPaintStyle.Caption),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btn_Restore, DevExpress.XtraBars.BarItemPaintStyle.Caption),
@@ -114,47 +117,61 @@ namespace MyAccounts.Forms
             // 
             // btn_Backup
             // 
-            this.btn_Backup.Caption = "Backup";
+            resources.ApplyResources(this.btn_Backup, "btn_Backup");
             this.btn_Backup.Id = 2;
+            this.btn_Backup.ImageOptions.ImageIndex = ((int)(resources.GetObject("btn_Backup.ImageOptions.ImageIndex")));
+            this.btn_Backup.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btn_Backup.ImageOptions.LargeImageIndex")));
             this.btn_Backup.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Backup.ImageOptions.SvgImage")));
             this.btn_Backup.Name = "btn_Backup";
             this.btn_Backup.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_Backup_ItemClick);
             // 
             // btn_Restore
             // 
-            this.btn_Restore.Caption = "Restore";
+            resources.ApplyResources(this.btn_Restore, "btn_Restore");
             this.btn_Restore.Id = 3;
+            this.btn_Restore.ImageOptions.ImageIndex = ((int)(resources.GetObject("btn_Restore.ImageOptions.ImageIndex")));
+            this.btn_Restore.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btn_Restore.ImageOptions.LargeImageIndex")));
+            this.btn_Restore.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Restore.ImageOptions.SvgImage")));
             this.btn_Restore.Name = "btn_Restore";
             this.btn_Restore.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_Restore_ItemClick);
             // 
             // btn_ChangePassword
             // 
-            this.btn_ChangePassword.Caption = "Change Password";
+            resources.ApplyResources(this.btn_ChangePassword, "btn_ChangePassword");
             this.btn_ChangePassword.Id = 5;
+            this.btn_ChangePassword.ImageOptions.ImageIndex = ((int)(resources.GetObject("btn_ChangePassword.ImageOptions.ImageIndex")));
+            this.btn_ChangePassword.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btn_ChangePassword.ImageOptions.LargeImageIndex")));
             this.btn_ChangePassword.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_ChangePassword.ImageOptions.SvgImage")));
             this.btn_ChangePassword.Name = "btn_ChangePassword";
             this.btn_ChangePassword.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_ChangePassword_ItemClick);
             // 
             // btn_Logout
             // 
-            this.btn_Logout.Caption = "Log Out";
+            resources.ApplyResources(this.btn_Logout, "btn_Logout");
             this.btn_Logout.Id = 7;
+            this.btn_Logout.ImageOptions.ImageIndex = ((int)(resources.GetObject("btn_Logout.ImageOptions.ImageIndex")));
+            this.btn_Logout.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btn_Logout.ImageOptions.LargeImageIndex")));
             this.btn_Logout.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Logout.ImageOptions.SvgImage")));
             this.btn_Logout.Name = "btn_Logout";
             this.btn_Logout.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_Logout_ItemClick);
             // 
             // btn_Exit
             // 
-            this.btn_Exit.Caption = "Exit";
+            resources.ApplyResources(this.btn_Exit, "btn_Exit");
             this.btn_Exit.Id = 6;
+            this.btn_Exit.ImageOptions.ImageIndex = ((int)(resources.GetObject("btn_Exit.ImageOptions.ImageIndex")));
+            this.btn_Exit.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btn_Exit.ImageOptions.LargeImageIndex")));
             this.btn_Exit.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Exit.ImageOptions.SvgImage")));
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_Exit_ItemClick);
             // 
             // barSubItem2
             // 
-            this.barSubItem2.Caption = "Categories";
+            resources.ApplyResources(this.barSubItem2, "barSubItem2");
             this.barSubItem2.Id = 8;
+            this.barSubItem2.ImageOptions.ImageIndex = ((int)(resources.GetObject("barSubItem2.ImageOptions.ImageIndex")));
+            this.barSubItem2.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barSubItem2.ImageOptions.LargeImageIndex")));
+            this.barSubItem2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barSubItem2.ImageOptions.SvgImage")));
             this.barSubItem2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem7),
             new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem8),
@@ -163,22 +180,31 @@ namespace MyAccounts.Forms
             // 
             // barButtonItem7
             // 
-            this.barButtonItem7.Caption = "Account Groups";
+            resources.ApplyResources(this.barButtonItem7, "barButtonItem7");
             this.barButtonItem7.Id = 9;
+            this.barButtonItem7.ImageOptions.ImageIndex = ((int)(resources.GetObject("barButtonItem7.ImageOptions.ImageIndex")));
+            this.barButtonItem7.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barButtonItem7.ImageOptions.LargeImageIndex")));
+            this.barButtonItem7.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem7.ImageOptions.SvgImage")));
             this.barButtonItem7.Name = "barButtonItem7";
             this.barButtonItem7.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem7_ItemClick);
             // 
             // barButtonItem8
             // 
-            this.barButtonItem8.Caption = "Accounts Type";
+            resources.ApplyResources(this.barButtonItem8, "barButtonItem8");
             this.barButtonItem8.Id = 10;
+            this.barButtonItem8.ImageOptions.ImageIndex = ((int)(resources.GetObject("barButtonItem8.ImageOptions.ImageIndex")));
+            this.barButtonItem8.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barButtonItem8.ImageOptions.LargeImageIndex")));
+            this.barButtonItem8.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem8.ImageOptions.SvgImage")));
             this.barButtonItem8.Name = "barButtonItem8";
             this.barButtonItem8.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8_ItemClick);
             // 
             // barButtonItem9
             // 
-            this.barButtonItem9.Caption = "Account Management";
+            resources.ApplyResources(this.barButtonItem9, "barButtonItem9");
             this.barButtonItem9.Id = 11;
+            this.barButtonItem9.ImageOptions.ImageIndex = ((int)(resources.GetObject("barButtonItem9.ImageOptions.ImageIndex")));
+            this.barButtonItem9.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barButtonItem9.ImageOptions.LargeImageIndex")));
+            this.barButtonItem9.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem9.ImageOptions.SvgImage")));
             this.barButtonItem9.Name = "barButtonItem9";
             this.barButtonItem9.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem9_ItemClick);
             // 
@@ -195,61 +221,62 @@ namespace MyAccounts.Forms
             this.bar3.OptionsBar.AllowQuickCustomization = false;
             this.bar3.OptionsBar.DrawDragBorder = false;
             this.bar3.OptionsBar.UseWholeRow = true;
-            this.bar3.Text = "Status bar";
+            resources.ApplyResources(this.bar3, "bar3");
             // 
             // lbl_Server
             // 
-            this.lbl_Server.Caption = "Server:";
+            resources.ApplyResources(this.lbl_Server, "lbl_Server");
             this.lbl_Server.Id = 12;
-            this.lbl_Server.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Server.ImageOptions.ImageIndex = ((int)(resources.GetObject("lbl_Server.ImageOptions.ImageIndex")));
+            this.lbl_Server.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("lbl_Server.ImageOptions.LargeImageIndex")));
+            this.lbl_Server.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("lbl_Server.ImageOptions.SvgImage")));
+            this.lbl_Server.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("lbl_Server.ItemAppearance.Normal.Font")));
             this.lbl_Server.ItemAppearance.Normal.Options.UseFont = true;
             this.lbl_Server.Name = "lbl_Server";
             // 
             // lbl_User
             // 
+            resources.ApplyResources(this.lbl_User, "lbl_User");
             this.lbl_User.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
-            this.lbl_User.Caption = "User:";
             this.lbl_User.Id = 13;
-            this.lbl_User.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_User.ImageOptions.ImageIndex = ((int)(resources.GetObject("lbl_User.ImageOptions.ImageIndex")));
+            this.lbl_User.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("lbl_User.ImageOptions.LargeImageIndex")));
+            this.lbl_User.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("lbl_User.ImageOptions.SvgImage")));
+            this.lbl_User.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("lbl_User.ItemAppearance.Normal.Font")));
             this.lbl_User.ItemAppearance.Normal.Options.UseFont = true;
             this.lbl_User.Name = "lbl_User";
             // 
             // barDockControlTop
             // 
+            resources.ApplyResources(this.barDockControlTop, "barDockControlTop");
             this.barDockControlTop.CausesValidation = false;
-            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager;
-            this.barDockControlTop.Size = new System.Drawing.Size(1184, 26);
             // 
             // barDockControlBottom
             // 
+            resources.ApplyResources(this.barDockControlBottom, "barDockControlBottom");
             this.barDockControlBottom.CausesValidation = false;
-            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 711);
             this.barDockControlBottom.Manager = this.barManager;
-            this.barDockControlBottom.Size = new System.Drawing.Size(1184, 22);
             // 
             // barDockControlLeft
             // 
+            resources.ApplyResources(this.barDockControlLeft, "barDockControlLeft");
             this.barDockControlLeft.CausesValidation = false;
-            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 26);
             this.barDockControlLeft.Manager = this.barManager;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 685);
             // 
             // barDockControlRight
             // 
+            resources.ApplyResources(this.barDockControlRight, "barDockControlRight");
             this.barDockControlRight.CausesValidation = false;
-            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1184, 26);
             this.barDockControlRight.Manager = this.barManager;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 685);
             // 
             // barButtonItem3
             // 
-            this.barButtonItem3.Caption = "Thiết lập kết nối";
+            resources.ApplyResources(this.barButtonItem3, "barButtonItem3");
             this.barButtonItem3.Id = 4;
+            this.barButtonItem3.ImageOptions.ImageIndex = ((int)(resources.GetObject("barButtonItem3.ImageOptions.ImageIndex")));
+            this.barButtonItem3.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barButtonItem3.ImageOptions.LargeImageIndex")));
+            this.barButtonItem3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem3.ImageOptions.SvgImage")));
             this.barButtonItem3.Name = "barButtonItem3";
             // 
             // xtraTabbedMdiManager
@@ -262,9 +289,8 @@ namespace MyAccounts.Forms
             // 
             // frm_Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 733);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
@@ -273,7 +299,6 @@ namespace MyAccounts.Forms
             this.IsMdiContainer = true;
             this.Name = "frm_Main";
             this.ShowMdiChildCaptionInParentTitle = true;
-            this.Text = "MyAccounts";
             this.Load += new System.EventHandler(this.frm_Main_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).EndInit();

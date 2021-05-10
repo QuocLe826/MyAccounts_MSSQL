@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Resources;
 using DevExpress.Utils.Svg;
 using MyAccounts.Api.Categories;
 using MyAccounts.Libraries.Constants;
@@ -15,6 +16,7 @@ namespace MyAccounts.Forms.Categories
     public partial class frm_AddUpdateAccount : XtraForm
     {
         private AccountManagementController _accManagementApi = new AccountManagementController();
+        private ResourceManager _resources = new ResourceManager(typeof(frm_AddUpdateAccount));
         private string _actionType = string.Empty;
         private string _accCode = string.Empty;
         public bool IsSuccess = false;
@@ -22,7 +24,7 @@ namespace MyAccounts.Forms.Categories
         public frm_AddUpdateAccount(string actionType)
         {
             InitializeComponent();
-            this.Text = @"Add New Account";
+            this.Text = _resources.GetString("AddNewAccount");
             this.IconOptions.SvgImage = SvgImage.FromFile("System//images//add.svg");
             txt_Code.ReadOnly = false;
             _actionType = actionType;
@@ -32,7 +34,7 @@ namespace MyAccounts.Forms.Categories
         {
             InitializeComponent();
 
-            this.Text = @"Edit Account";
+            this.Text = _resources.GetString("EditAccount");
             this.IconOptions.SvgImage = SvgImage.FromFile("System//images//edit.svg");
             txt_Code.ReadOnly = true;
             _actionType = actionType;
@@ -45,7 +47,14 @@ namespace MyAccounts.Forms.Categories
             {
                 lk_AccountGroup.Properties.DataSource = _accManagementApi.GetAccountGroups();
                 lk_AccountType.Properties.DataSource = _accManagementApi.GetAccountType();
-                lk_Status.Properties.DataSource = CommonConstants.DicStatus;
+                if (GlobalData.DefaultLanguage == "en-US")
+                {
+                    lk_Status.Properties.DataSource = CommonConstants.DicStatus_EN;
+                }
+                else
+                {
+                    lk_Status.Properties.DataSource = CommonConstants.DicStatus_VN;
+                }
                 lk_Status.ItemIndex = 0;
                 txt_Code.Focus();
 
@@ -54,7 +63,7 @@ namespace MyAccounts.Forms.Categories
                     var dt = _accManagementApi.GetAccountManagementByCode(_accCode);
                     if (dt.Rows.Count == 0)
                     {
-                        WinCommons.ShowMessageDialog("Get data error!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                        WinCommons.ShowMessageDialog(_resources.GetString("GetDataError"),  Enums.MessageBoxType.Error);
                         this.Close();
                         return;
                     }
@@ -72,7 +81,7 @@ namespace MyAccounts.Forms.Categories
             catch (Exception ex)
             {
                 Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
-                WinCommons.ShowMessageDialog(ex.Message, MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                WinCommons.ShowMessageDialog(ex.Message,  Enums.MessageBoxType.Error);
             }
         }
 
@@ -82,42 +91,43 @@ namespace MyAccounts.Forms.Categories
             {
                 if (string.IsNullOrEmpty(txt_Code.Text))
                 {
-                    WinCommons.ShowMessageDialog("Code cannot be empty value!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                    WinCommons.ShowMessageDialog(_resources.GetString("CodeCannotBeEmptyValue"),  Enums.MessageBoxType.Error);
                     txt_Code.Focus();
                     return;
                 }
                 if (string.IsNullOrEmpty(txt_Name.Text))
                 {
-                    WinCommons.ShowMessageDialog("Name cannot be empty value!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                    WinCommons.ShowMessageDialog(_resources.GetString("NameCannotBeEmptyValue"),  Enums.MessageBoxType.Error);
                     txt_Name.Focus();
                     return;
                 }
                 if (string.IsNullOrEmpty(txt_Username.Text))
                 {
-                    WinCommons.ShowMessageDialog("Username cannot be empty value!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                    WinCommons.ShowMessageDialog(_resources.GetString("UsernameCannotBeEmptyValue"),  Enums.MessageBoxType.Error);
                     txt_Username.Focus();
                     return;
                 }
                 if (string.IsNullOrEmpty(txt_Password.Text))
                 {
-                    WinCommons.ShowMessageDialog("Password cannot be empty value!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                    WinCommons.ShowMessageDialog(_resources.GetString("PasswordCannotBeEmptyValue"),  Enums.MessageBoxType.Error);
                     txt_Code.Focus();
                     return;
                 }
                 if (string.IsNullOrEmpty(Functions.ToString(lk_AccountGroup.EditValue)))
                 {
-                    WinCommons.ShowMessageDialog("Account Group cannot be empty value!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                    WinCommons.ShowMessageDialog(_resources.GetString("AccountGroupCannotBeEmptyValue"),  Enums.MessageBoxType.Error);
                     lk_AccountGroup.Focus();
                     return;
                 }
 
                 if (string.IsNullOrEmpty(Functions.ToString(lk_AccountType.EditValue)))
                 {
-                    WinCommons.ShowMessageDialog("Account Type cannot be empty value!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                    WinCommons.ShowMessageDialog(_resources.GetString("AccountTypeCannotBeEmptyValue"),  Enums.MessageBoxType.Error);
                     lk_AccountType.Focus();
                     return;
                 }
 
+                WinCommons.OpenCursorProcessing(this);
                 var dicData = new Dictionary<string,string>();
                 dicData.Add("Code", txt_Code.Text.Trim());
                 dicData.Add("Name", txt_Name.Text.Trim());
@@ -136,14 +146,15 @@ namespace MyAccounts.Forms.Categories
                     return;
                 }
                 IsSuccess = false;
-                WinCommons.ShowMessageDialog(result, MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                WinCommons.ShowMessageDialog(result,  Enums.MessageBoxType.Error);
                 txt_Code.Focus();
             }
             catch (Exception ex)
             {
                 Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
-                WinCommons.ShowMessageDialog(ex.Message, MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                WinCommons.ShowMessageDialog(ex.Message,  Enums.MessageBoxType.Error);
             }
+            WinCommons.CloseCursorProcessing(this);
         }
 
         private void btn_Cancel_Click(object sender, EventArgs e)
@@ -161,20 +172,20 @@ namespace MyAccounts.Forms.Categories
                     {
                         txt_Password.Properties.UseSystemPasswordChar = false;
                         e.Button.ImageOptions.SvgImage = SvgImage.FromFile("System//images//hide.svg");
-                        e.Button.ToolTip = "Hide Password";
+                        e.Button.ToolTip = _resources.GetString("HidePassword");
                     }
                     else
                     {
                         txt_Password.Properties.UseSystemPasswordChar = true;
                         e.Button.ImageOptions.SvgImage = SvgImage.FromFile("System//images//show.svg");
-                        e.Button.ToolTip = "Show Password";
+                        e.Button.ToolTip = _resources.GetString("ShowPassword");
                     }
                 }
             }
             catch (Exception ex)
             {
                 Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
-                WinCommons.ShowMessageDialog(ex.Message, MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                WinCommons.ShowMessageDialog(ex.Message,  Enums.MessageBoxType.Error);
             }
         }
     }

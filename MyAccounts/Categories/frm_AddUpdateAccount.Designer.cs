@@ -65,189 +65,142 @@ namespace MyAccounts.Forms.Categories
             // 
             // lbl_Code
             // 
-            this.lbl_Code.Location = new System.Drawing.Point(12, 12);
+            resources.ApplyResources(this.lbl_Code, "lbl_Code");
             this.lbl_Code.Name = "lbl_Code";
-            this.lbl_Code.Size = new System.Drawing.Size(25, 13);
-            this.lbl_Code.TabIndex = 0;
-            this.lbl_Code.Text = "Code";
             // 
             // txt_Code
             // 
-            this.txt_Code.Location = new System.Drawing.Point(89, 9);
+            resources.ApplyResources(this.txt_Code, "txt_Code");
             this.txt_Code.Name = "txt_Code";
             this.txt_Code.Properties.MaxLength = 20;
-            this.txt_Code.Size = new System.Drawing.Size(269, 20);
-            this.txt_Code.TabIndex = 1;
             // 
             // lbl_Name
             // 
-            this.lbl_Name.Location = new System.Drawing.Point(12, 38);
+            resources.ApplyResources(this.lbl_Name, "lbl_Name");
             this.lbl_Name.Name = "lbl_Name";
-            this.lbl_Name.Size = new System.Drawing.Size(27, 13);
-            this.lbl_Name.TabIndex = 0;
-            this.lbl_Name.Text = "Name";
             // 
             // txt_Name
             // 
-            this.txt_Name.Location = new System.Drawing.Point(89, 35);
+            resources.ApplyResources(this.txt_Name, "txt_Name");
             this.txt_Name.Name = "txt_Name";
             this.txt_Name.Properties.MaxLength = 254;
-            this.txt_Name.Size = new System.Drawing.Size(269, 20);
-            this.txt_Name.TabIndex = 2;
             // 
             // lbl_Username
             // 
-            this.lbl_Username.Location = new System.Drawing.Point(12, 64);
+            resources.ApplyResources(this.lbl_Username, "lbl_Username");
             this.lbl_Username.Name = "lbl_Username";
-            this.lbl_Username.Size = new System.Drawing.Size(48, 13);
-            this.lbl_Username.TabIndex = 0;
-            this.lbl_Username.Text = "Username";
             // 
             // txt_Username
             // 
-            this.txt_Username.Location = new System.Drawing.Point(89, 61);
+            resources.ApplyResources(this.txt_Username, "txt_Username");
             this.txt_Username.Name = "txt_Username";
             this.txt_Username.Properties.MaxLength = 150;
-            this.txt_Username.Size = new System.Drawing.Size(269, 20);
-            this.txt_Username.TabIndex = 3;
             // 
             // lbl_Password
             // 
-            this.lbl_Password.Location = new System.Drawing.Point(12, 90);
+            resources.ApplyResources(this.lbl_Password, "lbl_Password");
             this.lbl_Password.Name = "lbl_Password";
-            this.lbl_Password.Size = new System.Drawing.Size(46, 13);
-            this.lbl_Password.TabIndex = 0;
-            this.lbl_Password.Text = "Password";
             // 
             // lbl_AccGroup
             // 
-            this.lbl_AccGroup.Location = new System.Drawing.Point(12, 116);
+            resources.ApplyResources(this.lbl_AccGroup, "lbl_AccGroup");
             this.lbl_AccGroup.Name = "lbl_AccGroup";
-            this.lbl_AccGroup.Size = new System.Drawing.Size(71, 13);
-            this.lbl_AccGroup.TabIndex = 0;
-            this.lbl_AccGroup.Text = "Account Group";
             // 
             // lk_AccountGroup
             // 
-            this.lk_AccountGroup.Location = new System.Drawing.Point(89, 113);
+            resources.ApplyResources(this.lk_AccountGroup, "lk_AccountGroup");
             this.lk_AccountGroup.Name = "lk_AccountGroup";
             this.lk_AccountGroup.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lk_AccountGroup.Properties.Buttons"))))});
             this.lk_AccountGroup.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Name")});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lk_AccountGroup.Properties.Columns"), resources.GetString("lk_AccountGroup.Properties.Columns1"))});
             this.lk_AccountGroup.Properties.DisplayMember = "Name";
             this.lk_AccountGroup.Properties.KeyMember = "Code";
-            this.lk_AccountGroup.Properties.NullText = "";
+            this.lk_AccountGroup.Properties.NullText = resources.GetString("lk_AccountGroup.Properties.NullText");
             this.lk_AccountGroup.Properties.ShowHeader = false;
             this.lk_AccountGroup.Properties.ValueMember = "Code";
-            this.lk_AccountGroup.Size = new System.Drawing.Size(269, 20);
-            this.lk_AccountGroup.TabIndex = 5;
             // 
             // lbl_AccType
             // 
-            this.lbl_AccType.Location = new System.Drawing.Point(12, 142);
+            resources.ApplyResources(this.lbl_AccType, "lbl_AccType");
             this.lbl_AccType.Name = "lbl_AccType";
-            this.lbl_AccType.Size = new System.Drawing.Size(66, 13);
-            this.lbl_AccType.TabIndex = 0;
-            this.lbl_AccType.Text = "Account Type";
             // 
             // lk_AccountType
             // 
-            this.lk_AccountType.Location = new System.Drawing.Point(89, 139);
+            resources.ApplyResources(this.lk_AccountType, "lk_AccountType");
             this.lk_AccountType.Name = "lk_AccountType";
             this.lk_AccountType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lk_AccountType.Properties.Buttons"))))});
             this.lk_AccountType.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Name")});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lk_AccountType.Properties.Columns"), resources.GetString("lk_AccountType.Properties.Columns1"))});
             this.lk_AccountType.Properties.DisplayMember = "Name";
             this.lk_AccountType.Properties.KeyMember = "Code";
-            this.lk_AccountType.Properties.NullText = "";
+            this.lk_AccountType.Properties.NullText = resources.GetString("lk_AccountType.Properties.NullText");
             this.lk_AccountType.Properties.ShowHeader = false;
             this.lk_AccountType.Properties.ValueMember = "Code";
-            this.lk_AccountType.Size = new System.Drawing.Size(269, 20);
-            this.lk_AccountType.TabIndex = 6;
             // 
             // lbl_Status
             // 
-            this.lbl_Status.Location = new System.Drawing.Point(12, 168);
+            resources.ApplyResources(this.lbl_Status, "lbl_Status");
             this.lbl_Status.Name = "lbl_Status";
-            this.lbl_Status.Size = new System.Drawing.Size(31, 13);
-            this.lbl_Status.TabIndex = 0;
-            this.lbl_Status.Text = "Status";
             // 
             // lk_Status
             // 
-            this.lk_Status.Location = new System.Drawing.Point(89, 165);
+            resources.ApplyResources(this.lk_Status, "lk_Status");
             this.lk_Status.Name = "lk_Status";
             this.lk_Status.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lk_Status.Properties.Buttons"))))});
             this.lk_Status.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Value", "Name")});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lk_Status.Properties.Columns"), resources.GetString("lk_Status.Properties.Columns1"))});
             this.lk_Status.Properties.DisplayMember = "Value";
             this.lk_Status.Properties.KeyMember = "Code";
-            this.lk_Status.Properties.NullText = "";
+            this.lk_Status.Properties.NullText = resources.GetString("lk_Status.Properties.NullText");
             this.lk_Status.Properties.ShowHeader = false;
             this.lk_Status.Properties.ValueMember = "Key";
-            this.lk_Status.Size = new System.Drawing.Size(269, 20);
-            this.lk_Status.TabIndex = 7;
             // 
             // lbl_Desc
             // 
-            this.lbl_Desc.Location = new System.Drawing.Point(12, 196);
+            resources.ApplyResources(this.lbl_Desc, "lbl_Desc");
             this.lbl_Desc.Name = "lbl_Desc";
-            this.lbl_Desc.Size = new System.Drawing.Size(58, 13);
-            this.lbl_Desc.TabIndex = 0;
-            this.lbl_Desc.Text = "Descriptions";
             // 
             // mno_Desc
             // 
-            this.mno_Desc.Location = new System.Drawing.Point(89, 191);
+            resources.ApplyResources(this.mno_Desc, "mno_Desc");
             this.mno_Desc.Name = "mno_Desc";
             this.mno_Desc.Properties.MaxLength = 2000;
-            this.mno_Desc.Size = new System.Drawing.Size(269, 134);
-            this.mno_Desc.TabIndex = 8;
             // 
             // btn_OK
             // 
+            resources.ApplyResources(this.btn_OK, "btn_OK");
             this.btn_OK.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_OK.ImageOptions.Image")));
-            this.btn_OK.Location = new System.Drawing.Point(205, 331);
             this.btn_OK.Name = "btn_OK";
-            this.btn_OK.Size = new System.Drawing.Size(75, 23);
-            this.btn_OK.TabIndex = 9;
-            this.btn_OK.Text = "OK";
             this.btn_OK.Click += new System.EventHandler(this.btn_OK_Click);
             // 
             // btn_Cancel
             // 
+            resources.ApplyResources(this.btn_Cancel, "btn_Cancel");
             this.btn_Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btn_Cancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancel.ImageOptions.Image")));
-            this.btn_Cancel.Location = new System.Drawing.Point(283, 331);
             this.btn_Cancel.Name = "btn_Cancel";
-            this.btn_Cancel.Size = new System.Drawing.Size(75, 23);
-            this.btn_Cancel.TabIndex = 10;
-            this.btn_Cancel.Text = "Cancel";
             this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
             // 
             // txt_Password
             // 
-            this.txt_Password.Location = new System.Drawing.Point(89, 87);
+            resources.ApplyResources(this.txt_Password, "txt_Password");
             this.txt_Password.Name = "txt_Password";
             editorButtonImageOptions1.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
-            editorButtonImageOptions1.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions1.SvgImage")));
+            resources.ApplyResources(editorButtonImageOptions1, "editorButtonImageOptions1");
             editorButtonImageOptions1.SvgImageSize = new System.Drawing.Size(16, 16);
             this.txt_Password.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "Show Password", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txt_Password.Properties.Buttons"))), resources.GetString("txt_Password.Properties.Buttons1"), ((int)(resources.GetObject("txt_Password.Properties.Buttons2"))), ((bool)(resources.GetObject("txt_Password.Properties.Buttons3"))), ((bool)(resources.GetObject("txt_Password.Properties.Buttons4"))), ((bool)(resources.GetObject("txt_Password.Properties.Buttons5"))), editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, resources.GetString("txt_Password.Properties.Buttons6"), ((object)(resources.GetObject("txt_Password.Properties.Buttons7"))), ((DevExpress.Utils.SuperToolTip)(resources.GetObject("txt_Password.Properties.Buttons8"))), ((DevExpress.Utils.ToolTipAnchor)(resources.GetObject("txt_Password.Properties.Buttons9"))))});
             this.txt_Password.Properties.UseSystemPasswordChar = true;
-            this.txt_Password.Size = new System.Drawing.Size(268, 20);
-            this.txt_Password.TabIndex = 4;
             this.txt_Password.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.txt_Password_ButtonClick);
             // 
             // frm_AddUpdateAccount
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btn_Cancel;
-            this.ClientSize = new System.Drawing.Size(369, 363);
             this.Controls.Add(this.txt_Password);
             this.Controls.Add(this.btn_Cancel);
             this.Controls.Add(this.btn_OK);
@@ -272,8 +225,6 @@ namespace MyAccounts.Forms.Categories
             this.MinimizeBox = false;
             this.Name = "frm_AddUpdateAccount";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Add New Account";
             this.Load += new System.EventHandler(this.frm_AddNewAccount_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txt_Code.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Name.Properties)).EndInit();

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Resources;
 using System.Windows.Forms;
 using MyAccounts.Api.Commons;
 using MyAccounts.Libraries.Constants;
@@ -11,6 +12,7 @@ namespace MyAccounts.Forms.Home
     public partial class frm_Restore : DevExpress.XtraEditors.XtraForm
     {
         private CommonsController _commonApi = new CommonsController();
+        private ResourceManager _resources = new ResourceManager(typeof(frm_Restore));
 
         public frm_Restore()
         {
@@ -23,7 +25,7 @@ namespace MyAccounts.Forms.Home
             {
                 if (string.IsNullOrEmpty(btn_RestoreFile.Text))
                 {
-                    WinCommons.ShowMessageDialog("Please choose restore file!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                    WinCommons.ShowMessageDialog(_resources.GetString("PleaseChooseRestoreFile"),  Enums.MessageBoxType.Error);
                     btn_RestoreFile.Focus();
                     return;
                 }
@@ -31,19 +33,19 @@ namespace MyAccounts.Forms.Home
                 var res = _commonApi.RestoreDatabase(path);
                 if (string.IsNullOrEmpty(res))
                 {
-                    WinCommons.ShowMessageDialog("Restore successfully", MessageTitle.SystemInformation, Enums.MessageBoxType.Information);
+                    WinCommons.ShowMessageDialog(_resources.GetString("RestoreSuccessfully"), Enums.MessageBoxType.Information);
                     this.Close();
                     Application.Restart();
                 }
                 else
                 {
-                    WinCommons.ShowMessageDialog("Restore failed!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                    WinCommons.ShowMessageDialog(_resources.GetString("RestoreFailed"),  Enums.MessageBoxType.Error);
                 }
             }
             catch (Exception ex)
             {
                 Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
-                WinCommons.ShowMessageDialog(ex.Message, MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                WinCommons.ShowMessageDialog(ex.Message,  Enums.MessageBoxType.Error);
             }
         }
 

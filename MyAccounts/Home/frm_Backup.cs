@@ -1,6 +1,7 @@
 ﻿using DevExpress.XtraEditors;
 using System;
 using System.Diagnostics;
+using System.Resources;
 using System.Windows.Forms;
 using MyAccounts.Api.Commons;
 using MyAccounts.Libraries.Constants;
@@ -13,6 +14,7 @@ namespace MyAccounts.Forms.Home
     {
 
         private CommonsController _commonApi = new CommonsController();
+        private ResourceManager _resources = new ResourceManager(typeof(frm_Backup));
 
         public frm_Backup()
         {
@@ -35,19 +37,19 @@ namespace MyAccounts.Forms.Home
                     var res = _commonApi.BackupDatabase(path);
                     if (string.IsNullOrEmpty(res))
                     {
-                        WinCommons.ShowMessageDialog("Backup successfully", MessageTitle.SystemInformation, Enums.MessageBoxType.Information);
+                        WinCommons.ShowMessageDialog(_resources.GetString("BackupSuccessfully"), Enums.MessageBoxType.Information);
                         this.Close();
                     }
                     else
                     {
-                        WinCommons.ShowMessageDialog("Backup failed!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                        WinCommons.ShowMessageDialog(_resources.GetString("BackupFailed"),  Enums.MessageBoxType.Error);
                     }
                 }
             }
             catch (Exception ex)
             {
                 Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
-                WinCommons.ShowMessageDialog(ex.Message, MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                WinCommons.ShowMessageDialog(ex.Message,  Enums.MessageBoxType.Error);
             }
         }
 

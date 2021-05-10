@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using System.IO;
 using System.Windows.Forms;
 using MyAccounts.Api.Commons;
@@ -11,11 +12,17 @@ using MyAccounts.Libraries.Helpers;
 using MyAccounts.Libraries.Logging;
 using MyAccounts.Libraries.Security;
 using Newtonsoft.Json;
+using System.ComponentModel;
+using System.Resources;
+using System.Threading;
 
 namespace MyAccounts.Forms
 {
     public partial class frm_SystemInitialization : XtraForm
     {
+        private string _language = string.Empty;
+        private ResourceManager _resource = new ResourceManager(typeof(frm_SystemInitialization));
+
         #region Constructor
         public frm_SystemInitialization()
         {
@@ -39,7 +46,7 @@ namespace MyAccounts.Forms
                 dicData.Add("ServerPassword", RSASecurity.Encrypt(txt_ServerPassword.Text.Trim()));
                 dicData.Add("DatabaseProvider", RSASecurity.Encrypt("MSSQL"));
                 dicData.Add("DatabaseName", RSASecurity.Encrypt(databaseName));
-                dicData.Add("LastUserSign", RSASecurity.Encrypt("empty"));
+                dicData.Add("DefaultLanguage", RSASecurity.Encrypt(_language));
 
                 var jsonData = JsonConvert.SerializeObject(dicData);
                 File.WriteAllText(GlobalData.CONFIG_PATH, jsonData);
@@ -49,6 +56,24 @@ namespace MyAccounts.Forms
             {
                 Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
                 return false;
+            }
+        }
+
+        private void ChangeLanguage(string language)
+        {
+            try
+            {
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
+                foreach (Control control in this.Controls)
+                {
+                    ComponentResourceManager resource = new ComponentResourceManager(typeof(frm_SystemInitialization));
+                    resource.ApplyResources(control, control.Name, new CultureInfo(language));
+                }
+                _language = language;
+            }
+            catch (Exception ex)
+            {
+                Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
             }
         }
 
@@ -70,76 +95,74 @@ namespace MyAccounts.Forms
             {
                 if (string.IsNullOrEmpty(txt_ServerName.Text))
                 {
-                    WinCommons.ShowMessageDialog("Server Name cannot be empty value!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                    WinCommons.ShowMessageDialog(_resource.GetString("ServerNameCannotBeEmptyValue"),  Enums.MessageBoxType.Error);
                     txt_ServerName.Focus();
                     return;
                 }
                 if (lk_Authentication.ItemIndex == -1)
                 {
-                    WinCommons.ShowMessageDialog("Please choose Authentication!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                    WinCommons.ShowMessageDialog(_resource.GetString("PleaseChooseAuthentication"),  Enums.MessageBoxType.Error);
                     lk_Authentication.Focus();
                     return;
                 }
                 if (string.IsNullOrEmpty(txt_ServerUser.Text))
                 {
-                    WinCommons.ShowMessageDialog("Server Username cannot be empty value!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                    WinCommons.ShowMessageDialog(_resource.GetString("ServerUsernameCannotBeEmptyValue"),  Enums.MessageBoxType.Error);
                     txt_ServerUser.Focus();
                     return;
                 }
                 if (string.IsNullOrEmpty(txt_ServerPassword.Text))
                 {
-                    WinCommons.ShowMessageDialog("Server Password cannot be empty value!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                    WinCommons.ShowMessageDialog(_resource.GetString("ServerPasswordCannotBeEmptyValue"),  Enums.MessageBoxType.Error);
                     txt_ServerPassword.Focus();
                     return;
                 }
                 if (string.IsNullOrEmpty(txt_FirstName.Text))
                 {
-                    WinCommons.ShowMessageDialog("First Name cannot be empty value!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                    WinCommons.ShowMessageDialog(_resource.GetString("FirstNameCannotBeEmptyValue"),  Enums.MessageBoxType.Error);
                     txt_FirstName.Focus();
                     return;
                 }
                 if (string.IsNullOrEmpty(txt_LastName.Text))
                 {
-                    WinCommons.ShowMessageDialog("Last Name cannot be empty value!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                    WinCommons.ShowMessageDialog(_resource.GetString("LastNameCannotBeEmptyValue"),  Enums.MessageBoxType.Error);
                     txt_LastName.Focus();
                     return;
                 }
                 if (string.IsNullOrEmpty(txt_UserLogin.Text))
                 {
-                    WinCommons.ShowMessageDialog("User login cannot be empty value!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                    WinCommons.ShowMessageDialog(_resource.GetString("UserLoginCannotBeEmptyValue"),  Enums.MessageBoxType.Error);
                     txt_UserLogin.Focus();
                     return;
                 }
                 if (string.IsNullOrEmpty(txt_Password.Text))
                 {
-                    WinCommons.ShowMessageDialog("Password cannot be empty value!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                    WinCommons.ShowMessageDialog(_resource.GetString("PasswordCannotBeEmptyValue"),  Enums.MessageBoxType.Error);
                     txt_Password.Focus();
                     return;
                 }
 
-                WinCommons.OpenProcessing("Connecting to server...");
+                WinCommons.OpenCursorProcessing(this);
                 var serverConnected = lk_Authentication.ItemIndex == 0
                         ? WinCommons.CheckConnection(txt_ServerName.Text)
                         : WinCommons.CheckConnection(txt_ServerName.Text, txt_ServerUser.Text, txt_ServerPassword.Text);
                 if (!serverConnected)
                 {
-                    WinCommons.ShowMessageDialog("Connect to Server failed!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
-                    WinCommons.CloseProcessing();
+                    WinCommons.ShowMessageDialog(_resource.GetString("ConnectToServerFailed"),  Enums.MessageBoxType.Error);
+                    WinCommons.CloseCursorProcessing(this);
                     return;
                 }
-                WinCommons.CloseProcessing();
 
-                WinCommons.OpenProcessing("Initializing System...");
                 if (WriteConfig("master"))
                 {
-                    var path = string.Format(@"{0}//System//config//initserver.bak", Application.StartupPath);
+                    var path = string.Format(@"{0}//System//config//initserver", Application.StartupPath);
                     var api = new CommonsController();
                     var result = api.RestoreDatabase(path);
                     if (!string.IsNullOrEmpty(result))
                     {
-                        WinCommons.ShowMessageDialog(result, MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                        WinCommons.ShowMessageDialog(result,  Enums.MessageBoxType.Error);
                         File.Delete(GlobalData.CONFIG_PATH);
-                        WinCommons.CloseProcessing();
+                        WinCommons.CloseCursorProcessing(this);
                         return;
                     }
 
@@ -149,12 +172,12 @@ namespace MyAccounts.Forms
                         result = api.InsertUserInfo(txt_FirstName.Text.Trim(), txt_LastName.Text.Trim(), txt_UserLogin.Text.Trim(), RSASecurity.Encrypt(txt_Password.Text.Trim()));
                         if (!string.IsNullOrEmpty(result))
                         {
-                            WinCommons.ShowMessageDialog(result, MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                            WinCommons.ShowMessageDialog(result,  Enums.MessageBoxType.Error);
                             File.Delete(GlobalData.CONFIG_PATH);
-                            WinCommons.CloseProcessing();
+                            WinCommons.CloseCursorProcessing(this);
                             return;
                         }
-                        WinCommons.CloseProcessing();
+                        WinCommons.CloseCursorProcessing(this);
                         this.Hide();
                         var frm = new frm_Login();
                         frm.StartPosition = FormStartPosition.CenterScreen;
@@ -165,9 +188,9 @@ namespace MyAccounts.Forms
             catch (Exception ex)
             {
                 Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
-                WinCommons.ShowMessageDialog(ex.Message, MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                WinCommons.ShowMessageDialog(ex.Message,  Enums.MessageBoxType.Error);
             }
-            WinCommons.CloseProcessing();
+            WinCommons.CloseCursorProcessing(this);
         }
 
         private void txt_FirstName_KeyPress(object sender, KeyPressEventArgs e)
@@ -201,6 +224,18 @@ namespace MyAccounts.Forms
                 txt_ServerPassword.Enabled = true;
                 lbl_ServerUser.Enabled = true;
                 lbl_ServerPassword.Enabled = true;
+            }
+        }
+
+        private void rd_Languages_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (rd_Languages.SelectedIndex == 0)
+            {
+                ChangeLanguage("en-US");
+            }
+            else
+            {
+                ChangeLanguage("vi-VN");
             }
         }
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Resources;
 using System.Windows.Forms;
 using MyAccounts.Api.Commons;
 using MyAccounts.Libraries.Constants;
@@ -11,6 +12,7 @@ namespace MyAccounts.Forms.Home
     public partial class frm_ChangePassword : DevExpress.XtraEditors.XtraForm
     {
         private UsersController _userApi = new UsersController();
+        private ResourceManager _resource = new ResourceManager(typeof(frm_ChangePassword));
 
         public frm_ChangePassword()
         {
@@ -23,33 +25,33 @@ namespace MyAccounts.Forms.Home
             {
                 if (string.IsNullOrEmpty(txt_CurrentPassword.Text))
                 {
-                    WinCommons.ShowMessageDialog("Current Password cannot be empty value!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                    WinCommons.ShowMessageDialog(_resource.GetString("CurrentPasswordCannotBeEmptyValue"),  Enums.MessageBoxType.Error);
                     txt_CurrentPassword.Focus();
                     return;
                 }
                 if (string.IsNullOrEmpty(txt_NewPassword.Text))
                 {
-                    WinCommons.ShowMessageDialog("New Password cannot be empty value!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                    WinCommons.ShowMessageDialog(_resource.GetString("NewPasswordCannotBeEmptyValue"),  Enums.MessageBoxType.Error);
                     txt_NewPassword.Focus();
                     return;
                 }
                 if (string.IsNullOrEmpty(txt_ConfirmPassword.Text))
                 {
-                    WinCommons.ShowMessageDialog("Confirm Password cannot be empty value!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                    WinCommons.ShowMessageDialog(_resource.GetString("ConfirmPasswordCannotBeEmptyValue"),  Enums.MessageBoxType.Error);
                     txt_ConfirmPassword.Focus();
                     return;
                 }
 
-                if (WinCommons.ShowMessageDialog("Are you sure to change password?", MessageTitle.SystemConfirm,
+                if (WinCommons.ShowMessageDialog(_resource.GetString("AreYouSureToChangePassword"),
                         Enums.MessageBoxType.Question) == DialogResult.Yes)
                 {
                     var result = _userApi.ChangePassword(GlobalData.UserLogin, txt_CurrentPassword.Text.Trim(), txt_NewPassword.Text.Trim(), txt_ConfirmPassword.Text.Trim());
                     if (!string.IsNullOrEmpty(result))
                     {
-                        WinCommons.ShowMessageDialog(result, MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                        WinCommons.ShowMessageDialog(_resource.GetString("PasswordChangeFailed"),  Enums.MessageBoxType.Error);
                         return;
                     }
-                    WinCommons.ShowMessageDialog("Password changed successfully", MessageTitle.SystemInformation, Enums.MessageBoxType.Information);
+                    WinCommons.ShowMessageDialog(_resource.GetString("PasswordChangedSuccessfully"), Enums.MessageBoxType.Information);
                     this.Close();
                     Application.Restart();
                 }
@@ -57,7 +59,7 @@ namespace MyAccounts.Forms.Home
             catch (Exception ex)
             {
                 Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
-                WinCommons.ShowMessageDialog(ex.Message, MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                WinCommons.ShowMessageDialog(ex.Message,  Enums.MessageBoxType.Error);
             }
         }
 

@@ -171,123 +171,17 @@
 </value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pic_Logo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 12</value>
-  </data>
-  <data name="pic_Logo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 122</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pic_Logo.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pic_Logo.Name" xml:space="preserve">
-    <value>pic_Logo</value>
-  </data>
-  <data name="&gt;&gt;pic_Logo.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PictureEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;pic_Logo.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pic_Logo.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="labelControl1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="labelControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>152, 28</value>
-  </data>
   <data name="labelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 13</value>
-  </data>
-  <data name="labelControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+    <value>83, 13</value>
   </data>
   <data name="labelControl1.Text" xml:space="preserve">
-    <value>Username</value>
-  </data>
-  <data name="&gt;&gt;labelControl1.Name" xml:space="preserve">
-    <value>labelControl1</value>
-  </data>
-  <data name="&gt;&gt;labelControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;labelControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;labelControl1.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="txt_Username.Location" type="System.Drawing.Point, System.Drawing">
-    <value>152, 47</value>
-  </data>
-  <data name="txt_Username.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 20</value>
-  </data>
-  <data name="txt_Username.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;txt_Username.Name" xml:space="preserve">
-    <value>txt_Username</value>
-  </data>
-  <data name="&gt;&gt;txt_Username.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txt_Username.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txt_Username.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="labelControl2.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="labelControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>152, 73</value>
+    <value>Tên đăng nhập</value>
   </data>
   <data name="labelControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 13</value>
-  </data>
-  <data name="labelControl2.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+    <value>53, 13</value>
   </data>
   <data name="labelControl2.Text" xml:space="preserve">
-    <value>Password</value>
-  </data>
-  <data name="&gt;&gt;labelControl2.Name" xml:space="preserve">
-    <value>labelControl2</value>
-  </data>
-  <data name="&gt;&gt;labelControl2.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;labelControl2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;labelControl2.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="txt_Password.Location" type="System.Drawing.Point, System.Drawing">
-    <value>152, 92</value>
-  </data>
-  <data name="txt_Password.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 20</value>
-  </data>
-  <data name="txt_Password.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;txt_Password.Name" xml:space="preserve">
-    <value>txt_Password</value>
-  </data>
-  <data name="&gt;&gt;txt_Password.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txt_Password.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txt_Password.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>Mật khẩu</value>
   </data>
   <data name="btn_Login.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -312,28 +206,13 @@
 </value>
   </data>
   <data name="btn_Login.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 118</value>
+    <value>212, 118</value>
   </data>
   <data name="btn_Login.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="btn_Login.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+    <value>82, 23</value>
   </data>
   <data name="btn_Login.Text" xml:space="preserve">
-    <value>Login</value>
-  </data>
-  <data name="&gt;&gt;btn_Login.Name" xml:space="preserve">
-    <value>btn_Login</value>
-  </data>
-  <data name="&gt;&gt;btn_Login.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_Login.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btn_Login.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>Đăng nhập</value>
   </data>
   <data name="btn_Exit.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -357,138 +236,8 @@
         8j91kUbX3K/WKgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btn_Exit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>298, 118</value>
-  </data>
-  <data name="btn_Exit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="btn_Exit.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
   <data name="btn_Exit.Text" xml:space="preserve">
-    <value>Exit</value>
-  </data>
-  <data name="&gt;&gt;btn_Exit.Name" xml:space="preserve">
-    <value>btn_Exit</value>
-  </data>
-  <data name="&gt;&gt;btn_Exit.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_Exit.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btn_Exit.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="popupMenu1.TrayLocation" type="System.Drawing.Point, System.Drawing">
-    <value>319, 17</value>
-  </data>
-  <data name="chk_English.Caption" xml:space="preserve">
-    <value>English</value>
-  </data>
-  <data name="chk_Vietnamese.Caption" xml:space="preserve">
-    <value>Vietnamese</value>
-  </data>
-  <data name="barManager1.TrayLocation" type="System.Drawing.Point, System.Drawing">
-    <value>194, 17</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="barDockControlTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="barDockControlTop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>438, 0</value>
-  </data>
-  <data name="&gt;&gt;barDockControlTop.Name" xml:space="preserve">
-    <value>barDockControlTop</value>
-  </data>
-  <data name="&gt;&gt;barDockControlTop.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barDockControlTop.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;barDockControlTop.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="barDockControlBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 153</value>
-  </data>
-  <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>438, 0</value>
-  </data>
-  <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
-    <value>barDockControlBottom</value>
-  </data>
-  <data name="&gt;&gt;barDockControlBottom.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barDockControlBottom.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;barDockControlBottom.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="barDockControlLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="barDockControlLeft.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 153</value>
-  </data>
-  <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
-    <value>barDockControlLeft</value>
-  </data>
-  <data name="&gt;&gt;barDockControlLeft.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barDockControlLeft.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;barDockControlLeft.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="barDockControlRight.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>438, 0</value>
-  </data>
-  <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 153</value>
-  </data>
-  <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
-    <value>barDockControlRight</value>
-  </data>
-  <data name="&gt;&gt;barDockControlRight.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barDockControlRight.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;barDockControlRight.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="$this.Language" type="System.Globalization.CultureInfo, mscorlib">
-    <value>vi-VN</value>
-  </data>
-  <data name="$this.Localizable" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>438, 153</value>
+    <value>Thoát</value>
   </data>
   <data name="frm_Login.IconOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -526,85 +275,31 @@
         +OAhbmFy8dqXpsR47WtzYrz2xUkelLD3vTrrCK98ebpnA5//AHk9b7haBfwqAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Login</value>
+    <value>Đăng nhập</value>
   </data>
-  <data name="&gt;&gt;splashScreenManager1.Name" xml:space="preserve">
-    <value>splashScreenManager1</value>
+  <data name="chk_English.Caption" xml:space="preserve">
+    <value>Tiếng Anh</value>
   </data>
-  <data name="&gt;&gt;splashScreenManager1.Type" xml:space="preserve">
-    <value>DevExpress.XtraSplashScreen.SplashScreenManager, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;popupMenu1.Name" xml:space="preserve">
-    <value>popupMenu1</value>
-  </data>
-  <data name="&gt;&gt;popupMenu1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.PopupMenu, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;chk_English.Name" xml:space="preserve">
-    <value>chk_English</value>
-  </data>
-  <data name="&gt;&gt;chk_English.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarCheckItem, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;chk_Vietnamese.Name" xml:space="preserve">
-    <value>chk_Vietnamese</value>
-  </data>
-  <data name="&gt;&gt;chk_Vietnamese.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarCheckItem, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barManager1.Name" xml:space="preserve">
-    <value>barManager1</value>
-  </data>
-  <data name="&gt;&gt;barManager1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarManager, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>frm_Login</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="btn_Languages.Location" type="System.Drawing.Point, System.Drawing">
-    <value>357, 4</value>
-  </data>
-  <data name="btn_Languages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 22</value>
-  </data>
-  <data name="btn_Languages.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="chk_Vietnamese.Caption" xml:space="preserve">
+    <value>Tiếng Việt</value>
   </data>
   <data name="btn_Languages.Text" xml:space="preserve">
-    <value>Languages</value>
-  </data>
-  <data name="&gt;&gt;btn_Languages.Name" xml:space="preserve">
-    <value>btn_Languages</value>
-  </data>
-  <data name="&gt;&gt;btn_Languages.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.DropDownButton, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_Languages.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btn_Languages.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>Ngôn ngữ</value>
   </data>
   <data name="IncorrectUserNameOrPassword" xml:space="preserve">
-    <value>Incorrect Username or password!</value>
+    <value>Tên đăng nhập hoặc mật khẩu không chính xác!</value>
   </data>
   <data name="LoginFailed" xml:space="preserve">
-    <value>Login Failed!</value>
+    <value>Đăng nhập thất bại!</value>
   </data>
   <data name="PasswordCannotBeEmptyValue" xml:space="preserve">
-    <value>Password cannot be empty value!</value>
+    <value>Mật khẩu không được để trống!</value>
   </data>
   <data name="SystemFilesCannotBeFound" xml:space="preserve">
-    <value>System files cannot be found!</value>
+    <value>Không tìm thấy tập tin hệ thống!</value>
   </data>
   <data name="UsernameCannotBeEmptyValue" xml:space="preserve">
-    <value>Username cannot be empty value!</value>
+    <value>Tên đăng nhập không được để trống!</value>
   </data>
 </root>

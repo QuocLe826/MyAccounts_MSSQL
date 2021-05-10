@@ -117,4 +117,95 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="labelControl1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="labelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 15</value>
+  </data>
+  <data name="labelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 13</value>
+  </data>
+  <data name="labelControl1.Text" xml:space="preserve">
+    <value>Tên tài khoản</value>
+  </data>
+  <data name="labelControl2.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="labelControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 68</value>
+  </data>
+  <data name="labelControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 13</value>
+  </data>
+  <data name="labelControl2.Text" xml:space="preserve">
+    <value>Tên người dùng</value>
+  </data>
+  <data name="labelControl3.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="labelControl3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 94</value>
+  </data>
+  <data name="labelControl3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 13</value>
+  </data>
+  <data name="labelControl3.Text" xml:space="preserve">
+    <value>Mật khẩu</value>
+  </data>
+  <data name="txt_Name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 12</value>
+  </data>
+  <data name="txt_Username.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 65</value>
+  </data>
+  <data name="txt_Password.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 91</value>
+  </data>
+  <data name="labelControl4.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="labelControl4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 41</value>
+  </data>
+  <data name="labelControl4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 13</value>
+  </data>
+  <data name="labelControl4.Text" xml:space="preserve">
+    <value>Loại tài khoản</value>
+  </data>
+  <data name="txt_Type.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 38</value>
+  </data>
+  <data name="mno_Desc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 117</value>
+  </data>
+  <data name="labelControl5.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="labelControl5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 119</value>
+  </data>
+  <data name="labelControl5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="labelControl5.Text" xml:space="preserve">
+    <value>Chú thích</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>366, 221</value>
+  </data>
+  <data name="frm_ShowAccountInfo.IconOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAALdEVYdFRpdGxlAEluZm87bRIthgAAAJxJREFUOE+t
+        k+ENQDAUhDuKafyzlN9MYQkbWEdiAO5rNEEOlZJ8Cb17l77XCk07XqlFLyYx7/DOGtrJf/yoRCcWsd6A
+        hgfvKYCFQbgiB94YkgJIdcYnqIkB9GW3rSeA0wQ1NSLDcYa3AOgRmbATc5gI4JicmLOD+ZeA2xYyAmIL
+        xUMsPkYoukhQfJVTCKm2nR00PLEYjgGJD7/zGDZMp1TRLvGgqwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Thông tin tài khoản</value>
+  </data>
 </root>

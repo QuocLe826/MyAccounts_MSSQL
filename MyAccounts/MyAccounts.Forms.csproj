@@ -94,12 +94,6 @@
     <Compile Include="Categories\frm_ShowAccountInfo.Designer.cs">
       <DependentUpon>frm_ShowAccountInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Commons\Processing.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Commons\Processing.Designer.cs">
-      <DependentUpon>Processing.cs</DependentUpon>
-    </Compile>
     <Compile Include="frm_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,47 +138,77 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="SplashScreen.cs">
+    <Compile Include="frm_SplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SplashScreen.Designer.cs">
-      <DependentUpon>SplashScreen.cs</DependentUpon>
+    <Compile Include="frm_SplashScreen.Designer.cs">
+      <DependentUpon>frm_SplashScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="WinCommons.cs" />
     <EmbeddedResource Include="Categories\frm_AccountGroups.resx">
       <DependentUpon>frm_AccountGroups.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Categories\frm_AccountGroups.vi-VN.resx">
+      <DependentUpon>frm_AccountGroups.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Categories\frm_AccountManagement.resx">
+      <DependentUpon>frm_AccountManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categories\frm_AccountManagement.vi-VN.resx">
       <DependentUpon>frm_AccountManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Categories\frm_AccountType.resx">
       <DependentUpon>frm_AccountType.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Categories\frm_AccountType.vi-VN.resx">
+      <DependentUpon>frm_AccountType.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Categories\frm_AddUpdateAccount.resx">
+      <DependentUpon>frm_AddUpdateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categories\frm_AddUpdateAccount.vi-VN.resx">
       <DependentUpon>frm_AddUpdateAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Categories\frm_ShowAccountInfo.resx">
       <DependentUpon>frm_ShowAccountInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Commons\Processing.resx">
-      <DependentUpon>Processing.cs</DependentUpon>
+    <EmbeddedResource Include="Categories\frm_ShowAccountInfo.vi-VN.resx">
+      <DependentUpon>frm_ShowAccountInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Login.resx">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Login.vi-VN.resx">
       <DependentUpon>frm_Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Main.resx">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_Main.vi-VN.resx">
+      <DependentUpon>frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_SystemInitialization.resx">
+      <DependentUpon>frm_SystemInitialization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SystemInitialization.vi-VN.resx">
       <DependentUpon>frm_SystemInitialization.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home\frm_Backup.resx">
       <DependentUpon>frm_Backup.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Home\frm_Backup.vi-VN.resx">
+      <DependentUpon>frm_Backup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home\frm_ChangePassword.resx">
       <DependentUpon>frm_ChangePassword.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Home\frm_ChangePassword.vi-VN.resx">
+      <DependentUpon>frm_ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home\frm_Restore.resx">
+      <DependentUpon>frm_Restore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home\frm_Restore.vi-VN.resx">
       <DependentUpon>frm_Restore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -193,8 +217,11 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="SplashScreen.resx">
-      <DependentUpon>SplashScreen.cs</DependentUpon>
+    <EmbeddedResource Include="frm_SplashScreen.resx">
+      <DependentUpon>frm_SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SplashScreen.vi-VN.resx">
+      <DependentUpon>frm_SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="packages.config" />

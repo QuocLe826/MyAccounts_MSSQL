@@ -117,148 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="barButtonItem9.Caption" xml:space="preserve">
-    <value>Account Management</value>
+  <data name="barSubItem1.Caption" xml:space="preserve">
+    <value>Hệ thống</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="barDockControlTop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lbl_User.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem9.Name" xml:space="preserve">
-    <value>barButtonItem9</value>
+  <data name="btn_Backup.Caption" xml:space="preserve">
+    <value>Sao lưu</value>
   </data>
   <assembly alias="DevExpress.Data.v20.1" name="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="btn_ChangePassword.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIwLjEsIFZlcnNpb249MjAuMS4z
-        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
-        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAHEFAAAC77u/
-        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
-        IHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9y
-        Zy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpz
-        cGFjZT0icHJlc2VydmUiIGlkPSJDYXBhXzEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAw
-        IDUxMiA1MTIiPg0KICA8cGF0aCBkPSJNMjU2LDBjLTc2LjU0NCwwLjA5NC0xMzguNTczLDYyLjEyMi0x
-        MzguNjY3LDEzOC42NjdWMjI0YzAsNS44OTEsNC43NzYsMTAuNjY3LDEwLjY2NywxMC42NjdoNDIuNjY3
-        ICBjNS44OTEsMCwxMC42NjctNC43NzYsMTAuNjY3LTEwLjY2N3YtODUuMzMzQzE4MS4zMzMsOTcuNDI5
-        LDIxNC43NjMsNjQsMjU2LDY0czc0LjY2NywzMy40MjksNzQuNjY3LDc0LjY2N1YyMjQgIGMwLDUuODkx
-        LDQuNzc2LDEwLjY2NywxMC42NjcsMTAuNjY3SDM4NGM1Ljg5MSwwLDEwLjY2Ny00Ljc3NiwxMC42Njct
-        MTAuNjY3di04NS4zMzNDMzk0LjU3Myw2Mi4xMjIsMzMyLjU0NCwwLjA5NCwyNTYsMHoiIHN0eWxlPSJm
-        aWxsOiM0NTVBNjQiIC8+DQogIDxwYXRoIGQ9Ik0xMjgsMjEzLjMzM2gyNTZjMjkuNDU1LDAsNTMuMzMz
-        LDIzLjg3OCw1My4zMzMsNTMuMzMzdjE5MkM0MzcuMzMzLDQ4OC4xMjIsNDEzLjQ1NSw1MTIsMzg0LDUx
-        MkgxMjggIGMtMjkuNDU1LDAtNTMuMzMzLTIzLjg3OC01My4zMzMtNTMuMzMzdi0xOTJDNzQuNjY3LDIz
-        Ny4yMTEsOTguNTQ1LDIxMy4zMzMsMTI4LDIxMy4zMzN6IiBzdHlsZT0iZmlsbDojRkZDMTA3IiAvPg0K
-        ICA8cGF0aCBkPSJNMzA5LjMzMywzMzAuNjY3YzAuMTI0LTI5LjQ1NS0yMy42NTMtNTMuNDM0LTUzLjEw
-        OC01My41NTggIGMtMjkuNDU1LTAuMTI0LTUzLjQzNCwyMy42NTMtNTMuNTU4LDUzLjEwOGMtMC4wODYs
-        MjAuMzYsMTEuNDI3LDM4Ljk5MiwyOS42NzQsNDguMDIzbC04LjIzNSw1Ny42ICBjLTAuODI1LDUuODMz
-        LDMuMjM1LDExLjIzLDkuMDY4LDEyLjA1NWMwLjQ5NCwwLjA3LDAuOTkzLDAuMTA1LDEuNDkyLDAuMTA1
-        aDQyLjY2N2M1Ljg5MSwwLjA2LDEwLjcxNS00LjY2NywxMC43NzQtMTAuNTU4ICBjMC4wMDUtMC41NDMt
-        MC4wMy0xLjA4Ni0wLjEwOC0xLjYyM2wtOC4yMzUtNTcuNkMyOTcuNzg4LDM2OS4xOTksMzA5LjIxNiwz
-        NTAuODIsMzA5LjMzMywzMzAuNjY3eiIgc3R5bGU9ImZpbGw6IzQ1NUE2NCIgLz4NCiAgPGcgLz4NCiAg
-        PGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4N
-        CiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcg
-        Lz4NCjwvc3ZnPgs=
-</value>
-  </data>
-  <data name="btn_Logout.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barButtonItem9.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="&gt;&gt;barDockControlRight.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lbl_User.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="barButtonItem3.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="barSubItem1.Caption" xml:space="preserve">
-    <value>Home</value>
-  </data>
-  <data name="&gt;&gt;bar2.Name" xml:space="preserve">
-    <value>bar2</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>frm_Main</value>
-  </data>
-  <data name="&gt;&gt;btn_Restore.Name" xml:space="preserve">
-    <value>btn_Restore</value>
-  </data>
-  <data name="&gt;&gt;barDockControlTop.Name" xml:space="preserve">
-    <value>barDockControlTop</value>
-  </data>
-  <data name="barButtonItem9.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="&gt;&gt;lbl_User.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarStaticItem, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="barButtonItem8.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="btn_Logout.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIwLjEsIFZlcnNpb249MjAuMS4z
-        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
-        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAALYFAAAC77u/
-        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgd2lkdGg9IjUxMnB0IiBo
-        ZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSIwIDAgNTEyLjAwNTMgNTEyIiB4bWxucz0iaHR0cDovL3d3dy53
-        My5vcmcvMjAwMC9zdmciPg0KICA8cGF0aCBkPSJtMjk4LjY2Nzk2OSAyNzcuMzM1OTM4Yy0zNS4yODUx
-        NTcgMC02NC0yOC43MTQ4NDQtNjQtNjQgMC0zNS4yODUxNTcgMjguNzE0ODQzLTY0IDY0LTY0aDQyLjY2
-        NDA2MnYtODUuMzMyMDMyYzAtMzUuMjg1MTU2LTI4LjcxNDg0My02My45OTk5OTk3NS02NC02My45OTk5
-        OTk3NWgtMjI5LjMzMjAzMWMtNy4wMTk1MzEgMC0xMy41ODk4NDQgMy40NTMxMjQ3NS0xNy41NzgxMjUg
-        OS4yMzQzNzQ3NS0zLjk2ODc1IDUuNzgxMjUtNC44NjMyODEgMTMuMTQ0NTMxLTIuMzQ3NjU2IDE5LjY5
-        MTQwN2wxNTQuNjY3OTY5IDQwNS4zMzU5MzdjMy4xMzY3MTggOC4yNzczNDQgMTEuMDcwMzEyIDEzLjcz
-        ODI4MSAxOS45MjU3ODEgMTMuNzM4MjgxaDc0LjY2NDA2MmMzNS4yODUxNTcgMCA2NC0yOC43MTQ4NDQg
-        NjQtNjR2LTEwNi42Njc5Njh6bTAgMCIgZmlsbD0iIzIxOTZmMyIgLz4NCiAgPHBhdGggZD0ibTM5Ny4x
-        NjQwNjIgMzE4LjM4MjgxMmMtNy45NTcwMzEtMy4zMDg1OTMtMTMuMTY0MDYyLTExLjA5Mzc1LTEzLjE2
-        NDA2Mi0xOS43MTQ4NDN2LTY0aC04NS4zMzIwMzFjLTExLjc3NzM0NCAwLTIxLjMzNTkzOC05LjU1NDY4
-        OC0yMS4zMzU5MzgtMjEuMzMyMDMxIDAtMTEuNzc3MzQ0IDkuNTU4NTk0LTIxLjMzMjAzMiAyMS4zMzU5
-        MzgtMjEuMzMyMDMyaDg1LjMzMjAzMXYtNjRjMC04LjYyMTA5NCA1LjIwNzAzMS0xNi40MDYyNSAxMy4x
-        NjQwNjItMTkuNzE0ODQ0IDcuOTc2NTYzLTMuMzA0Njg3IDE3LjE1MjM0NC0xLjQ2ODc1IDIzLjI1IDQu
-        NjMyODEzbDg1LjMzNTkzOCA4NS4zMzIwMzFjOC4zMzk4NDQgOC4zMzk4NDQgOC4zMzk4NDQgMjEuODI0
-        MjE5IDAgMzAuMTY0MDYzbC04NS4zMzU5MzggODUuMzM1OTM3Yy02LjA5NzY1NiA2LjA5NzY1Ni0xNS4y
-        NzM0MzcgNy45MzM1OTQtMjMuMjUgNC42Mjg5MDZ6bTAgMCIgZmlsbD0iIzYwN2Q4YiIgLz4NCiAgPHBh
-        dGggZD0ibTE4NC40NDkyMTkgNDQuODQzNzUtMTI4LjE5MTQwNy00Mi43MzA0NjljLTI4LjkyOTY4Ny04
-        Ljg5NDUzMS01Ni4yNTc4MTIgMTIuNDYwOTM4LTU2LjI1NzgxMiA0MC41NTQ2ODh2Mzg0YzAgMTguMjQy
-        MTg3IDExLjYwNTQ2OSAzNC41MTk1MzEgMjguODg2NzE5IDQwLjQ5MjE4N2wxMjguMTY3OTY5IDQyLjcz
-        MDQ2OWM0LjcxNDg0MyAxLjQ0OTIxOSA5LjA0Njg3NCAyLjExMzI4MSAxMy42MTMyODEgMi4xMTMyODEg
-        MjMuNTMxMjUgMCA0Mi42NjQwNjItMTkuMTM2NzE4IDQyLjY2NDA2Mi00Mi42Njc5Njh2LTM4NGMwLTE4
-        LjIzODI4Mi0xMS42MDU0NjktMzQuNTE1NjI2LTI4Ljg4MjgxMi00MC40OTIxODh6bTAgMCIgZmlsbD0i
-        IzY0YjVmNiIgLz4NCjwvc3ZnPgs=
-</value>
-  </data>
-  <data name="lbl_User.Caption" xml:space="preserve">
-    <value>User:</value>
-  </data>
-  <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
-    <value>barDockControlBottom</value>
-  </data>
-  <data name="btn_Logout.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="btn_Logout.Caption" xml:space="preserve">
-    <value>Log Out</value>
-  </data>
-  <data name="&gt;&gt;btn_Exit.Name" xml:space="preserve">
-    <value>btn_Exit</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem3.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1184, 26</value>
-  </data>
-  <data name="&gt;&gt;btn_Restore.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
   <data name="btn_Backup.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIwLjEsIFZlcnNpb249MjAuMS4z
@@ -330,95 +195,80 @@
         NzQtMS45NzgtMi40MDYtMy43OTF6IiAvPg0KICAgIDwvZz4NCiAgPC9nPg0KPC9zdmc+Cw==
 </value>
   </data>
-  <data name="&gt;&gt;barDockControlLeft.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="lbl_User.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="&gt;&gt;xtraTabbedMdiManager.Name" xml:space="preserve">
-    <value>xtraTabbedMdiManager</value>
-  </data>
-  <data name="barButtonItem8.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barButtonItem8.Caption" xml:space="preserve">
-    <value>Accounts Type</value>
+  <data name="btn_Restore.Caption" xml:space="preserve">
+    <value>Phục hồi</value>
   </data>
   <data name="btn_ChangePassword.Caption" xml:space="preserve">
-    <value>Change Password</value>
+    <value>Thay đổi mật khẩu</value>
   </data>
-  <data name="&gt;&gt;barDockControlLeft.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="btn_ChangePassword.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIwLjEsIFZlcnNpb249MjAuMS4z
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAHEFAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9y
+        Zy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpz
+        cGFjZT0icHJlc2VydmUiIGlkPSJDYXBhXzEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAw
+        IDUxMiA1MTIiPg0KICA8cGF0aCBkPSJNMjU2LDBjLTc2LjU0NCwwLjA5NC0xMzguNTczLDYyLjEyMi0x
+        MzguNjY3LDEzOC42NjdWMjI0YzAsNS44OTEsNC43NzYsMTAuNjY3LDEwLjY2NywxMC42NjdoNDIuNjY3
+        ICBjNS44OTEsMCwxMC42NjctNC43NzYsMTAuNjY3LTEwLjY2N3YtODUuMzMzQzE4MS4zMzMsOTcuNDI5
+        LDIxNC43NjMsNjQsMjU2LDY0czc0LjY2NywzMy40MjksNzQuNjY3LDc0LjY2N1YyMjQgIGMwLDUuODkx
+        LDQuNzc2LDEwLjY2NywxMC42NjcsMTAuNjY3SDM4NGM1Ljg5MSwwLDEwLjY2Ny00Ljc3NiwxMC42Njct
+        MTAuNjY3di04NS4zMzNDMzk0LjU3Myw2Mi4xMjIsMzMyLjU0NCwwLjA5NCwyNTYsMHoiIHN0eWxlPSJm
+        aWxsOiM0NTVBNjQiIC8+DQogIDxwYXRoIGQ9Ik0xMjgsMjEzLjMzM2gyNTZjMjkuNDU1LDAsNTMuMzMz
+        LDIzLjg3OCw1My4zMzMsNTMuMzMzdjE5MkM0MzcuMzMzLDQ4OC4xMjIsNDEzLjQ1NSw1MTIsMzg0LDUx
+        MkgxMjggIGMtMjkuNDU1LDAtNTMuMzMzLTIzLjg3OC01My4zMzMtNTMuMzMzdi0xOTJDNzQuNjY3LDIz
+        Ny4yMTEsOTguNTQ1LDIxMy4zMzMsMTI4LDIxMy4zMzN6IiBzdHlsZT0iZmlsbDojRkZDMTA3IiAvPg0K
+        ICA8cGF0aCBkPSJNMzA5LjMzMywzMzAuNjY3YzAuMTI0LTI5LjQ1NS0yMy42NTMtNTMuNDM0LTUzLjEw
+        OC01My41NTggIGMtMjkuNDU1LTAuMTI0LTUzLjQzNCwyMy42NTMtNTMuNTU4LDUzLjEwOGMtMC4wODYs
+        MjAuMzYsMTEuNDI3LDM4Ljk5MiwyOS42NzQsNDguMDIzbC04LjIzNSw1Ny42ICBjLTAuODI1LDUuODMz
+        LDMuMjM1LDExLjIzLDkuMDY4LDEyLjA1NWMwLjQ5NCwwLjA3LDAuOTkzLDAuMTA1LDEuNDkyLDAuMTA1
+        aDQyLjY2N2M1Ljg5MSwwLjA2LDEwLjcxNS00LjY2NywxMC43NzQtMTAuNTU4ICBjMC4wMDUtMC41NDMt
+        MC4wMy0xLjA4Ni0wLjEwOC0xLjYyM2wtOC4yMzUtNTcuNkMyOTcuNzg4LDM2OS4xOTksMzA5LjIxNiwz
+        NTAuODIsMzA5LjMzMywzMzAuNjY3eiIgc3R5bGU9ImZpbGw6IzQ1NUE2NCIgLz4NCiAgPGcgLz4NCiAg
+        PGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4N
+        CiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcg
+        Lz4NCjwvc3ZnPgs=
+</value>
   </data>
-  <data name="barDockControlTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+  <data name="btn_Logout.Caption" xml:space="preserve">
+    <value>Đăng xuất</value>
   </data>
-  <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 711</value>
+  <data name="btn_Logout.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIwLjEsIFZlcnNpb249MjAuMS4z
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAALYFAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgd2lkdGg9IjUxMnB0IiBo
+        ZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSIwIDAgNTEyLjAwNTMgNTEyIiB4bWxucz0iaHR0cDovL3d3dy53
+        My5vcmcvMjAwMC9zdmciPg0KICA8cGF0aCBkPSJtMjk4LjY2Nzk2OSAyNzcuMzM1OTM4Yy0zNS4yODUx
+        NTcgMC02NC0yOC43MTQ4NDQtNjQtNjQgMC0zNS4yODUxNTcgMjguNzE0ODQzLTY0IDY0LTY0aDQyLjY2
+        NDA2MnYtODUuMzMyMDMyYzAtMzUuMjg1MTU2LTI4LjcxNDg0My02My45OTk5OTk3NS02NC02My45OTk5
+        OTk3NWgtMjI5LjMzMjAzMWMtNy4wMTk1MzEgMC0xMy41ODk4NDQgMy40NTMxMjQ3NS0xNy41NzgxMjUg
+        OS4yMzQzNzQ3NS0zLjk2ODc1IDUuNzgxMjUtNC44NjMyODEgMTMuMTQ0NTMxLTIuMzQ3NjU2IDE5LjY5
+        MTQwN2wxNTQuNjY3OTY5IDQwNS4zMzU5MzdjMy4xMzY3MTggOC4yNzczNDQgMTEuMDcwMzEyIDEzLjcz
+        ODI4MSAxOS45MjU3ODEgMTMuNzM4MjgxaDc0LjY2NDA2MmMzNS4yODUxNTcgMCA2NC0yOC43MTQ4NDQg
+        NjQtNjR2LTEwNi42Njc5Njh6bTAgMCIgZmlsbD0iIzIxOTZmMyIgLz4NCiAgPHBhdGggZD0ibTM5Ny4x
+        NjQwNjIgMzE4LjM4MjgxMmMtNy45NTcwMzEtMy4zMDg1OTMtMTMuMTY0MDYyLTExLjA5Mzc1LTEzLjE2
+        NDA2Mi0xOS43MTQ4NDN2LTY0aC04NS4zMzIwMzFjLTExLjc3NzM0NCAwLTIxLjMzNTkzOC05LjU1NDY4
+        OC0yMS4zMzU5MzgtMjEuMzMyMDMxIDAtMTEuNzc3MzQ0IDkuNTU4NTk0LTIxLjMzMjAzMiAyMS4zMzU5
+        MzgtMjEuMzMyMDMyaDg1LjMzMjAzMXYtNjRjMC04LjYyMTA5NCA1LjIwNzAzMS0xNi40MDYyNSAxMy4x
+        NjQwNjItMTkuNzE0ODQ0IDcuOTc2NTYzLTMuMzA0Njg3IDE3LjE1MjM0NC0xLjQ2ODc1IDIzLjI1IDQu
+        NjMyODEzbDg1LjMzNTkzOCA4NS4zMzIwMzFjOC4zMzk4NDQgOC4zMzk4NDQgOC4zMzk4NDQgMjEuODI0
+        MjE5IDAgMzAuMTY0MDYzbC04NS4zMzU5MzggODUuMzM1OTM3Yy02LjA5NzY1NiA2LjA5NzY1Ni0xNS4y
+        NzM0MzcgNy45MzM1OTQtMjMuMjUgNC42Mjg5MDZ6bTAgMCIgZmlsbD0iIzYwN2Q4YiIgLz4NCiAgPHBh
+        dGggZD0ibTE4NC40NDkyMTkgNDQuODQzNzUtMTI4LjE5MTQwNy00Mi43MzA0NjljLTI4LjkyOTY4Ny04
+        Ljg5NDUzMS01Ni4yNTc4MTIgMTIuNDYwOTM4LTU2LjI1NzgxMiA0MC41NTQ2ODh2Mzg0YzAgMTguMjQy
+        MTg3IDExLjYwNTQ2OSAzNC41MTk1MzEgMjguODg2NzE5IDQwLjQ5MjE4N2wxMjguMTY3OTY5IDQyLjcz
+        MDQ2OWM0LjcxNDg0MyAxLjQ0OTIxOSA5LjA0Njg3NCAyLjExMzI4MSAxMy42MTMyODEgMi4xMTMyODEg
+        MjMuNTMxMjUgMCA0Mi42NjQwNjItMTkuMTM2NzE4IDQyLjY2NDA2Mi00Mi42Njc5Njh2LTM4NGMwLTE4
+        LjIzODI4Mi0xMS42MDU0NjktMzQuNTE1NjI2LTI4Ljg4MjgxMi00MC40OTIxODh6bTAgMCIgZmlsbD0i
+        IzY0YjVmNiIgLz4NCjwvc3ZnPgs=
+</value>
   </data>
-  <data name="barDockControlLeft.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 26</value>
-  </data>
-  <data name="barButtonItem7.Caption" xml:space="preserve">
-    <value>Account Groups</value>
-  </data>
-  <data name="bar3.Text" xml:space="preserve">
-    <value>Status bar</value>
-  </data>
-  <data name="bar2.Text" xml:space="preserve">
-    <value>Main menu</value>
-  </data>
-  <data name="&gt;&gt;btn_ChangePassword.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="&gt;&gt;barDockControlRight.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barDockControlRight.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btn_Backup.Name" xml:space="preserve">
-    <value>btn_Backup</value>
-  </data>
-  <data name="&gt;&gt;btn_Exit.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem9.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="barDockControlBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="&gt;&gt;bar3.Name" xml:space="preserve">
-    <value>bar3</value>
-  </data>
-  <data name="btn_Restore.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem7.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="barSubItem2.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="&gt;&gt;barSubItem1.Name" xml:space="preserve">
-    <value>barSubItem1</value>
-  </data>
-  <data name="btn_Restore.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
-    <value>barDockControlRight</value>
-  </data>
-  <data name="&gt;&gt;bar3.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="barDockControlLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
+  <data name="btn_Exit.Caption" xml:space="preserve">
+    <value>Thoát</value>
   </data>
   <data name="btn_Exit.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -440,59 +290,23 @@
         LjUyMzQzNy00NS4yNjk1MzEtLjAyMzQzN3ptMCAwIiAvPg0KICA8L2c+DQo8L3N2Zz4L
 </value>
   </data>
-  <data name="lbl_Server.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="lbl_User.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="&gt;&gt;barButtonItem8.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="barSubItem2.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
   <data name="barSubItem2.Caption" xml:space="preserve">
-    <value>Categories</value>
+    <value>Danh mục</value>
   </data>
-  <data name="barButtonItem7.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
+  <data name="barButtonItem7.Caption" xml:space="preserve">
+    <value>Nhóm tài khoản</value>
   </data>
-  <data name="barButtonItem9.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="barButtonItem8.Caption" xml:space="preserve">
+    <value>Loại tài khoản</value>
   </data>
-  <data name="barDockControlRight.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
+  <data name="barButtonItem9.Caption" xml:space="preserve">
+    <value>Quản lý tài khoản</value>
   </data>
-  <data name="btn_Exit.Caption" xml:space="preserve">
-    <value>Exit</value>
+  <data name="lbl_Server.Caption" xml:space="preserve">
+    <value>Máy chủ:</value>
   </data>
-  <data name="&gt;&gt;xtraTabbedMdiManager.Type" xml:space="preserve">
-    <value>DevExpress.XtraTabbedMdi.XtraTabbedMdiManager, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="lbl_Server.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="&gt;&gt;btn_Logout.Name" xml:space="preserve">
-    <value>btn_Logout</value>
-  </data>
-  <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1184, 22</value>
-  </data>
-  <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 685</value>
-  </data>
-  <data name="btn_ChangePassword.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="btn_Restore.Caption" xml:space="preserve">
-    <value>Restore</value>
-  </data>
-  <data name="&gt;&gt;btn_ChangePassword.Name" xml:space="preserve">
-    <value>btn_ChangePassword</value>
-  </data>
-  <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
-    <value>barDockControlLeft</value>
+  <data name="lbl_User.Caption" xml:space="preserve">
+    <value>Người dùng:</value>
   </data>
   <data name="frm_Main.IconOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -603,157 +417,10 @@
         Zz4L
 </value>
   </data>
-  <data name="barSubItem2.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="btn_Backup.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="lbl_Server.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="&gt;&gt;barDockControlLeft.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="barSubItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="&gt;&gt;bar2.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barSubItem2.Name" xml:space="preserve">
-    <value>barSubItem2</value>
-  </data>
-  <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1184, 26</value>
-  </data>
-  <data name="&gt;&gt;barDockControlTop.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="barButtonItem3.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="&gt;&gt;barManager.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarManager, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="btn_Exit.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>MyAccounts</value>
-  </data>
-  <data name="barSubItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="&gt;&gt;barSubItem2.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarSubItem, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 685</value>
-  </data>
-  <data name="barButtonItem3.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barButtonItem8.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="btn_ChangePassword.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem3.Name" xml:space="preserve">
-    <value>barButtonItem3</value>
-  </data>
-  <data name="&gt;&gt;barDockControlBottom.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="barButtonItem7.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="btn_Backup.Caption" xml:space="preserve">
-    <value>Backup</value>
-  </data>
-  <data name="lbl_Server.Caption" xml:space="preserve">
-    <value>Server:</value>
-  </data>
-  <data name="&gt;&gt;barDockControlTop.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem7.Name" xml:space="preserve">
-    <value>barButtonItem7</value>
-  </data>
-  <data name="&gt;&gt;barDockControlBottom.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem8.Name" xml:space="preserve">
-    <value>barButtonItem8</value>
-  </data>
-  <data name="btn_Exit.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barButtonItem7.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="&gt;&gt;lbl_User.Name" xml:space="preserve">
-    <value>lbl_User</value>
-  </data>
-  <data name="&gt;&gt;lbl_Server.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarStaticItem, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barDockControlBottom.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="barSubItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1184, 733</value>
-  </data>
-  <data name="&gt;&gt;btn_Logout.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barManager.Name" xml:space="preserve">
-    <value>barManager</value>
-  </data>
-  <data name="lbl_Server.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="btn_Restore.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="&gt;&gt;barDockControlTop.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_Backup.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barSubItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarSubItem, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;lbl_Server.Name" xml:space="preserve">
-    <value>lbl_Server</value>
-  </data>
-  <data name="btn_Backup.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barButtonItem3.Caption" xml:space="preserve">
-    <value>Thiết lập kết nối</value>
-  </data>
-  <data name="barManager.TrayLocation" type="System.Drawing.Point, System.Drawing">
-    <value>17, 17</value>
-  </data>
-  <data name="$this.Localizable" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="xtraTabbedMdiManager.TrayLocation" type="System.Drawing.Point, System.Drawing">
-    <value>142, 17</value>
-  </data>
   <data name="Server" xml:space="preserve">
-    <value>Server:</value>
+    <value>Máy chủ:</value>
   </data>
   <data name="User" xml:space="preserve">
-    <value>User:</value>
+    <value>Người dùng:</value>
   </data>
 </root>

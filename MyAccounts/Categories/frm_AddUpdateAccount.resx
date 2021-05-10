@@ -117,7 +117,117 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btn_Cancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="mno_Desc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 191</value>
+  </data>
+  <data name="&gt;&gt;lbl_Status.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lbl_Username.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 64</value>
+  </data>
+  <data name="txt_Name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 20</value>
+  </data>
+  <data name="btn_Cancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="lbl_Password.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 13</value>
+  </data>
+  <data name="lbl_Password.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 90</value>
+  </data>
+  <data name="&gt;&gt;lbl_AccGroup.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lbl_AccType.Text" xml:space="preserve">
+    <value>Account Type</value>
+  </data>
+  <data name="lbl_Name.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="txt_Password.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 20</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txt_Password.Properties.Buttons7" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;lk_AccountType.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lbl_Code.Text" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="btn_OK.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;lbl_Status.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="HidePassword" xml:space="preserve">
+    <value>Hide Password</value>
+  </data>
+  <data name="lbl_Status.Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbl_Desc.Text" xml:space="preserve">
+    <value>Descriptions</value>
+  </data>
+  <data name="&gt;&gt;txt_Name.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="lk_AccountGroup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 113</value>
+  </data>
+  <data name="&gt;&gt;lbl_Name.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lbl_Name.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lk_AccountGroup.Name" xml:space="preserve">
+    <value>lk_AccountGroup</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Add New Account</value>
+  </data>
+  <data name="&gt;&gt;txt_Username.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="lbl_Name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 38</value>
+  </data>
+  <data name="&gt;&gt;lbl_AccType.Name" xml:space="preserve">
+    <value>lbl_AccType</value>
+  </data>
+  <data name="&gt;&gt;btn_OK.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="AccountGroupCannotBeEmptyValue" xml:space="preserve">
+    <value>Please choose Account group!</value>
+  </data>
+  <data name="txt_Password.Properties.Buttons1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl_Password.Text" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="btn_Cancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>283, 331</value>
+  </data>
   <data name="btn_OK.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACF0RVh0VGl0
@@ -140,27 +250,51 @@
         IjxB8Ph/fceYhPoHAkQRj5PgdPMAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btn_Cancel.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACN0RVh0VGl0
-        bGUAQ2FuY2VsO1N0b3A7RXhpdDtCYXJzO1JpYmJvbjtMlpayAAADmklEQVQ4TyWTf1CTdRzHvwim2KS6
-        0k5iXWAbIg6GbG2gHmPGhMEs+CMsT70yE1BGx3F5kCReFE7uNAMu7og6MBFk/LCEOZ15WUkXw8aAcgsE
-        +SHC9mzABtuR3rvv8/C9ez33vs/n834/3+9zz5d4TK3Ec7uDeO9cJXQF/pZ7RGQrKqh6cKLQMl5c9ISF
-        1X8XamsMHxwU05kgSoDHpCcLxhZCA/SsMYCy2qrNKx799BP/7Ldfw93eAM/tTngp7vZGzNRXYezkCb/5
-        2NFSOruWsooLoCtAK5fxho7nmcYryuC51Y757ouY66iHq6UGruYauNvqMPdTI+jLMHH2cwwcz/1FEyl8
-        gQ1hA4LMHx7+ZrS8lBovwVKUj7pwEYyZmXA2noOz4RxuZmVxNUvhMS5o7Msy/HH4/cvUu5Z0ZmVKrbk5
-        Txj9d7hXkIMG1TswdZvRnFOCbnUGDOkaTpu6ermeOf8juK7UwZqf97Q+NTWJmDI0tSNfnMTj2grU8aPw
-        wD4Fh2sJ9lEGLdrTHPepnnZ6MWyb4mamq8sxcroEhrR0Pbm5Rz1sP/ouRrT7cUPzFv7UnYd36T84532w
-        PWRgG2MwO+fDwuIy1zNq9mI4Lxu2I9m4oUp7SK4rVMv/ZKdg6O0dsB+iW969Gz26C5hx+zBDd/LYTWF8
-        +L3iKxiUStw/kIbBjAQMZiXBoEhZJlflScuW1DcwoJZhaG8irkm2w3jqLN3yEh45FzHl8FKWcL1Uh2vx
-        2zGQLod1jxT9KglYL2kSy8d6lSuFrthtaPu4DAP/OjA56wWz4AMz78f4jBf99lnoC06hKyYaljfj0KsQ
-        oylWNkVqheLvTTtksCjFuBQuhHPaiUnHIlwLfvRfqOZYCfHA8cjJzfyVFIOfEyWoFsR2kqLQiF0Xo+Ke
-        mnduw12lHLcOHIKfYXBPVwmjLJ4i4TRbY3t3k2XoS4zGD1vEyH/5NTX7IwVXviK8fCVyKyzJsehJlqJV
-        GAmTLI5+Fzl3ZlaztR6FFBZFDPSRUTizScBenvVswKqta9ZtqNy4ua8pQgDzLhE1JaA/RYK+hCjKFnrm
-        eAyqE9C3U4TmzQKc2RhhFa15lk+9gWSi4D02JDD+Gd6msuf4LVUbwtEuiMAd8evoldJAyq9Ud9BaNe19
-        9jz/x+jVwa9ST9C4dh8h7IMTKxeDd3DdS6oSXmhreUjYhC6ED11IGMrXh00W80Lb9ge/qKEzIZTAFd8+
-        8j91kUbX3K/WKgAAAABJRU5ErkJggg==
-</value>
+  <data name="lk_AccountGroup.Properties.Columns1" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="&gt;&gt;txt_Username.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbl_Username.Name" xml:space="preserve">
+    <value>lbl_Username</value>
+  </data>
+  <data name="&gt;&gt;mno_Desc.Name" xml:space="preserve">
+    <value>mno_Desc</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v20.1" name="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="lk_Status.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.1">
+    <value>Combo</value>
+  </data>
+  <data name="&gt;&gt;btn_OK.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="txt_Password.Properties.Buttons5" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lbl_Username.Text" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="lbl_Desc.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbl_Code.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lk_AccountGroup.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lbl_AccGroup.Text" xml:space="preserve">
+    <value>Account Group</value>
+  </data>
+  <data name="&gt;&gt;mno_Desc.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ShowPassword" xml:space="preserve">
+    <value>Show Password</value>
+  </data>
+  <data name="lk_AccountType.Properties.Columns1" xml:space="preserve">
+    <value>Name</value>
   </data>
   <assembly alias="DevExpress.Data.v20.1" name="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
   <data name="editorButtonImageOptions1.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -192,6 +326,400 @@
         IC8+DQogIDxnIC8+DQo8L3N2Zz4L
 </value>
   </data>
+  <data name="&gt;&gt;lk_AccountType.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="txt_Username.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 61</value>
+  </data>
+  <data name="&gt;&gt;lk_AccountType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancel.Name" xml:space="preserve">
+    <value>btn_Cancel</value>
+  </data>
+  <data name="txt_Password.Properties.Buttons8" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txt_Password.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lbl_Password.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lk_Status.Properties.Columns1" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="&gt;&gt;lbl_AccGroup.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_Username.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;lbl_AccType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lbl_Status.Name" xml:space="preserve">
+    <value>lbl_Status</value>
+  </data>
+  <data name="lbl_AccGroup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="lk_AccountType.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.1">
+    <value>Combo</value>
+  </data>
+  <data name="&gt;&gt;btn_OK.Name" xml:space="preserve">
+    <value>btn_OK</value>
+  </data>
+  <data name="txt_Code.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="EditAccount" xml:space="preserve">
+    <value>Edit an Account</value>
+  </data>
+  <data name="&gt;&gt;lk_Status.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lk_AccountType.Name" xml:space="preserve">
+    <value>lk_AccountType</value>
+  </data>
+  <data name="&gt;&gt;txt_Code.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;lbl_Desc.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frm_AddUpdateAccount</value>
+  </data>
+  <data name="&gt;&gt;btn_OK.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lk_AccountGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="lk_AccountGroup.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;lbl_Username.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="lk_AccountGroup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 20</value>
+  </data>
+  <data name="&gt;&gt;lbl_Name.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="NameCannotBeEmptyValue" xml:space="preserve">
+    <value>Name cannot be empty value!</value>
+  </data>
+  <data name="txt_Code.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 9</value>
+  </data>
+  <data name="lbl_AccType.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbl_Username.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="lbl_Desc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 13</value>
+  </data>
+  <data name="txt_Password.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.1">
+    <value>Glyph</value>
+  </data>
+  <data name="lk_Status.Properties.Columns" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="btn_Cancel.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACN0RVh0VGl0
+        bGUAQ2FuY2VsO1N0b3A7RXhpdDtCYXJzO1JpYmJvbjtMlpayAAADmklEQVQ4TyWTf1CTdRzHvwim2KS6
+        0k5iXWAbIg6GbG2gHmPGhMEs+CMsT70yE1BGx3F5kCReFE7uNAMu7og6MBFk/LCEOZ15WUkXw8aAcgsE
+        +SHC9mzABtuR3rvv8/C9ez33vs/n834/3+9zz5d4TK3Ec7uDeO9cJXQF/pZ7RGQrKqh6cKLQMl5c9ISF
+        1X8XamsMHxwU05kgSoDHpCcLxhZCA/SsMYCy2qrNKx799BP/7Ldfw93eAM/tTngp7vZGzNRXYezkCb/5
+        2NFSOruWsooLoCtAK5fxho7nmcYryuC51Y757ouY66iHq6UGruYauNvqMPdTI+jLMHH2cwwcz/1FEyl8
+        gQ1hA4LMHx7+ZrS8lBovwVKUj7pwEYyZmXA2noOz4RxuZmVxNUvhMS5o7Msy/HH4/cvUu5Z0ZmVKrbk5
+        Txj9d7hXkIMG1TswdZvRnFOCbnUGDOkaTpu6ermeOf8juK7UwZqf97Q+NTWJmDI0tSNfnMTj2grU8aPw
+        wD4Fh2sJ9lEGLdrTHPepnnZ6MWyb4mamq8sxcroEhrR0Pbm5Rz1sP/ouRrT7cUPzFv7UnYd36T84532w
+        PWRgG2MwO+fDwuIy1zNq9mI4Lxu2I9m4oUp7SK4rVMv/ZKdg6O0dsB+iW969Gz26C5hx+zBDd/LYTWF8
+        +L3iKxiUStw/kIbBjAQMZiXBoEhZJlflScuW1DcwoJZhaG8irkm2w3jqLN3yEh45FzHl8FKWcL1Uh2vx
+        2zGQLod1jxT9KglYL2kSy8d6lSuFrthtaPu4DAP/OjA56wWz4AMz78f4jBf99lnoC06hKyYaljfj0KsQ
+        oylWNkVqheLvTTtksCjFuBQuhHPaiUnHIlwLfvRfqOZYCfHA8cjJzfyVFIOfEyWoFsR2kqLQiF0Xo+Ke
+        mnduw12lHLcOHIKfYXBPVwmjLJ4i4TRbY3t3k2XoS4zGD1vEyH/5NTX7IwVXviK8fCVyKyzJsehJlqJV
+        GAmTLI5+Fzl3ZlaztR6FFBZFDPSRUTizScBenvVswKqta9ZtqNy4ua8pQgDzLhE1JaA/RYK+hCjKFnrm
+        eAyqE9C3U4TmzQKc2RhhFa15lk+9gWSi4D02JDD+Gd6msuf4LVUbwtEuiMAd8evoldJAyq9Ud9BaNe19
+        9jz/x+jVwa9ST9C4dh8h7IMTKxeDd3DdS6oSXmhreUjYhC6ED11IGMrXh00W80Lb9ge/qKEzIZTAFd8+
+        8j91kUbX3K/WKgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="&gt;&gt;mno_Desc.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_Password.Name" xml:space="preserve">
+    <value>txt_Password</value>
+  </data>
+  <data name="lbl_Status.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="txt_Name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 35</value>
+  </data>
+  <data name="btn_OK.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;txt_Code.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="lbl_Code.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 13</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="lbl_AccType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 13</value>
+  </data>
+  <data name="lk_Status.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 165</value>
+  </data>
+  <data name="PasswordCannotBeEmptyValue" xml:space="preserve">
+    <value>Password cannot be empty value!</value>
+  </data>
+  <data name="&gt;&gt;txt_Password.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lbl_AccType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 142</value>
+  </data>
+  <data name="txt_Username.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txt_Code.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CodeCannotBeEmptyValue" xml:space="preserve">
+    <value>Code cannot be empty value!</value>
+  </data>
+  <data name="&gt;&gt;txt_Username.Name" xml:space="preserve">
+    <value>txt_Username</value>
+  </data>
+  <data name="&gt;&gt;lbl_AccGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="lbl_Code.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="btn_OK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 331</value>
+  </data>
+  <data name="txt_Password.Properties.Buttons6" xml:space="preserve">
+    <value>Show Password</value>
+  </data>
+  <data name="lbl_Password.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="mno_Desc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 134</value>
+  </data>
+  <data name="&gt;&gt;lbl_Password.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;lbl_Code.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="lbl_AccGroup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 116</value>
+  </data>
+  <data name="lbl_Status.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lbl_Name.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lbl_AccGroup.Name" xml:space="preserve">
+    <value>lbl_AccGroup</value>
+  </data>
+  <data name="mno_Desc.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;lbl_Name.Name" xml:space="preserve">
+    <value>lbl_Name</value>
+  </data>
+  <data name="&gt;&gt;txt_Password.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ButtonEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lbl_Username.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="txt_Code.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 20</value>
+  </data>
+  <data name="lk_AccountType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 20</value>
+  </data>
+  <data name="AccountTypeCannotBeEmptyValue" xml:space="preserve">
+    <value>Please choose Account type!</value>
+  </data>
+  <data name="&gt;&gt;lbl_Password.Name" xml:space="preserve">
+    <value>lbl_Password</value>
+  </data>
+  <data name="UsernameCannotBeEmptyValue" xml:space="preserve">
+    <value>Username cannot be empty value!</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="txt_Password.Properties.Buttons9" type="DevExpress.Utils.ToolTipAnchor, DevExpress.Utils.v20.1">
+    <value>Default</value>
+  </data>
+  <data name="AddNewAccount" xml:space="preserve">
+    <value>Add New Account</value>
+  </data>
+  <data name="&gt;&gt;txt_Name.Name" xml:space="preserve">
+    <value>txt_Name</value>
+  </data>
+  <data name="lbl_Desc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 196</value>
+  </data>
+  <data name="lk_AccountType.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lk_Status.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 20</value>
+  </data>
+  <data name="&gt;&gt;txt_Name.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="txt_Password.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 87</value>
+  </data>
+  <data name="&gt;&gt;lbl_AccType.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="GetDataError" xml:space="preserve">
+    <value>Get data error!</value>
+  </data>
+  <data name="lk_AccountGroup.Properties.Columns" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="txt_Password.Properties.Buttons4" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lbl_Code.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lk_AccountGroup.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lk_Status.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;lk_Status.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txt_Password.Properties.Buttons3" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;txt_Password.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbl_Username.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbl_Desc.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;lbl_Password.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="btn_OK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_Cancel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;txt_Name.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="txt_Password.Properties.Buttons2" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="lbl_Name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>369, 363</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lk_AccountGroup.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.1">
+    <value>Combo</value>
+  </data>
+  <data name="lk_AccountType.Properties.Columns" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="&gt;&gt;lk_Status.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lbl_AccGroup.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txt_Name.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txt_Code.Name" xml:space="preserve">
+    <value>txt_Code</value>
+  </data>
+  <data name="&gt;&gt;lbl_Status.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="txt_Username.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 20</value>
+  </data>
+  <data name="lk_Status.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lk_AccountType.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;mno_Desc.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lbl_Username.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lbl_Desc.Name" xml:space="preserve">
+    <value>lbl_Desc</value>
+  </data>
+  <data name="lk_AccountType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 139</value>
+  </data>
+  <data name="lbl_Status.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 168</value>
+  </data>
+  <data name="&gt;&gt;lk_AccountGroup.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;lk_Status.Name" xml:space="preserve">
+    <value>lk_Status</value>
+  </data>
+  <data name="&gt;&gt;lbl_Code.Name" xml:space="preserve">
+    <value>lbl_Code</value>
+  </data>
+  <data name="&gt;&gt;lbl_AccType.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbl_Desc.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lbl_Code.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
   <data name="frm_AddUpdateAccount.IconOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIwLjEsIFZlcnNpb249MjAuMS4z
@@ -209,4 +737,10 @@
         Yy0xNy42NjQwNjIgMC0zMiAxNC4zMzU5MzgtMzIgMzJ6bTAgMCIgLz4NCiAgPC9nPg0KPC9zdmc+Cw==
 </value>
   </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>vi-VN</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

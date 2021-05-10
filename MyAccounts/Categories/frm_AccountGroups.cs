@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Diagnostics;
+using System.Resources;
 using System.Windows.Forms;
 using MyAccounts.Api.Categories;
 using MyAccounts.Libraries.Constants;
@@ -14,6 +15,7 @@ namespace MyAccounts.Forms.Categories
     public partial class frm_AccountGroups : DevExpress.XtraEditors.XtraForm
     {
         private AccountGroupsController _accountGrpsApi = new AccountGroupsController();
+        private ResourceManager _resources = new ResourceManager(typeof(frm_AccountGroups));
         private string _actionType = string.Empty;
 
         public frm_AccountGroups()
@@ -33,7 +35,7 @@ namespace MyAccounts.Forms.Categories
             catch (Exception ex)
             {
                 Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
-                WinCommons.ShowMessageDialog(ex.Message, MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                WinCommons.ShowMessageDialog(ex.Message, Enums.MessageBoxType.Error);
             }
         }
 
@@ -79,10 +81,20 @@ namespace MyAccounts.Forms.Categories
         {
             try
             {
-                //WinCommons.OpenProcessing("Loading data...");
+                WinCommons.OpenCursorProcessing(this);
                 _actionType = string.Empty;
-                lk_Status.Properties.DataSource = CommonConstants.DicStatus;
-                rep_Status.DataSource = CommonConstants.DicStatus;
+
+                if (GlobalData.DefaultLanguage == "en-US")
+                {
+                    lk_Status.Properties.DataSource = CommonConstants.DicStatus_EN;
+                    rep_Status.DataSource = CommonConstants.DicStatus_EN;
+                }
+                else
+                {
+                    lk_Status.Properties.DataSource = CommonConstants.DicStatus_VN;
+                    rep_Status.DataSource = CommonConstants.DicStatus_VN;
+                }
+                
                 lk_Status.ItemIndex = 0;
                 LoadData();
                 EnableDisableControls(_actionType);
@@ -90,9 +102,9 @@ namespace MyAccounts.Forms.Categories
             catch (Exception ex)
             {
                 Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
-                WinCommons.ShowMessageDialog(ex.Message, MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                WinCommons.ShowMessageDialog(ex.Message,  Enums.MessageBoxType.Error);
             }
-            WinCommons.CloseProcessing();
+            WinCommons.CloseCursorProcessing(this);
         }
 
         private void btn_Edit_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -109,20 +121,21 @@ namespace MyAccounts.Forms.Categories
             {
                 if (string.IsNullOrEmpty(txt_Code.Text))
                 {
-                    WinCommons.ShowMessageDialog("Code cannot be empty value!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                    WinCommons.ShowMessageDialog(_resources.GetString("CodeCannotBeEmptyValue"),  Enums.MessageBoxType.Error);
                     txt_Code.Focus();
                     return;
                 }
                 if (string.IsNullOrEmpty(txt_Name.Text))
                 {
-                    WinCommons.ShowMessageDialog("Name cannot be empty value!", MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                    WinCommons.ShowMessageDialog(_resources.GetString("NameCannotBeEmptyValue"),  Enums.MessageBoxType.Error);
                     txt_Name.Focus();
                     return;
                 }
 
-                if (WinCommons.ShowMessageDialog("Do you want to add new?", MessageTitle.SystemConfirm,
+                if (WinCommons.ShowMessageDialog(_resources.GetString("DoYouWantToAddNew"),
                         Enums.MessageBoxType.Question) == DialogResult.Yes)
                 {
+                    WinCommons.OpenCursorProcessing(this);
                     var dt = (grd_AccountGroups.DataSource as DataTable).Clone();
                     var newRow = dt.NewRow();
                     newRow["Code"] = txt_Code.Text.Trim();
@@ -133,9 +146,10 @@ namespace MyAccounts.Forms.Categories
                     dt.AcceptChanges();
 
                     var result = _accountGrpsApi.ProcessAccountGroups(dt, _actionType);
-                    if (!string.IsNullOrEmpty(result))
+                    if (!string.IsNullOrEmpty(result.Item1) && !string.IsNullOrEmpty(result.Item2))
                     {
-                        WinCommons.ShowMessageDialog(result, MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                        WinCommons.ShowMessageDialog(GlobalData.DefaultLanguage == "en-US" ? result.Item1 : result.Item2,  Enums.MessageBoxType.Error);
+                        WinCommons.CloseCursorProcessing(this);
                         return;
                     }
 
@@ -147,15 +161,18 @@ namespace MyAccounts.Forms.Categories
             catch (Exception ex)
             {
                 Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
-                WinCommons.ShowMessageDialog(ex.Message, MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                WinCommons.ShowMessageDialog(ex.Message,  Enums.MessageBoxType.Error);
             }
+            WinCommons.CloseCursorProcessing(this);
         }
 
         private void btn_Refresh_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            WinCommons.OpenCursorProcessing(this);
             _actionType = string.Empty;
             LoadData();
             EnableDisableControls(_actionType);
+            WinCommons.CloseCursorProcessing(this);
         }
 
         private void gv_AccountGroups_FocusedRowObjectChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowObjectChangedEventArgs e)
@@ -176,7 +193,7 @@ namespace MyAccounts.Forms.Categories
             catch (Exception ex)
             {
                 Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
-                WinCommons.ShowMessageDialog(ex.Message, MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                WinCommons.ShowMessageDialog(ex.Message,  Enums.MessageBoxType.Error);
             }
         }
 
@@ -190,13 +207,15 @@ namespace MyAccounts.Forms.Categories
         {
             try
             {
-                if (WinCommons.ShowMessageDialog("Are you sure to remove this record?", MessageTitle.SystemConfirm,
+                if (WinCommons.ShowMessageDialog(_resources.GetString("AreYouSureToRemoveThisRecord"),
                         Enums.MessageBoxType.Question) == DialogResult.Yes)
                 {
+                    WinCommons.OpenCursorProcessing(this);
                     var result = _accountGrpsApi.DeleteAccountGroups(txt_Code.Text.Trim());
-                    if (!string.IsNullOrEmpty(result))
+                    if (result != null)
                     {
-                        WinCommons.ShowMessageDialog(result, MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                        WinCommons.ShowMessageDialog(GlobalData.DefaultLanguage == "en-US" ? result.Item1 : result.Item2,  Enums.MessageBoxType.Error);
+                        WinCommons.CloseCursorProcessing(this);
                         return;
                     }
 
@@ -208,14 +227,16 @@ namespace MyAccounts.Forms.Categories
             catch (Exception ex)
             {
                 Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
-                WinCommons.ShowMessageDialog(ex.Message, MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                WinCommons.ShowMessageDialog(ex.Message,  Enums.MessageBoxType.Error);
             }
+            WinCommons.CloseCursorProcessing(this);
         }
 
         private void btn_Search_Click(object sender, EventArgs e)
         {
             try
             {
+                WinCommons.OpenCursorProcessing(this);
                 var dt = _accountGrpsApi.SearchAccountGroup(txt_Code.Text.Trim(), txt_Name.Text.Trim(), Functions.ToString(lk_Status.EditValue), txt_Desc.Text.Trim());
                 grd_AccountGroups.DataSource = dt;
                 grd_AccountGroups.RefreshDataSource();
@@ -224,8 +245,9 @@ namespace MyAccounts.Forms.Categories
             catch (Exception ex)
             {
                 Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
-                WinCommons.ShowMessageDialog(ex.Message, MessageTitle.SystemError, Enums.MessageBoxType.Error);
+                WinCommons.ShowMessageDialog(ex.Message,  Enums.MessageBoxType.Error);
             }
+            WinCommons.CloseCursorProcessing(this);
         }
     }
 }

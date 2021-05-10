@@ -43,38 +43,28 @@ namespace MyAccounts.Forms.Home
             // 
             // btn_Cancel
             // 
+            resources.ApplyResources(this.btn_Cancel, "btn_Cancel");
             this.btn_Cancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancel.ImageOptions.Image")));
-            this.btn_Cancel.Location = new System.Drawing.Point(398, 101);
             this.btn_Cancel.Name = "btn_Cancel";
-            this.btn_Cancel.Size = new System.Drawing.Size(75, 23);
-            this.btn_Cancel.TabIndex = 3;
-            this.btn_Cancel.Text = "Cancel";
             this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
             // 
             // btn_Restore
             // 
+            resources.ApplyResources(this.btn_Restore, "btn_Restore");
             this.btn_Restore.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Restore.ImageOptions.Image")));
-            this.btn_Restore.Location = new System.Drawing.Point(320, 101);
             this.btn_Restore.Name = "btn_Restore";
-            this.btn_Restore.Size = new System.Drawing.Size(75, 23);
-            this.btn_Restore.TabIndex = 2;
-            this.btn_Restore.Text = "OK";
             this.btn_Restore.Click += new System.EventHandler(this.btn_Restore_Click);
             // 
             // lbl_RestoreName
             // 
-            this.lbl_RestoreName.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lbl_RestoreName, "lbl_RestoreName");
+            this.lbl_RestoreName.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("lbl_RestoreName.Appearance.Font")));
             this.lbl_RestoreName.Appearance.Options.UseFont = true;
-            this.lbl_RestoreName.Location = new System.Drawing.Point(192, 56);
             this.lbl_RestoreName.Name = "lbl_RestoreName";
-            this.lbl_RestoreName.Size = new System.Drawing.Size(67, 13);
-            this.lbl_RestoreName.TabIndex = 0;
-            this.lbl_RestoreName.Text = "Restore File";
             // 
             // pictureEdit1
             // 
-            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
-            this.pictureEdit1.Location = new System.Drawing.Point(-6, -7);
+            resources.ApplyResources(this.pictureEdit1, "pictureEdit1");
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
@@ -82,30 +72,25 @@ namespace MyAccounts.Forms.Home
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit1.Properties.ShowMenu = false;
             this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
-            this.pictureEdit1.Size = new System.Drawing.Size(186, 173);
-            this.pictureEdit1.TabIndex = 0;
             // 
             // btn_RestoreFile
             // 
-            this.btn_RestoreFile.Location = new System.Drawing.Point(192, 75);
+            resources.ApplyResources(this.btn_RestoreFile, "btn_RestoreFile");
             this.btn_RestoreFile.Name = "btn_RestoreFile";
             this.btn_RestoreFile.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.btn_RestoreFile.Size = new System.Drawing.Size(281, 20);
-            this.btn_RestoreFile.TabIndex = 1;
             this.btn_RestoreFile.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btn_BackupFile_ButtonClick);
             // 
             // xtraOpenFileDialog
             // 
-            this.xtraOpenFileDialog.Filter = "Backup File|*.bak|All Files|.*";
+            resources.ApplyResources(this.xtraOpenFileDialog, "xtraOpenFileDialog");
             // 
             // frm_Restore
             // 
+            resources.ApplyResources(this, "$this");
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(483, 159);
             this.Controls.Add(this.btn_RestoreFile);
             this.Controls.Add(this.btn_Cancel);
             this.Controls.Add(this.btn_Restore);
@@ -116,8 +101,6 @@ namespace MyAccounts.Forms.Home
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frm_Restore";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Restore Data";
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_RestoreFile.Properties)).EndInit();
             this.ResumeLayout(false);

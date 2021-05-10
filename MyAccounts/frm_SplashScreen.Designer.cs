@@ -39,30 +39,22 @@ namespace MyAccounts.Forms
             // 
             // progressBarControl
             // 
-            this.progressBarControl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.progressBarControl.EditValue = 0;
-            this.progressBarControl.Location = new System.Drawing.Point(24, 232);
+            resources.ApplyResources(this.progressBarControl, "progressBarControl");
             this.progressBarControl.Name = "progressBarControl";
+            this.progressBarControl.Properties.AutoHeight = ((bool)(resources.GetObject("progressBarControl.Properties.AutoHeight")));
+            this.progressBarControl.Properties.LookAndFeel.SkinName = "Office 2013";
+            this.progressBarControl.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.progressBarControl.Properties.MarqueeAnimationSpeed = 50;
-            this.progressBarControl.Properties.ProgressAnimationMode = DevExpress.Utils.Drawing.ProgressAnimationMode.Cycle;
-            this.progressBarControl.Size = new System.Drawing.Size(312, 14);
-            this.progressBarControl.TabIndex = 5;
+            this.progressBarControl.Properties.ProgressViewStyle = DevExpress.XtraEditors.Controls.ProgressViewStyle.Solid;
             // 
             // labelStatus
             // 
-            this.labelStatus.Location = new System.Drawing.Point(24, 215);
-            this.labelStatus.Margin = new System.Windows.Forms.Padding(3, 3, 3, 1);
+            resources.ApplyResources(this.labelStatus, "labelStatus");
             this.labelStatus.Name = "labelStatus";
-            this.labelStatus.Size = new System.Drawing.Size(86, 13);
-            this.labelStatus.TabIndex = 7;
-            this.labelStatus.Text = "Loading system...";
             // 
             // peImage
             // 
-            this.peImage.Dock = System.Windows.Forms.DockStyle.Top;
-            this.peImage.EditValue = ((object)(resources.GetObject("peImage.EditValue")));
-            this.peImage.Location = new System.Drawing.Point(1, 1);
+            resources.ApplyResources(this.peImage, "peImage");
             this.peImage.Name = "peImage";
             this.peImage.Properties.AllowFocused = false;
             this.peImage.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -71,20 +63,15 @@ namespace MyAccounts.Forms
             this.peImage.Properties.ShowMenu = false;
             this.peImage.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
             this.peImage.Properties.SvgImageColorizationMode = DevExpress.Utils.SvgImageColorizationMode.None;
-            this.peImage.Size = new System.Drawing.Size(358, 200);
-            this.peImage.TabIndex = 9;
             // 
             // frm_SplashScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(360, 274);
             this.Controls.Add(this.peImage);
             this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.progressBarControl);
             this.Name = "frm_SplashScreen";
-            this.Padding = new System.Windows.Forms.Padding(1);
-            this.Text = "SplashScreen";
             ((System.ComponentModel.ISupportInitialize)(this.progressBarControl.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.peImage.Properties)).EndInit();
             this.ResumeLayout(false);
