@@ -15,8 +15,8 @@ namespace MyAccounts.Forms.Categories
 {
     public partial class frm_AddUpdateAccount : XtraForm
     {
-        private AccountManagementController _accManagementApi = new AccountManagementController();
-        private ResourceManager _resources = new ResourceManager(typeof(frm_AddUpdateAccount));
+        private readonly AccountManagementController _accManagementApi = new AccountManagementController();
+        private readonly ResourceManager _resources = new ResourceManager(typeof(frm_AddUpdateAccount));
         private string _actionType = string.Empty;
         private string _accCode = string.Empty;
         public bool IsSuccess = false;

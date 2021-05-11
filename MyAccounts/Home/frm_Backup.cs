@@ -13,8 +13,8 @@ namespace MyAccounts.Forms.Home
     public partial class frm_Backup : XtraForm
     {
 
-        private CommonsController _commonApi = new CommonsController();
-        private ResourceManager _resources = new ResourceManager(typeof(frm_Backup));
+        private readonly CommonsController _commonApi = new CommonsController();
+        private readonly ResourceManager _resources = new ResourceManager(typeof(frm_Backup));
 
         public frm_Backup()
         {

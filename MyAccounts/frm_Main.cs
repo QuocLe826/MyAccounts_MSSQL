@@ -4,10 +4,8 @@ using System.Linq;
 using System.Resources;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
-using DevExpress.XtraTabbedMdi;
 using MyAccounts.Forms.Categories;
 using MyAccounts.Forms.Home;
-using MyAccounts.Libraries.Constants;
 using MyAccounts.Libraries.Enums;
 using MyAccounts.Libraries.Logging;
 
@@ -16,7 +14,7 @@ namespace MyAccounts.Forms
     public partial class frm_Main : XtraForm
     {
 
-        private ResourceManager _resources = new ResourceManager(typeof(frm_Main));
+        private readonly ResourceManager _resources = new ResourceManager(typeof(frm_Main));
 
         public frm_Main()
         {
@@ -113,6 +111,12 @@ namespace MyAccounts.Forms
         private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             ShowMdiForm(new frm_AccountManagement());
+        }
+
+        private void frm_Main_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Dispose();
+            Application.Exit();
         }
     }
 }

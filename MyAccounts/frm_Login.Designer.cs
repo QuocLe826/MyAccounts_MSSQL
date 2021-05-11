@@ -70,9 +70,9 @@ namespace MyAccounts.Forms
             // 
             // labelControl1
             // 
+            resources.ApplyResources(this.labelControl1, "labelControl1");
             this.labelControl1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl1.Appearance.Font")));
             this.labelControl1.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.labelControl1, "labelControl1");
             this.labelControl1.Name = "labelControl1";
             // 
             // txt_Username
@@ -83,9 +83,9 @@ namespace MyAccounts.Forms
             // 
             // labelControl2
             // 
+            resources.ApplyResources(this.labelControl2, "labelControl2");
             this.labelControl2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl2.Appearance.Font")));
             this.labelControl2.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.labelControl2, "labelControl2");
             this.labelControl2.Name = "labelControl2";
             // 
             // txt_Password
@@ -97,22 +97,22 @@ namespace MyAccounts.Forms
             // 
             // btn_Login
             // 
-            this.btn_Login.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Login.ImageOptions.Image")));
             resources.ApplyResources(this.btn_Login, "btn_Login");
+            this.btn_Login.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Login.ImageOptions.Image")));
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
             // 
             // btn_Exit
             // 
-            this.btn_Exit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Exit.ImageOptions.Image")));
             resources.ApplyResources(this.btn_Exit, "btn_Exit");
+            this.btn_Exit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Exit.ImageOptions.Image")));
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
             // btn_Languages
             // 
-            this.btn_Languages.DropDownControl = this.popupMenu1;
             resources.ApplyResources(this.btn_Languages, "btn_Languages");
+            this.btn_Languages.DropDownControl = this.popupMenu1;
             this.btn_Languages.Name = "btn_Languages";
             this.btn_Languages.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             // 
@@ -128,6 +128,9 @@ namespace MyAccounts.Forms
             // 
             resources.ApplyResources(this.chk_English, "chk_English");
             this.chk_English.Id = 6;
+            this.chk_English.ImageOptions.ImageIndex = ((int)(resources.GetObject("chk_English.ImageOptions.ImageIndex")));
+            this.chk_English.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("chk_English.ImageOptions.LargeImageIndex")));
+            this.chk_English.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("chk_English.ImageOptions.SvgImage")));
             this.chk_English.Name = "chk_English";
             this.chk_English.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.chk_English_ItemClick);
             // 
@@ -135,6 +138,9 @@ namespace MyAccounts.Forms
             // 
             resources.ApplyResources(this.chk_Vietnamese, "chk_Vietnamese");
             this.chk_Vietnamese.Id = 7;
+            this.chk_Vietnamese.ImageOptions.ImageIndex = ((int)(resources.GetObject("chk_Vietnamese.ImageOptions.ImageIndex")));
+            this.chk_Vietnamese.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("chk_Vietnamese.ImageOptions.LargeImageIndex")));
+            this.chk_Vietnamese.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("chk_Vietnamese.ImageOptions.SvgImage")));
             this.chk_Vietnamese.Name = "chk_Vietnamese";
             this.chk_Vietnamese.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.chk_Vietnamese_ItemClick_1);
             // 
@@ -152,33 +158,33 @@ namespace MyAccounts.Forms
             // 
             // barDockControlTop
             // 
-            this.barDockControlTop.CausesValidation = false;
             resources.ApplyResources(this.barDockControlTop, "barDockControlTop");
+            this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Manager = this.barManager1;
             // 
             // barDockControlBottom
             // 
-            this.barDockControlBottom.CausesValidation = false;
             resources.ApplyResources(this.barDockControlBottom, "barDockControlBottom");
+            this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Manager = this.barManager1;
             // 
             // barDockControlLeft
             // 
-            this.barDockControlLeft.CausesValidation = false;
             resources.ApplyResources(this.barDockControlLeft, "barDockControlLeft");
+            this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Manager = this.barManager1;
             // 
             // barDockControlRight
             // 
-            this.barDockControlRight.CausesValidation = false;
             resources.ApplyResources(this.barDockControlRight, "barDockControlRight");
+            this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Manager = this.barManager1;
             // 
             // frm_Login
             // 
+            resources.ApplyResources(this, "$this");
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
-            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btn_Languages);
             this.Controls.Add(this.btn_Exit);
@@ -197,6 +203,7 @@ namespace MyAccounts.Forms
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frm_Login";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frm_Login_FormClosing);
             this.Load += new System.EventHandler(this.frm_Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pic_Logo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Username.Properties)).EndInit();

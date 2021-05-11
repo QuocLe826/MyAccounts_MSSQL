@@ -590,31 +590,4 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Khởi tạo hệ thống</value>
   </data>
-  <data name="ConnectToServerFailed" xml:space="preserve">
-    <value>Kết nối tới máy chủ thất bại!</value>
-  </data>
-  <data name="FirstNameCannotBeEmptyValue" xml:space="preserve">
-    <value>Tên không được để trống!</value>
-  </data>
-  <data name="LastNameCannotBeEmptyValue" xml:space="preserve">
-    <value>Họ và tên đệm không được để trống!</value>
-  </data>
-  <data name="PasswordCannotBeEmptyValue" xml:space="preserve">
-    <value>Mật khẩu không được để trống!</value>
-  </data>
-  <data name="PleaseChooseAuthentication" xml:space="preserve">
-    <value>Vui lòng chọn Loại xác thực!</value>
-  </data>
-  <data name="Server UsernameCannotBeEmptyValue" xml:space="preserve">
-    <value>Tên đăng nhập máy chủ không được để trống!</value>
-  </data>
-  <data name="ServerNameCannotBeEmptyValue" xml:space="preserve">
-    <value>Tên máy chủ không được để trống!</value>
-  </data>
-  <data name="ServerPasswordCannotBeEmptyValue" xml:space="preserve">
-    <value>Mật khẩu máy chủ không được để trống!</value>
-  </data>
-  <data name="UserLoginCannotBeEmptyValue" xml:space="preserve">
-    <value>Tên người dùng không được để trống!</value>
-  </data>
 </root>

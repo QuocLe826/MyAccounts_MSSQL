@@ -11,8 +11,8 @@ namespace MyAccounts.Forms.Home
 {
     public partial class frm_ChangePassword : DevExpress.XtraEditors.XtraForm
     {
-        private UsersController _userApi = new UsersController();
-        private ResourceManager _resource = new ResourceManager(typeof(frm_ChangePassword));
+        private readonly UsersController _userApi = new UsersController();
+        private readonly ResourceManager _resource = new ResourceManager(typeof(frm_ChangePassword));
 
         public frm_ChangePassword()
         {

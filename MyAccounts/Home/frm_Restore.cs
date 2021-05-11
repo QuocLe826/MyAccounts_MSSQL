@@ -11,8 +11,8 @@ namespace MyAccounts.Forms.Home
 {
     public partial class frm_Restore : DevExpress.XtraEditors.XtraForm
     {
-        private CommonsController _commonApi = new CommonsController();
-        private ResourceManager _resources = new ResourceManager(typeof(frm_Restore));
+        private readonly CommonsController _commonApi = new CommonsController();
+        private readonly ResourceManager _resources = new ResourceManager(typeof(frm_Restore));
 
         public frm_Restore()
         {

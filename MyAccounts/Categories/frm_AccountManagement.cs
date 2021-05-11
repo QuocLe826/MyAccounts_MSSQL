@@ -13,8 +13,8 @@ namespace MyAccounts.Forms.Categories
 {
     public partial class frm_AccountManagement : XtraForm
     {
-        private AccountManagementController _accManagementApi = new AccountManagementController();
-        private ResourceManager _resources = new ResourceManager(typeof(frm_AccountManagement));
+        private readonly AccountManagementController _accManagementApi = new AccountManagementController();
+        private readonly ResourceManager _resources = new ResourceManager(typeof(frm_AccountManagement));
         private string _actionType = string.Empty;
 
         public frm_AccountManagement()

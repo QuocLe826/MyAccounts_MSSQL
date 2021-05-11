@@ -14,8 +14,8 @@ namespace MyAccounts.Forms.Categories
 {
     public partial class frm_AccountGroups : DevExpress.XtraEditors.XtraForm
     {
-        private AccountGroupsController _accountGrpsApi = new AccountGroupsController();
-        private ResourceManager _resources = new ResourceManager(typeof(frm_AccountGroups));
+        private readonly AccountGroupsController _accountGrpsApi = new AccountGroupsController();
+        private readonly ResourceManager _resources = new ResourceManager(typeof(frm_AccountGroups));
         private string _actionType = string.Empty;
 
         public frm_AccountGroups()

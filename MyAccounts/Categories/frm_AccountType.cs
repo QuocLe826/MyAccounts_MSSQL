@@ -14,8 +14,8 @@ namespace MyAccounts.Forms.Categories
 {
     public partial class frm_AccountType : XtraForm
     {
-        private AccountTypeController _accountTypeApi = new AccountTypeController();
-        private ResourceManager _resources = new ResourceManager(typeof(frm_AccountType));
+        private readonly AccountTypeController _accountTypeApi = new AccountTypeController();
+        private readonly ResourceManager _resources = new ResourceManager(typeof(frm_AccountType));
         private string _actionType = string.Empty;
 
         public frm_AccountType()

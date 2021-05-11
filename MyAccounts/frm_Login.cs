@@ -20,22 +20,22 @@ namespace MyAccounts.Forms
     public partial class frm_Login : XtraForm
     {
         private UsersController _loginApi = new UsersController();
-        private ResourceManager _resources = new ResourceManager(typeof(frm_Login));
+        private readonly ResourceManager _resources = new ResourceManager(typeof(frm_Login));
         
         public frm_Login()
         {
             InitializeComponent();
-            ChangeLanguage(GlobalData.DefaultLanguage);
+            SetLanguage(GlobalData.DefaultLanguage);
         }
 
-        private void ChangeLanguage(string language)
+        private void SetLanguage(string language)
         {
             try
             {
                 Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
                 foreach (Control control in this.Controls)
                 {
-                    ComponentResourceManager resource = new ComponentResourceManager(typeof(frm_Login));
+                    var resource = new ComponentResourceManager(typeof(frm_Login));
                     resource.ApplyResources(control, control.Name, new CultureInfo(language));
                 }
                 GlobalData.DefaultLanguage = language;
@@ -66,7 +66,6 @@ namespace MyAccounts.Forms
             catch (Exception ex)
             {
                 Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
-
             }
         }
 
@@ -140,7 +139,6 @@ namespace MyAccounts.Forms
         {
             try
             {
-                Thread.CurrentThread.CurrentUICulture = new CultureInfo(GlobalData.DefaultLanguage);
                 var resourcesExists = File.Exists("System//Images//add.svg") && File.Exists("System//Images//edit.svg");
                 var dbExists = File.Exists("System//config//initserver");
 
@@ -172,14 +170,13 @@ namespace MyAccounts.Forms
                 Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
                 WinCommons.ShowMessageDialog(ex.Message,  Enums.MessageBoxType.Error);
             }
-            
         }
 
         private void chk_English_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             chk_English.Checked = true;
             chk_Vietnamese.Checked = false;
-            ChangeLanguage("en-US");
+            SetLanguage("en-US");
             WriteLanguageConfig("en-US");
         }
 
@@ -187,8 +184,14 @@ namespace MyAccounts.Forms
         {
             chk_English.Checked = false;
             chk_Vietnamese.Checked = true;
-            ChangeLanguage("vi-VN");
+            SetLanguage("vi-VN");
             WriteLanguageConfig("vi-VN");
+        }
+
+        private void frm_Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Dispose();
+            Application.Exit();
         }
     }
 }

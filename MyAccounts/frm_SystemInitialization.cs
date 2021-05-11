@@ -21,7 +21,7 @@ namespace MyAccounts.Forms
     public partial class frm_SystemInitialization : XtraForm
     {
         private string _language = string.Empty;
-        private ResourceManager _resource = new ResourceManager(typeof(frm_SystemInitialization));
+        private readonly ResourceManager _resource = new ResourceManager(typeof(frm_SystemInitialization));
 
         #region Constructor
         public frm_SystemInitialization()
@@ -66,7 +66,7 @@ namespace MyAccounts.Forms
                 Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
                 foreach (Control control in this.Controls)
                 {
-                    ComponentResourceManager resource = new ComponentResourceManager(typeof(frm_SystemInitialization));
+                    var resource = new ComponentResourceManager(typeof(frm_SystemInitialization));
                     resource.ApplyResources(control, control.Name, new CultureInfo(language));
                 }
                 _language = language;
@@ -86,6 +86,7 @@ namespace MyAccounts.Forms
 
         private void btn_Cancel_Click(object sender, EventArgs e)
         {
+            this.Dispose();
             Application.Exit();
         }
 
@@ -229,16 +230,16 @@ namespace MyAccounts.Forms
 
         private void rd_Languages_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (rd_Languages.SelectedIndex == 0)
-            {
-                ChangeLanguage("en-US");
-            }
-            else
-            {
-                ChangeLanguage("vi-VN");
-            }
+            var language = rd_Languages.SelectedIndex == 0 ? "en-US" : "vi-VN";
+            ChangeLanguage(language);
         }
 
         #endregion
+
+        private void frm_SystemInitialization_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Dispose();
+            Application.Exit();
+        }
     }
 }
