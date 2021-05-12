@@ -287,4 +287,19 @@
   <data name="btn_Languages.Text" xml:space="preserve">
     <value>Ngôn ngữ</value>
   </data>
+  <data name="IncorrectUserNameOrPassword" xml:space="preserve">
+    <value>Tên đăng nhập hoặc mật khẩu không chính xác!</value>
+  </data>
+  <data name="LoginFailed" xml:space="preserve">
+    <value>Đăng nhập thất bại!</value>
+  </data>
+  <data name="PasswordCannotBeEmptyValue" xml:space="preserve">
+    <value>Mật khẩu không được để trống!</value>
+  </data>
+  <data name="SystemFilesCannotBeFound" xml:space="preserve">
+    <value>Không tìm thấy tập tin hệ thống!</value>
+  </data>
+  <data name="UsernameCannotBeEmptyValue" xml:space="preserve">
+    <value>Tên đăng nhập không được để trống!</value>
+  </data>
 </root>

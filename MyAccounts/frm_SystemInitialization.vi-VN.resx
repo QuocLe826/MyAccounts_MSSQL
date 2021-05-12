@@ -593,4 +593,7 @@
   <data name="SystemFilesCannotBeFound" xml:space="preserve">
     <value>Không tìm thấy tập tin hệ thống!</value>
   </data>
+  <data name="lk_Authentication.Properties.NullText" xml:space="preserve">
+    <value>Chọn loại xác thực</value>
+  </data>
 </root>
