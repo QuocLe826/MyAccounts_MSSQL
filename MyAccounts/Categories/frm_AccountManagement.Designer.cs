@@ -146,8 +146,6 @@ namespace MyAccounts.Forms.Categories
             // 
             resources.ApplyResources(this.btn_AddNew, "btn_AddNew");
             this.btn_AddNew.Id = 0;
-            this.btn_AddNew.ImageOptions.ImageIndex = ((int)(resources.GetObject("btn_AddNew.ImageOptions.ImageIndex")));
-            this.btn_AddNew.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btn_AddNew.ImageOptions.LargeImageIndex")));
             this.btn_AddNew.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_AddNew.ImageOptions.SvgImage")));
             this.btn_AddNew.Name = "btn_AddNew";
             this.btn_AddNew.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_AddNew_ItemClick);
@@ -156,8 +154,6 @@ namespace MyAccounts.Forms.Categories
             // 
             resources.ApplyResources(this.btn_Edit, "btn_Edit");
             this.btn_Edit.Id = 1;
-            this.btn_Edit.ImageOptions.ImageIndex = ((int)(resources.GetObject("btn_Edit.ImageOptions.ImageIndex")));
-            this.btn_Edit.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btn_Edit.ImageOptions.LargeImageIndex")));
             this.btn_Edit.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Edit.ImageOptions.SvgImage")));
             this.btn_Edit.Name = "btn_Edit";
             this.btn_Edit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_Edit_ItemClick);
@@ -166,8 +162,6 @@ namespace MyAccounts.Forms.Categories
             // 
             resources.ApplyResources(this.btn_Delete, "btn_Delete");
             this.btn_Delete.Id = 4;
-            this.btn_Delete.ImageOptions.ImageIndex = ((int)(resources.GetObject("btn_Delete.ImageOptions.ImageIndex")));
-            this.btn_Delete.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btn_Delete.ImageOptions.LargeImageIndex")));
             this.btn_Delete.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Delete.ImageOptions.SvgImage")));
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_Delete_ItemClick);
@@ -176,8 +170,6 @@ namespace MyAccounts.Forms.Categories
             // 
             resources.ApplyResources(this.btn_Refresh, "btn_Refresh");
             this.btn_Refresh.Id = 5;
-            this.btn_Refresh.ImageOptions.ImageIndex = ((int)(resources.GetObject("btn_Refresh.ImageOptions.ImageIndex")));
-            this.btn_Refresh.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btn_Refresh.ImageOptions.LargeImageIndex")));
             this.btn_Refresh.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Refresh.ImageOptions.SvgImage")));
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_Refresh_ItemClick);
@@ -187,35 +179,32 @@ namespace MyAccounts.Forms.Categories
             resources.ApplyResources(this.btn_ShowAccInfo, "btn_ShowAccInfo");
             this.btn_ShowAccInfo.Id = 6;
             this.btn_ShowAccInfo.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_ShowAccInfo.ImageOptions.Image")));
-            this.btn_ShowAccInfo.ImageOptions.ImageIndex = ((int)(resources.GetObject("btn_ShowAccInfo.ImageOptions.ImageIndex")));
             this.btn_ShowAccInfo.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btn_ShowAccInfo.ImageOptions.LargeImage")));
-            this.btn_ShowAccInfo.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btn_ShowAccInfo.ImageOptions.LargeImageIndex")));
-            this.btn_ShowAccInfo.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_ShowAccInfo.ImageOptions.SvgImage")));
             this.btn_ShowAccInfo.Name = "btn_ShowAccInfo";
             this.btn_ShowAccInfo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_ShowAccInfo_ItemClick);
             // 
             // barDockControlTop
             // 
-            resources.ApplyResources(this.barDockControlTop, "barDockControlTop");
             this.barDockControlTop.CausesValidation = false;
+            resources.ApplyResources(this.barDockControlTop, "barDockControlTop");
             this.barDockControlTop.Manager = this.barManager1;
             // 
             // barDockControlBottom
             // 
-            resources.ApplyResources(this.barDockControlBottom, "barDockControlBottom");
             this.barDockControlBottom.CausesValidation = false;
+            resources.ApplyResources(this.barDockControlBottom, "barDockControlBottom");
             this.barDockControlBottom.Manager = this.barManager1;
             // 
             // barDockControlLeft
             // 
-            resources.ApplyResources(this.barDockControlLeft, "barDockControlLeft");
             this.barDockControlLeft.CausesValidation = false;
+            resources.ApplyResources(this.barDockControlLeft, "barDockControlLeft");
             this.barDockControlLeft.Manager = this.barManager1;
             // 
             // barDockControlRight
             // 
-            resources.ApplyResources(this.barDockControlRight, "barDockControlRight");
             this.barDockControlRight.CausesValidation = false;
+            resources.ApplyResources(this.barDockControlRight, "barDockControlRight");
             this.barDockControlRight.Manager = this.barManager1;
             // 
             // txt_Username
@@ -242,6 +231,7 @@ namespace MyAccounts.Forms.Categories
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lk_AccGroups.Properties.Columns"), resources.GetString("lk_AccGroups.Properties.Columns1"))});
             this.lk_AccGroups.Properties.DisplayMember = "Name";
             this.lk_AccGroups.Properties.NullText = resources.GetString("lk_AccGroups.Properties.NullText");
+            this.lk_AccGroups.Properties.SearchMode = DevExpress.XtraEditors.Controls.SearchMode.AutoSearch;
             this.lk_AccGroups.Properties.ShowHeader = false;
             this.lk_AccGroups.Properties.ValueMember = "Code";
             // 
@@ -261,31 +251,20 @@ namespace MyAccounts.Forms.Categories
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lk_AccType.Properties.Columns"), resources.GetString("lk_AccType.Properties.Columns1"))});
             this.lk_AccType.Properties.DisplayMember = "Name";
             this.lk_AccType.Properties.NullText = resources.GetString("lk_AccType.Properties.NullText");
+            this.lk_AccType.Properties.SearchMode = DevExpress.XtraEditors.Controls.SearchMode.AutoSearch;
             this.lk_AccType.Properties.ShowHeader = false;
             this.lk_AccType.Properties.ValueMember = "Code";
             // 
             // btn_Search
             // 
-            resources.ApplyResources(this.btn_Search, "btn_Search");
             this.btn_Search.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Search.ImageOptions.Image")));
+            resources.ApplyResources(this.btn_Search, "btn_Search");
             this.btn_Search.Name = "btn_Search";
             this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
             // 
             // grd_AccManagement
             // 
             resources.ApplyResources(this.grd_AccManagement, "grd_AccManagement");
-            this.grd_AccManagement.EmbeddedNavigator.AccessibleDescription = resources.GetString("grd_AccManagement.EmbeddedNavigator.AccessibleDescription");
-            this.grd_AccManagement.EmbeddedNavigator.AccessibleName = resources.GetString("grd_AccManagement.EmbeddedNavigator.AccessibleName");
-            this.grd_AccManagement.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("grd_AccManagement.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.grd_AccManagement.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("grd_AccManagement.EmbeddedNavigator.Anchor")));
-            this.grd_AccManagement.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("grd_AccManagement.EmbeddedNavigator.BackgroundImage")));
-            this.grd_AccManagement.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("grd_AccManagement.EmbeddedNavigator.BackgroundImageLayout")));
-            this.grd_AccManagement.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("grd_AccManagement.EmbeddedNavigator.ImeMode")));
-            this.grd_AccManagement.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("grd_AccManagement.EmbeddedNavigator.MaximumSize")));
-            this.grd_AccManagement.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("grd_AccManagement.EmbeddedNavigator.TextLocation")));
-            this.grd_AccManagement.EmbeddedNavigator.ToolTip = resources.GetString("grd_AccManagement.EmbeddedNavigator.ToolTip");
-            this.grd_AccManagement.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("grd_AccManagement.EmbeddedNavigator.ToolTipIconType")));
-            this.grd_AccManagement.EmbeddedNavigator.ToolTipTitle = resources.GetString("grd_AccManagement.EmbeddedNavigator.ToolTipTitle");
             this.grd_AccManagement.MainView = this.gv_AccManagement;
             this.grd_AccManagement.MenuManager = this.barManager1;
             this.grd_AccManagement.Name = "grd_AccManagement";
@@ -298,7 +277,6 @@ namespace MyAccounts.Forms.Categories
             // 
             // gv_AccManagement
             // 
-            resources.ApplyResources(this.gv_AccManagement, "gv_AccManagement");
             this.gv_AccManagement.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gc_Code,
             this.gc_Name,
@@ -329,24 +307,18 @@ namespace MyAccounts.Forms.Categories
             resources.ApplyResources(this.gc_Code, "gc_Code");
             this.gc_Code.FieldName = "Code";
             this.gc_Code.Name = "gc_Code";
-            this.gc_Code.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem()});
             // 
             // gc_Name
             // 
             resources.ApplyResources(this.gc_Name, "gc_Name");
             this.gc_Name.FieldName = "Name";
             this.gc_Name.Name = "gc_Name";
-            this.gc_Name.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem()});
             // 
             // gc_Username
             // 
             resources.ApplyResources(this.gc_Username, "gc_Username");
             this.gc_Username.FieldName = "Username";
             this.gc_Username.Name = "gc_Username";
-            this.gc_Username.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem()});
             // 
             // gc_Password
             // 
@@ -354,8 +326,6 @@ namespace MyAccounts.Forms.Categories
             this.gc_Password.ColumnEdit = this.rep_Password;
             this.gc_Password.FieldName = "Password";
             this.gc_Password.Name = "gc_Password";
-            this.gc_Password.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem()});
             // 
             // rep_Password
             // 
@@ -373,16 +343,12 @@ namespace MyAccounts.Forms.Categories
             this.gc_Group.Name = "gc_Group";
             this.gc_Group.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.gc_Group.OptionsColumn.ShowCaption = false;
-            this.gc_Group.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem()});
             // 
             // gc_Type
             // 
             resources.ApplyResources(this.gc_Type, "gc_Type");
             this.gc_Type.FieldName = "AccTypeName";
             this.gc_Type.Name = "gc_Type";
-            this.gc_Type.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem()});
             // 
             // gc_Status
             // 
@@ -390,8 +356,6 @@ namespace MyAccounts.Forms.Categories
             this.gc_Status.ColumnEdit = this.rep_Status;
             this.gc_Status.FieldName = "Status";
             this.gc_Status.Name = "gc_Status";
-            this.gc_Status.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem()});
             // 
             // rep_Status
             // 
@@ -408,8 +372,6 @@ namespace MyAccounts.Forms.Categories
             resources.ApplyResources(this.gc_Desc, "gc_Desc");
             this.gc_Desc.FieldName = "Descriptions";
             this.gc_Desc.Name = "gc_Desc";
-            this.gc_Desc.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem()});
             // 
             // frm_AccountManagement
             // 

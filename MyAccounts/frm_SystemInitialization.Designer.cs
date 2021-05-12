@@ -67,6 +67,7 @@ namespace MyAccounts.Forms
             // 
             resources.ApplyResources(this.pictureEdit1, "pictureEdit1");
             this.pictureEdit1.Name = "pictureEdit1";
+            this.pictureEdit1.Properties.AllowFocused = false;
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
@@ -76,9 +77,9 @@ namespace MyAccounts.Forms
             // 
             // labelControl1
             // 
-            resources.ApplyResources(this.labelControl1, "labelControl1");
             this.labelControl1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl1.Appearance.Font")));
             this.labelControl1.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.labelControl1, "labelControl1");
             this.labelControl1.Name = "labelControl1";
             // 
             // txt_ServerName
@@ -88,16 +89,16 @@ namespace MyAccounts.Forms
             // 
             // labelControl2
             // 
-            resources.ApplyResources(this.labelControl2, "labelControl2");
             this.labelControl2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl2.Appearance.Font")));
             this.labelControl2.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.labelControl2, "labelControl2");
             this.labelControl2.Name = "labelControl2";
             // 
             // lbl_ServerUser
             // 
-            resources.ApplyResources(this.lbl_ServerUser, "lbl_ServerUser");
             this.lbl_ServerUser.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("lbl_ServerUser.Appearance.Font")));
             this.lbl_ServerUser.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.lbl_ServerUser, "lbl_ServerUser");
             this.lbl_ServerUser.Name = "lbl_ServerUser";
             // 
             // txt_ServerUser
@@ -107,9 +108,9 @@ namespace MyAccounts.Forms
             // 
             // lbl_ServerPassword
             // 
-            resources.ApplyResources(this.lbl_ServerPassword, "lbl_ServerPassword");
             this.lbl_ServerPassword.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("lbl_ServerPassword.Appearance.Font")));
             this.lbl_ServerPassword.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.lbl_ServerPassword, "lbl_ServerPassword");
             this.lbl_ServerPassword.Name = "lbl_ServerPassword";
             // 
             // txt_ServerPassword
@@ -120,9 +121,9 @@ namespace MyAccounts.Forms
             // 
             // labelControl5
             // 
-            resources.ApplyResources(this.labelControl5, "labelControl5");
             this.labelControl5.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl5.Appearance.Font")));
             this.labelControl5.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.labelControl5, "labelControl5");
             this.labelControl5.Name = "labelControl5";
             // 
             // txt_UserLogin
@@ -132,9 +133,9 @@ namespace MyAccounts.Forms
             // 
             // labelControl6
             // 
-            resources.ApplyResources(this.labelControl6, "labelControl6");
             this.labelControl6.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl6.Appearance.Font")));
             this.labelControl6.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.labelControl6, "labelControl6");
             this.labelControl6.Name = "labelControl6";
             // 
             // txt_Password
@@ -170,16 +171,16 @@ namespace MyAccounts.Forms
             // 
             // labelControl7
             // 
-            resources.ApplyResources(this.labelControl7, "labelControl7");
             this.labelControl7.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl7.Appearance.Font")));
             this.labelControl7.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.labelControl7, "labelControl7");
             this.labelControl7.Name = "labelControl7";
             // 
             // labelControl8
             // 
-            resources.ApplyResources(this.labelControl8, "labelControl8");
             this.labelControl8.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl8.Appearance.Font")));
             this.labelControl8.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.labelControl8, "labelControl8");
             this.labelControl8.Name = "labelControl8";
             // 
             // txt_FirstName
@@ -196,9 +197,9 @@ namespace MyAccounts.Forms
             // 
             // labelControl3
             // 
-            resources.ApplyResources(this.labelControl3, "labelControl3");
             this.labelControl3.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl3.Appearance.Font")));
             this.labelControl3.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.labelControl3, "labelControl3");
             this.labelControl3.Name = "labelControl3";
             // 
             // rd_Languages
@@ -215,9 +216,9 @@ namespace MyAccounts.Forms
             // 
             // frm_SystemInitialization
             // 
-            resources.ApplyResources(this, "$this");
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.rd_Languages);
             this.Controls.Add(this.lk_Authentication);

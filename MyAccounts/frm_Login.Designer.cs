@@ -63,6 +63,9 @@ namespace MyAccounts.Forms
             // 
             resources.ApplyResources(this.pic_Logo, "pic_Logo");
             this.pic_Logo.Name = "pic_Logo";
+            this.pic_Logo.Properties.AllowFocused = false;
+            this.pic_Logo.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.pic_Logo.Properties.Appearance.Options.UseBackColor = true;
             this.pic_Logo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pic_Logo.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pic_Logo.Properties.ShowMenu = false;

@@ -2,14 +2,6 @@
 
 namespace MyAccounts.Libraries.Constants
 {
-    public class MessageTitle
-    {
-        public static string SystemInformation = @"Information";
-        public static string SystemWarning = @"Warning";
-        public static string SystemError = @"Error";
-        public static string SystemConfirm = @"Confirm";
-    }
-
     public class CommonConstants
     {
         public static Dictionary<string, string> DicDatabaseProvider = new Dictionary<string, string>()

@@ -270,7 +270,7 @@
     <value>Vui lòng chọn Loại tài khoản!</value>
   </data>
   <data name="AddNewAccount" xml:space="preserve">
-    <value>Thêm mới tài khoản</value>
+    <value>Thêm tài khoản</value>
   </data>
   <data name="CodeCannotBeEmptyValue" xml:space="preserve">
     <value>Mã không được để trống!</value>

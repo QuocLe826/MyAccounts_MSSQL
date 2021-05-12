@@ -15,9 +15,7 @@ namespace MyAccounts.Services.BaseServices
         public SqlTransaction DbTransaction { get; set; }
 
 
-        public BaseService()
-        {
-        }
+        public BaseService() { }
 
         public SqlConnection OpenConnection()
         {

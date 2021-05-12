@@ -45,6 +45,7 @@ namespace MyAccounts.Forms.Home
             // 
             resources.ApplyResources(this.pictureEdit1, "pictureEdit1");
             this.pictureEdit1.Name = "pictureEdit1";
+            this.pictureEdit1.Properties.AllowFocused = false;
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;

@@ -264,7 +264,6 @@ namespace MyAccounts.Forms
             this.IsMdiContainer = true;
             this.Name = "frm_Main";
             this.ShowMdiChildCaptionInParentTitle = true;
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frm_Main_FormClosing);
             this.Load += new System.EventHandler(this.frm_Main_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).EndInit();

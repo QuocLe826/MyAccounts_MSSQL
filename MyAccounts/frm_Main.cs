@@ -110,11 +110,5 @@ namespace MyAccounts.Forms
         {
             ShowMdiForm(new frm_AccountManagement());
         }
-
-        private void frm_Main_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            this.Dispose();
-            Application.Exit();
-        }
     }
 }

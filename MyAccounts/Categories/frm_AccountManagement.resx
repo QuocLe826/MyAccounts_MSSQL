@@ -117,551 +117,48 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btn_Edit.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="gc_Type.VisibleIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="gc_Desc.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lbl_AccGroups.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 13</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="grd_AccManagement.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left</value>
-  </data>
-  <data name="btn_ShowAccInfo.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="btn_ShowAccInfo.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAALdEVYdFRpdGxlAEluZm87bRIthgAAAJxJREFUOE+t
-        k+ENQDAUhDuKafyzlN9MYQkbWEdiAO5rNEEOlZJ8Cb17l77XCk07XqlFLyYx7/DOGtrJf/yoRCcWsd6A
-        hgfvKYCFQbgiB94YkgJIdcYnqIkB9GW3rSeA0wQ1NSLDcYa3AOgRmbATc5gI4JicmLOD+ZeA2xYyAmIL
-        xUMsPkYoukhQfJVTCKm2nR00PLEYjgGJD7/zGDZMp1TRLvGgqwAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="&gt;&gt;btn_Edit.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gc_Code.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="gc_Status.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="gc_Desc.VisibleIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="gc_Group.Caption" xml:space="preserve">
-    <value>Group</value>
-  </data>
-  <data name="&gt;&gt;btn_AddNew.Name" xml:space="preserve">
-    <value>btn_AddNew</value>
-  </data>
-  <data name="&gt;&gt;barDockControlTop.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="grd_AccManagement.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 506</value>
-  </data>
-  <data name="&gt;&gt;gc_Status.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="gc_Username.Caption" xml:space="preserve">
-    <value>Username</value>
-  </data>
-  <data name="&gt;&gt;lk_AccType.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;barDockControlTop.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="grd_AccManagement.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;bar4.Name" xml:space="preserve">
-    <value>bar4</value>
-  </data>
-  <data name="btn_Search.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 20</value>
-  </data>
-  <data name="&gt;&gt;gv_AccManagement.Name" xml:space="preserve">
-    <value>gv_AccManagement</value>
-  </data>
-  <data name="&gt;&gt;gc_Group.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;labelControl3.Name" xml:space="preserve">
-    <value>labelControl3</value>
-  </data>
-  <data name="&gt;&gt;txt_Username.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;gc_Name.Name" xml:space="preserve">
-    <value>gc_Name</value>
-  </data>
-  <data name="&gt;&gt;bar1.Name" xml:space="preserve">
-    <value>bar1</value>
-  </data>
-  <data name="&gt;&gt;btn_Delete.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;lbl_AccGroups.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;barDockControlBottom.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;rep_Password.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="lbl_AccGroups.Text" xml:space="preserve">
-    <value>Account Group</value>
-  </data>
-  <data name="&gt;&gt;gc_Password.Name" xml:space="preserve">
-    <value>gc_Password</value>
-  </data>
-  <data name="&gt;&gt;gc_Name.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;labelControl3.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Account Management</value>
-  </data>
-  <data name="&gt;&gt;txt_Username.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rep_Status.Name" xml:space="preserve">
-    <value>rep_Status</value>
-  </data>
-  <data name="grd_AccManagement.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Inherit</value>
-  </data>
-  <data name="gc_Password.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="gc_Password.VisibleIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1014, 28</value>
-  </data>
-  <data name="grd_AccManagement.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 68</value>
-  </data>
-  <data name="&gt;&gt;barDockControlRight.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="labelControl3.Text" xml:space="preserve">
-    <value>Account Type</value>
-  </data>
-  <data name="&gt;&gt;gv_AccManagement.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;lbl_Username.Name" xml:space="preserve">
-    <value>lbl_Username</value>
-  </data>
-  <data name="gc_Group.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="gc_Desc.Caption" xml:space="preserve">
-    <value>Descriptions</value>
-  </data>
-  <data name="&gt;&gt;barManager1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarManager, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="AreYouSureToDeleteThisRecord" xml:space="preserve">
-    <value>Are you sure to delete this record?</value>
-  </data>
-  <data name="&gt;&gt;lbl_AccGroups.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lbl_Username.Text" xml:space="preserve">
-    <value>Username</value>
-  </data>
-  <data name="btn_Delete.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barDockControlRight.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="barDockControlLeft.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 28</value>
-  </data>
   <data name="lbl_Username.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 45</value>
-  </data>
-  <data name="grd_AccManagement.EmbeddedNavigator.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="gc_Password.Caption" xml:space="preserve">
-    <value>Password</value>
-  </data>
-  <data name="&gt;&gt;bar3.Name" xml:space="preserve">
-    <value>bar3</value>
-  </data>
-  <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
-    <value>barDockControlBottom</value>
-  </data>
-  <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 550</value>
-  </data>
-  <data name="btn_Edit.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="&gt;&gt;gc_Group.Name" xml:space="preserve">
-    <value>gc_Group</value>
-  </data>
-  <data name="gc_Username.VisibleIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="grd_AccManagement.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;btn_Refresh.Name" xml:space="preserve">
-    <value>btn_Refresh</value>
-  </data>
-  <data name="&gt;&gt;grd_AccManagement.Name" xml:space="preserve">
-    <value>grd_AccManagement</value>
-  </data>
-  <data name="&gt;&gt;gc_Desc.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barDockControlLeft.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="txt_Username.Location" type="System.Drawing.Point, System.Drawing">
-    <value>66, 42</value>
-  </data>
-  <data name="gc_Name.Caption" xml:space="preserve">
-    <value>Name</value>
-  </data>
-  <data name="btn_Search.Text" xml:space="preserve">
-    <value>Search</value>
-  </data>
-  <data name="gc_Group.VisibleIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="rep_Status.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1014, 28</value>
-  </data>
-  <data name="&gt;&gt;txt_Username.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;btn_AddNew.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="btn_AddNew.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar2.Text" xml:space="preserve">
-    <value>Tools</value>
-  </data>
-  <data name="grd_AccManagement.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;barDockControlBottom.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="btn_AddNew.Caption" xml:space="preserve">
-    <value>Add New</value>
-  </data>
-  <data name="lk_AccType.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 20</value>
-  </data>
-  <data name="&gt;&gt;barDockControlRight.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;labelControl3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="bar1.Text" xml:space="preserve">
-    <value>Tools</value>
-  </data>
-  <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
-    <value>barDockControlLeft</value>
-  </data>
-  <data name="&gt;&gt;barDockControlRight.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;grd_AccManagement.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="gc_Status.VisibleIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;btn_Delete.Name" xml:space="preserve">
-    <value>btn_Delete</value>
-  </data>
-  <data name="&gt;&gt;lbl_AccGroups.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <assembly alias="DevExpress.XtraEditors.v20.1" name="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="grd_AccManagement.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v20.1">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;lk_AccGroups.Name" xml:space="preserve">
-    <value>lk_AccGroups</value>
-  </data>
-  <data name="lk_AccGroups.Properties.Columns" xml:space="preserve">
-    <value>Name</value>
-  </data>
-  <data name="barDockControlTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
   </data>
   <data name="lbl_Username.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 13</value>
   </data>
-  <assembly alias="DevExpress.Utils.v20.1" name="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="lk_AccType.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.1">
-    <value>Combo</value>
-  </data>
-  <data name="&gt;&gt;barManager1.Name" xml:space="preserve">
-    <value>barManager1</value>
-  </data>
-  <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 550</value>
-  </data>
-  <data name="lk_AccType.Properties.Columns1" xml:space="preserve">
-    <value>Name</value>
-  </data>
-  <data name="gc_Code.Caption" xml:space="preserve">
-    <value>Code</value>
-  </data>
-  <data name="grd_AccManagement.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Tile</value>
-  </data>
-  <data name="barDockControlLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="btn_Search.Location" type="System.Drawing.Point, System.Drawing">
-    <value>822, 42</value>
-  </data>
-  <data name="&gt;&gt;rep_Password.Name" xml:space="preserve">
-    <value>rep_Password</value>
-  </data>
-  <data name="gc_Status.Caption" xml:space="preserve">
-    <value>Status</value>
-  </data>
-  <data name="lbl_AccGroups.TabIndex" type="System.Int32, mscorlib">
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lbl_Username.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="grd_AccManagement.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="lbl_Username.Text" xml:space="preserve">
+    <value>Username</value>
   </data>
-  <data name="gc_Code.VisibleIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;lbl_Username.Name" xml:space="preserve">
+    <value>lbl_Username</value>
   </data>
-  <data name="&gt;&gt;btn_Refresh.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;lbl_Username.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="rep_Status.NullText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;btn_Search.Name" xml:space="preserve">
-    <value>btn_Search</value>
-  </data>
-  <data name="btn_Refresh.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="grd_AccManagement.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="btn_Delete.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="&gt;&gt;gc_Status.Name" xml:space="preserve">
-    <value>gc_Status</value>
-  </data>
-  <data name="&gt;&gt;btn_ShowAccInfo.Name" xml:space="preserve">
-    <value>btn_ShowAccInfo</value>
-  </data>
-  <data name="lk_AccGroups.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 20</value>
-  </data>
-  <data name="btn_Refresh.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="btn_ShowAccInfo.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="btn_AddNew.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar4.Text" xml:space="preserve">
-    <value>Tools</value>
-  </data>
-  <data name="txt_Username.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="btn_Search.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;lk_AccGroups.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;bar4.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_Search.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;txt_Username.Name" xml:space="preserve">
-    <value>txt_Username</value>
-  </data>
-  <data name="&gt;&gt;lbl_AccGroups.Name" xml:space="preserve">
-    <value>lbl_AccGroups</value>
-  </data>
-  <data name="barDockControlBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <assembly alias="DevExpress.Data.v20.1" name="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="btn_Refresh.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIwLjEsIFZlcnNpb249MjAuMS4z
-        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
-        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAEEFAAAC77u/
-        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
-        IHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9y
-        Zy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpz
-        cGFjZT0icHJlc2VydmUiIGlkPSJDYXBhXzEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAw
-        IDUxMiA1MTIiPg0KICA8cGF0aCBkPSJNNDQ2LjgsMTY2Ljg5OWMtNC43OTktNy41LTE0LjctOS0yMS44
-        OTktMy45TDM3Ni4zLDE5OS42Yy02LDQuNDk5LTcuOCwxMi45LTMuOSwxOS40OTkgIGMxMi4yOTksMjEs
-        MTguNiw0My41LDE4LjYsNjYuOTAxYzAsNzQuMzk5LTYwLjYwMSwxMzUtMTM1LDEzNXMtMTM1LTYwLjYw
-        MS0xMzUtMTM1YzAtNjkuMyw1Mi41LTEyNi42MDEsMTIwLTEzNC4xMDFWMTk2ICBjMCw5LDcuMiwxNC43
-        LDE1LDE1YzIuOTk5LDAsNi4zMDEtMC45MDEsOS0zLjAwMWwxMjAtODkuOTk4YzguMTAxLTYsOC4xMDEt
-        MTguMDAxLDAtMjQuMDAxTDI2NSwzYy0yLjY5OS0yLjA5OC02LTIuOTk5LTktMi45OTkgIGMtNy44LDAt
-        MTUsNi4zMDEtMTUsMTV2NDYuNjAxQzEyMy45OTksNjkuMTAxLDMxLDE2Ni44OTksMzEsMjg2YzAsMTI0
-        LjIsMTAwLjgsMjI2LDIyNSwyMjZzMjI1LTEwMS44LDIyNS0yMjYgIEM0ODEsMjQzLjk5OSw0NjguOTk5
-        LDIwMi44OTksNDQ2LjgsMTY2Ljg5OXoiIHN0eWxlPSJmaWxsOiMxN0FDRTgiIC8+DQogIDxnPg0KICAg
-        IDxwYXRoIGQ9Ik0yNjUsMjA3Ljk5OWMtMi42OTksMi4xLTYsMy4wMDEtOSwzLjAwMVYwYzIuOTk5LDAs
-        Ni4zMDEsMC45MDEsOSwyLjk5OWwxMjAsOTEgICBjOC4xMDEsNiw4LjEwMSwxOC4wMDEsMCwyNC4wMDFM
-        MjY1LDIwNy45OTl6IiBzdHlsZT0iZmlsbDojMTY4OUZDIiAvPg0KICAgIDxwYXRoIGQ9Ik00ODEsMjg2
-        YzAsMTI0LjItMTAwLjgsMjI2LTIyNSwyMjZ2LTkxYzc0LjM5OSwwLDEzNS02MC42MDEsMTM1LTEzNSAg
-        IGMwLTIzLjQwMS02LjMwMS00NS45MDEtMTguNi02Ni45MDFjLTMuOS02LjU5OS0yLjEtMTUsMy45LTE5
-        LjQ5OWw0OC42LTM2LjYwMWM3LjItNS4wOTksMTcuMS0zLjYsMjEuODk5LDMuOSAgIEM0NjguOTk5LDIw
-        Mi44OTksNDgxLDI0My45OTksNDgxLDI4NnoiIHN0eWxlPSJmaWxsOiMxNjg5RkMiIC8+DQogIDwvZz4N
-        CiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcg
-        Lz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAg
-        PGcgLz4NCiAgPGcgLz4NCjwvc3ZnPgs=
-</value>
-  </data>
-  <data name="grd_AccManagement.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1014, 0</value>
-  </data>
-  <data name="gc_Name.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;lk_AccGroups.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbl_Username.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btn_Search.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bar1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="lk_AccType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>641, 42</value>
-  </data>
-  <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
-    <value>barDockControlRight</value>
-  </data>
-  <data name="rep_Password.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="gc_Username.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;btn_Search.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lk_AccType.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;lbl_Username.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>frm_AccountManagement</value>
+  <data name="bar1.Text" xml:space="preserve">
+    <value>Tools</value>
   </data>
-  <data name="&gt;&gt;barDockControlLeft.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="bar2.Text" xml:space="preserve">
+    <value>Tools</value>
   </data>
-  <data name="grd_AccManagement.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v20.1">
-    <value>Default</value>
+  <data name="bar3.Text" xml:space="preserve">
+    <value>Tools</value>
   </data>
-  <data name="lk_AccType.Properties.NullText" xml:space="preserve">
-    <value />
+  <metadata name="barManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="btn_AddNew.Caption" xml:space="preserve">
+    <value>Add New</value>
   </data>
-  <data name="&gt;&gt;btn_ShowAccInfo.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rep_Status.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="btn_Edit.Caption" xml:space="preserve">
-    <value>Edit</value>
-  </data>
-  <data name="&gt;&gt;grd_AccManagement.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lk_AccType.Name" xml:space="preserve">
-    <value>lk_AccType</value>
-  </data>
-  <data name="grd_AccManagement.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v20.1">
-    <value>None</value>
-  </data>
-  <data name="gc_Name.VisibleIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;gc_Username.Name" xml:space="preserve">
-    <value>gc_Username</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="btn_ShowAccInfo.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAALdEVYdFRpdGxlAEluZm87bRIthgAAAahJREFUWEfN
-        lz1SwzAQhcMRSMXkCpyFPkeggg5aJjWTmqNQ5AoU3CC3yFCZ/TzejGQ/WZKNxxRfxuPs232RVj/ZNE2z
-        Ku3Hw+GzhJ2xN47GyTgblw6eecd3xBCrckSUGrg33oxvoymEWDRoVc6WnIEb49H4MlSREtCSg1yDGmMG
-        7ox3QyWdArnIGdVJGSDww1CJ5kDOyIQywFCV/PIf48nYGrfdM+9UbAi5r9OhDDBfStjnGV2IvXvtxaSg
-        hjRAx5Y23DYs3uVgNFRsH2q0qwNdaIBlowSKOQaAWpEBNo6ada6m4KUXMwa1duhczO6lAlN4E9KANU0Y
-        sg8NsIWqoCU5hgbYx1XQkpxCAxwmKigJuhAVk+GMzsWcaCooiRd2VEyGC7p/Y2D1KahuQi/sqJgMURNW
-        L0Mv7KiYDNEyrN2ITDbbQLQR1W7FJptlYLAVQ81hZLJZBgaHEdQcxyabbCB5HEPphcRkkw0kLyRQeiWb
-        SvZKBqteSh0C/3IkyBUVhzEDwFAxX8WNKUBLjuuwh+QMOHQsy6ZmnyAWTdvtKUoNOMv9OV2PZvMLsfKg
-        vDjYoZ0AAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="&gt;&gt;gc_Type.Name" xml:space="preserve">
-    <value>gc_Type</value>
-  </data>
-  <data name="&gt;&gt;lk_AccType.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="gc_Type.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;barDockControlTop.Name" xml:space="preserve">
-    <value>barDockControlTop</value>
-  </data>
+  <assembly alias="DevExpress.Data.v20.1" name="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
   <data name="btn_AddNew.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIwLjEsIFZlcnNpb249MjAuMS4z
@@ -679,11 +176,39 @@
         Yy0xNy42NjQwNjIgMC0zMiAxNC4zMzU5MzgtMzIgMzJ6bTAgMCIgLz4NCiAgPC9nPg0KPC9zdmc+Cw==
 </value>
   </data>
-  <data name="&gt;&gt;barDockControlLeft.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="btn_Edit.Caption" xml:space="preserve">
+    <value>Edit</value>
   </data>
-  <data name="rep_Status.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.1">
-    <value>Combo</value>
+  <data name="btn_Edit.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIwLjEsIFZlcnNpb249MjAuMS4z
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAOUEAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgd2lkdGg9IjUxMnB4IiBo
+        ZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8y
+        MDAwL3N2ZyIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiPg0KICA8cGF0aCBkPSJtMTcg
+        MjRoLTE0Yy0xLjY1NCAwLTMtMS4zNDYtMy0zdi0xNGMwLTEuNjU0IDEuMzQ2LTMgMy0zaDhjLjU1MyAw
+        IDEgLjQ0OCAxIDFzLS40NDcgMS0xIDFoLThjLS41NTIgMC0xIC40NDktMSAxdjE0YzAgLjU1MS40NDgg
+        MSAxIDFoMTRjLjU1MiAwIDEtLjQ0OSAxLTF2LThjMC0uNTUyLjQ0Ny0xIDEtMXMxIC40NDggMSAxdjhj
+        MCAxLjY1NC0xLjM0NiAzLTMgM3oiIGZpbGw9IiM2MDdkOGIiIC8+DQogIDxwYXRoIGQ9Im0xNy4yODgg
+        My4xNzctNy45MTIgNy45MTJjLS4wNy4wNy0uMTE3LjE1OS0uMTM3LjI1NWwtLjcwNyAzLjUzNmMtLjAz
+        My4xNjQuMDE4LjMzNC4xMzcuNDUyLjA5NS4wOTUuMjIzLjE0Ni4zNTQuMTQ2bC4wOTgtLjAxIDMuNTM1
+        LS43MDdjLjA5OC0uMDE5LjE4Ni0uMDY3LjI1Ni0uMTM3bDcuOTEyLTcuOTEyeiIgZmlsbD0iIzQyYTVm
+        NSIgLz4NCiAgPHBhdGggZD0ibTIzLjI2OC43MzJjLS45NzUtLjk3NS0yLjU2MS0uOTc1LTMuNTM1IDBs
+        LTEuMzg0IDEuMzg0IDMuNTM1IDMuNTM1IDEuMzg0LTEuMzg0Yy40NzItLjQ3MS43MzItMS4wOTkuNzMy
+        LTEuNzY3cy0uMjYtMS4yOTYtLjczMi0xLjc2OHoiIGZpbGw9IiM0MmE1ZjUiIC8+DQogIDxwYXRoIGQ9
+        Im0xOSAxMmMtLjU1MyAwLTEgLjQ0OC0xIDF2OGMwIC41NTEtLjQ0OCAxLTEgMWgtMTRjLS4yNzYgMC0u
+        NTI2LS4xMTItLjcwNy0uMjkzbC0xLjQxMyAxLjQxM2MuNTQzLjU0NCAxLjI5My44OCAyLjEyLjg4aDE0
+        YzEuNjU0IDAgMy0xLjM0NiAzLTN2LThjMC0uNTUzLS40NDctMS0xLTF6IiBmaWxsPSIjNTQ2ZDc5IiAv
+        Pg0KICA8ZyBmaWxsPSIjMzk5MGQ1Ij4NCiAgICA8cGF0aCBkPSJtMTkuMDU2IDQuOTQ0LTEwLjM4NyAx
+        MC4zODdjLjA5NS4wOTUuMjIzLjE0Ni4zNTQuMTQ2bC4wOTgtLjAxIDMuNTM1LS43MDdjLjA5OC0uMDE5
+        LjE4Ni0uMDY3LjI1Ni0uMTM3bDcuOTEyLTcuOTEyeiIgLz4NCiAgICA8cGF0aCBkPSJtMjMuMjY4Ljcz
+        Mi0zLjE1MSAzLjE1MSAxLjc2OCAxLjc2OCAxLjM4NC0xLjM4NGMuNDcxLS40NzEuNzMxLTEuMDk5Ljcz
+        MS0xLjc2N3MtLjI2LTEuMjk2LS43MzItMS43Njh6IiAvPg0KICA8L2c+DQo8L3N2Zz4L
+</value>
+  </data>
+  <data name="btn_Delete.Caption" xml:space="preserve">
+    <value>Delete</value>
   </data>
   <data name="btn_Delete.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -728,55 +253,269 @@
         NTcgNi43MTQ4NDQgMTUgMTUgMTV6bTAgMCIgLz4NCjwvc3ZnPgs=
 </value>
   </data>
-  <data name="lk_AccType.Properties.Columns" xml:space="preserve">
-    <value>Name</value>
+  <data name="btn_Refresh.Caption" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="btn_Refresh.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIwLjEsIFZlcnNpb249MjAuMS4z
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAEEFAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9y
+        Zy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpz
+        cGFjZT0icHJlc2VydmUiIGlkPSJDYXBhXzEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAw
+        IDUxMiA1MTIiPg0KICA8cGF0aCBkPSJNNDQ2LjgsMTY2Ljg5OWMtNC43OTktNy41LTE0LjctOS0yMS44
+        OTktMy45TDM3Ni4zLDE5OS42Yy02LDQuNDk5LTcuOCwxMi45LTMuOSwxOS40OTkgIGMxMi4yOTksMjEs
+        MTguNiw0My41LDE4LjYsNjYuOTAxYzAsNzQuMzk5LTYwLjYwMSwxMzUtMTM1LDEzNXMtMTM1LTYwLjYw
+        MS0xMzUtMTM1YzAtNjkuMyw1Mi41LTEyNi42MDEsMTIwLTEzNC4xMDFWMTk2ICBjMCw5LDcuMiwxNC43
+        LDE1LDE1YzIuOTk5LDAsNi4zMDEtMC45MDEsOS0zLjAwMWwxMjAtODkuOTk4YzguMTAxLTYsOC4xMDEt
+        MTguMDAxLDAtMjQuMDAxTDI2NSwzYy0yLjY5OS0yLjA5OC02LTIuOTk5LTktMi45OTkgIGMtNy44LDAt
+        MTUsNi4zMDEtMTUsMTV2NDYuNjAxQzEyMy45OTksNjkuMTAxLDMxLDE2Ni44OTksMzEsMjg2YzAsMTI0
+        LjIsMTAwLjgsMjI2LDIyNSwyMjZzMjI1LTEwMS44LDIyNS0yMjYgIEM0ODEsMjQzLjk5OSw0NjguOTk5
+        LDIwMi44OTksNDQ2LjgsMTY2Ljg5OXoiIHN0eWxlPSJmaWxsOiMxN0FDRTgiIC8+DQogIDxnPg0KICAg
+        IDxwYXRoIGQ9Ik0yNjUsMjA3Ljk5OWMtMi42OTksMi4xLTYsMy4wMDEtOSwzLjAwMVYwYzIuOTk5LDAs
+        Ni4zMDEsMC45MDEsOSwyLjk5OWwxMjAsOTEgICBjOC4xMDEsNiw4LjEwMSwxOC4wMDEsMCwyNC4wMDFM
+        MjY1LDIwNy45OTl6IiBzdHlsZT0iZmlsbDojMTY4OUZDIiAvPg0KICAgIDxwYXRoIGQ9Ik00ODEsMjg2
+        YzAsMTI0LjItMTAwLjgsMjI2LTIyNSwyMjZ2LTkxYzc0LjM5OSwwLDEzNS02MC42MDEsMTM1LTEzNSAg
+        IGMwLTIzLjQwMS02LjMwMS00NS45MDEtMTguNi02Ni45MDFjLTMuOS02LjU5OS0yLjEtMTUsMy45LTE5
+        LjQ5OWw0OC42LTM2LjYwMWM3LjItNS4wOTksMTcuMS0zLjYsMjEuODk5LDMuOSAgIEM0NjguOTk5LDIw
+        Mi44OTksNDgxLDI0My45OTksNDgxLDI4NnoiIHN0eWxlPSJmaWxsOiMxNjg5RkMiIC8+DQogIDwvZz4N
+        CiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcg
+        Lz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAg
+        PGcgLz4NCiAgPGcgLz4NCjwvc3ZnPgs=
+</value>
+  </data>
+  <data name="btn_ShowAccInfo.Caption" xml:space="preserve">
+    <value>Show Account Info</value>
+  </data>
+  <data name="btn_ShowAccInfo.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAALdEVYdFRpdGxlAEluZm87bRIthgAAAJxJREFUOE+t
+        k+ENQDAUhDuKafyzlN9MYQkbWEdiAO5rNEEOlZJ8Cb17l77XCk07XqlFLyYx7/DOGtrJf/yoRCcWsd6A
+        hgfvKYCFQbgiB94YkgJIdcYnqIkB9GW3rSeA0wQ1NSLDcYa3AOgRmbATc5gI4JicmLOD+ZeA2xYyAmIL
+        xUMsPkYoukhQfJVTCKm2nR00PLEYjgGJD7/zGDZMp1TRLvGgqwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btn_ShowAccInfo.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAALdEVYdFRpdGxlAEluZm87bRIthgAAAahJREFUWEfN
+        lz1SwzAQhcMRSMXkCpyFPkeggg5aJjWTmqNQ5AoU3CC3yFCZ/TzejGQ/WZKNxxRfxuPs232RVj/ZNE2z
+        Ku3Hw+GzhJ2xN47GyTgblw6eecd3xBCrckSUGrg33oxvoymEWDRoVc6WnIEb49H4MlSREtCSg1yDGmMG
+        7ox3QyWdArnIGdVJGSDww1CJ5kDOyIQywFCV/PIf48nYGrfdM+9UbAi5r9OhDDBfStjnGV2IvXvtxaSg
+        hjRAx5Y23DYs3uVgNFRsH2q0qwNdaIBlowSKOQaAWpEBNo6ada6m4KUXMwa1duhczO6lAlN4E9KANU0Y
+        sg8NsIWqoCU5hgbYx1XQkpxCAxwmKigJuhAVk+GMzsWcaCooiRd2VEyGC7p/Y2D1KahuQi/sqJgMURNW
+        L0Mv7KiYDNEyrN2ITDbbQLQR1W7FJptlYLAVQ81hZLJZBgaHEdQcxyabbCB5HEPphcRkkw0kLyRQeiWb
+        SvZKBqteSh0C/3IkyBUVhzEDwFAxX8WNKUBLjuuwh+QMOHQsy6ZmnyAWTdvtKUoNOMv9OV2PZvMLsfKg
+        vDjYoZ0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="bar4.Text" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="barDockControlTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="barDockControlTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1014, 28</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Name" xml:space="preserve">
+    <value>barDockControlTop</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="barDockControlBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 578</value>
+  </data>
+  <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1014, 0</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
+    <value>barDockControlBottom</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;barDockControlBottom.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="&gt;&gt;lbl_Username.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="barDockControlLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="barDockControlLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 28</value>
+  </data>
+  <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 550</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
+    <value>barDockControlLeft</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="barDockControlRight.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1014, 28</value>
+  </data>
+  <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 550</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
+    <value>barDockControlRight</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1014, 578</value>
+  </data>
+  <data name="grd_AccManagement.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="grd_AccManagement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 68</value>
+  </data>
+  <data name="gc_Code.Caption" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="gc_Code.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gc_Code.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gc_Name.Caption" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="gc_Name.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gc_Name.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="gc_Username.Caption" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="gc_Username.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gc_Username.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="gc_Password.Caption" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="rep_Password.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="gc_Password.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gc_Password.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="gc_Group.Caption" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="gc_Group.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gc_Group.VisibleIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="gc_Type.Caption" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="gc_Type.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gc_Type.VisibleIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="gc_Status.Caption" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="rep_Status.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v20.1" name="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="rep_Status.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.1">
+    <value>Combo</value>
+  </data>
+  <data name="rep_Status.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gc_Status.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gc_Status.VisibleIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="gc_Desc.Caption" xml:space="preserve">
+    <value>Descriptions</value>
+  </data>
+  <data name="gc_Desc.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gc_Desc.VisibleIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="grd_AccManagement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1008, 506</value>
+  </data>
+  <data name="grd_AccManagement.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;grd_AccManagement.Name" xml:space="preserve">
+    <value>grd_AccManagement</value>
   </data>
   <data name="&gt;&gt;grd_AccManagement.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;lk_AccGroups.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="lk_AccGroups.Properties.NullText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="lbl_Username.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btn_Delete.Caption" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="&gt;&gt;btn_Edit.Name" xml:space="preserve">
-    <value>btn_Edit</value>
-  </data>
-  <data name="&gt;&gt;gc_Desc.Name" xml:space="preserve">
-    <value>gc_Desc</value>
-  </data>
-  <data name="&gt;&gt;lbl_Username.Parent" xml:space="preserve">
+  <data name="&gt;&gt;grd_AccManagement.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;gc_Code.Name" xml:space="preserve">
-    <value>gc_Code</value>
-  </data>
-  <data name="labelControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 13</value>
-  </data>
-  <data name="&gt;&gt;gc_Password.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="lk_AccGroups.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="labelControl3.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;grd_AccManagement.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="btn_Search.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -792,93 +531,173 @@
         cEbvylSsOXZyrRub4D+1dPLvBY5vGoEc6Ii8o88AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="grd_AccManagement.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
+  <data name="btn_Search.Location" type="System.Drawing.Point, System.Drawing">
+    <value>822, 42</value>
   </data>
-  <data name="gc_Type.Caption" xml:space="preserve">
-    <value>Type</value>
+  <data name="btn_Search.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 20</value>
   </data>
-  <data name="&gt;&gt;gc_Type.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="btn_Search.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1014, 578</value>
+  <data name="btn_Search.Text" xml:space="preserve">
+    <value>Search</value>
   </data>
-  <data name="lbl_AccGroups.Location" type="System.Drawing.Point, System.Drawing">
-    <value>295, 45</value>
+  <data name="&gt;&gt;btn_Search.Name" xml:space="preserve">
+    <value>btn_Search</value>
   </data>
-  <data name="&gt;&gt;bar3.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;btn_Search.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="btn_Refresh.Caption" xml:space="preserve">
-    <value>Refresh</value>
+  <data name="&gt;&gt;btn_Search.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="gc_Code.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;btn_Search.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="barDockControlTop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="lk_AccType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>641, 42</value>
   </data>
-  <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 578</value>
+  <data name="lk_AccType.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.1">
+    <value>Combo</value>
   </data>
-  <data name="btn_ShowAccInfo.Caption" xml:space="preserve">
-    <value>Show Account Info</value>
-  </data>
-  <data name="btn_Edit.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIwLjEsIFZlcnNpb249MjAuMS4z
-        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
-        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAOUEAAAC77u/
-        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgd2lkdGg9IjUxMnB4IiBo
-        ZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8y
-        MDAwL3N2ZyIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiPg0KICA8cGF0aCBkPSJtMTcg
-        MjRoLTE0Yy0xLjY1NCAwLTMtMS4zNDYtMy0zdi0xNGMwLTEuNjU0IDEuMzQ2LTMgMy0zaDhjLjU1MyAw
-        IDEgLjQ0OCAxIDFzLS40NDcgMS0xIDFoLThjLS41NTIgMC0xIC40NDktMSAxdjE0YzAgLjU1MS40NDgg
-        MSAxIDFoMTRjLjU1MiAwIDEtLjQ0OSAxLTF2LThjMC0uNTUyLjQ0Ny0xIDEtMXMxIC40NDggMSAxdjhj
-        MCAxLjY1NC0xLjM0NiAzLTMgM3oiIGZpbGw9IiM2MDdkOGIiIC8+DQogIDxwYXRoIGQ9Im0xNy4yODgg
-        My4xNzctNy45MTIgNy45MTJjLS4wNy4wNy0uMTE3LjE1OS0uMTM3LjI1NWwtLjcwNyAzLjUzNmMtLjAz
-        My4xNjQuMDE4LjMzNC4xMzcuNDUyLjA5NS4wOTUuMjIzLjE0Ni4zNTQuMTQ2bC4wOTgtLjAxIDMuNTM1
-        LS43MDdjLjA5OC0uMDE5LjE4Ni0uMDY3LjI1Ni0uMTM3bDcuOTEyLTcuOTEyeiIgZmlsbD0iIzQyYTVm
-        NSIgLz4NCiAgPHBhdGggZD0ibTIzLjI2OC43MzJjLS45NzUtLjk3NS0yLjU2MS0uOTc1LTMuNTM1IDBs
-        LTEuMzg0IDEuMzg0IDMuNTM1IDMuNTM1IDEuMzg0LTEuMzg0Yy40NzItLjQ3MS43MzItMS4wOTkuNzMy
-        LTEuNzY3cy0uMjYtMS4yOTYtLjczMi0xLjc2OHoiIGZpbGw9IiM0MmE1ZjUiIC8+DQogIDxwYXRoIGQ9
-        Im0xOSAxMmMtLjU1MyAwLTEgLjQ0OC0xIDF2OGMwIC41NTEtLjQ0OCAxLTEgMWgtMTRjLS4yNzYgMC0u
-        NTI2LS4xMTItLjcwNy0uMjkzbC0xLjQxMyAxLjQxM2MuNTQzLjU0NCAxLjI5My44OCAyLjEyLjg4aDE0
-        YzEuNjU0IDAgMy0xLjM0NiAzLTN2LThjMC0uNTUzLS40NDctMS0xLTF6IiBmaWxsPSIjNTQ2ZDc5IiAv
-        Pg0KICA8ZyBmaWxsPSIjMzk5MGQ1Ij4NCiAgICA8cGF0aCBkPSJtMTkuMDU2IDQuOTQ0LTEwLjM4NyAx
-        MC4zODdjLjA5NS4wOTUuMjIzLjE0Ni4zNTQuMTQ2bC4wOTgtLjAxIDMuNTM1LS43MDdjLjA5OC0uMDE5
-        LjE4Ni0uMDY3LjI1Ni0uMTM3bDcuOTEyLTcuOTEyeiIgLz4NCiAgICA8cGF0aCBkPSJtMjMuMjY4Ljcz
-        Mi0zLjE1MSAzLjE1MSAxLjc2OCAxLjc2OCAxLjM4NC0xLjM4NGMuNDcxLS40NzEuNzMxLTEuMDk5Ljcz
-        MS0xLjc2N3MtLjI2LTEuMjk2LS43MzItMS43Njh6IiAvPg0KICA8L2c+DQo8L3N2Zz4L
-</value>
-  </data>
-  <data name="txt_Username.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 20</value>
-  </data>
-  <data name="btn_ShowAccInfo.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="lk_AccGroups.Properties.Columns1" xml:space="preserve">
+  <data name="lk_AccType.Properties.Columns" xml:space="preserve">
     <value>Name</value>
   </data>
-  <data name="labelControl3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>564, 45</value>
+  <data name="lk_AccType.Properties.Columns1" xml:space="preserve">
+    <value>Name</value>
   </data>
-  <data name="&gt;&gt;gc_Username.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="lk_AccType.Properties.NullText" xml:space="preserve">
+    <value />
   </data>
-  <data name="&gt;&gt;labelControl3.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="lk_AccType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 20</value>
   </data>
   <data name="lk_AccType.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;barDockControlTop.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lk_AccType.Name" xml:space="preserve">
+    <value>lk_AccType</value>
+  </data>
+  <data name="&gt;&gt;lk_AccType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lk_AccType.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="bar3.Text" xml:space="preserve">
-    <value>Tools</value>
+  <data name="&gt;&gt;lk_AccType.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lk_AccGroups.Location" type="System.Drawing.Point, System.Drawing">
+    <value>372, 42</value>
+  </data>
+  <data name="lk_AccGroups.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.1">
+    <value>Combo</value>
+  </data>
+  <data name="lk_AccGroups.Properties.Columns" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="lk_AccGroups.Properties.Columns1" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="lk_AccGroups.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lk_AccGroups.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 20</value>
+  </data>
+  <data name="lk_AccGroups.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lk_AccGroups.Name" xml:space="preserve">
+    <value>lk_AccGroups</value>
+  </data>
+  <data name="&gt;&gt;lk_AccGroups.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lk_AccGroups.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lk_AccGroups.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="labelControl3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>564, 45</value>
+  </data>
+  <data name="labelControl3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 13</value>
+  </data>
+  <data name="labelControl3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelControl3.Text" xml:space="preserve">
+    <value>Account Type</value>
+  </data>
+  <data name="&gt;&gt;labelControl3.Name" xml:space="preserve">
+    <value>labelControl3</value>
+  </data>
+  <data name="&gt;&gt;labelControl3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelControl3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txt_Username.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 42</value>
+  </data>
+  <data name="txt_Username.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 20</value>
+  </data>
+  <data name="txt_Username.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txt_Username.Name" xml:space="preserve">
+    <value>txt_Username</value>
+  </data>
+  <data name="&gt;&gt;txt_Username.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Username.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_Username.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lbl_AccGroups.Location" type="System.Drawing.Point, System.Drawing">
+    <value>295, 45</value>
+  </data>
+  <data name="lbl_AccGroups.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="lbl_AccGroups.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbl_AccGroups.Text" xml:space="preserve">
+    <value>Account Group</value>
+  </data>
+  <data name="&gt;&gt;lbl_AccGroups.Name" xml:space="preserve">
+    <value>lbl_AccGroups</value>
+  </data>
+  <data name="&gt;&gt;lbl_AccGroups.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lbl_AccGroups.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbl_AccGroups.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Account Management</value>
+  </data>
+  <data name="&gt;&gt;bar1.Name" xml:space="preserve">
+    <value>bar1</value>
+  </data>
+  <data name="&gt;&gt;bar1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bar2.Name" xml:space="preserve">
     <value>bar2</value>
@@ -886,19 +705,124 @@
   <data name="&gt;&gt;bar2.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="lk_AccGroups.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.1">
-    <value>Combo</value>
+  <data name="&gt;&gt;bar3.Name" xml:space="preserve">
+    <value>bar3</value>
   </data>
-  <data name="lk_AccGroups.Location" type="System.Drawing.Point, System.Drawing">
-    <value>372, 42</value>
+  <data name="&gt;&gt;bar3.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <metadata name="barManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>vi-VN</value>
-  </metadata>
+  <data name="&gt;&gt;barManager1.Name" xml:space="preserve">
+    <value>barManager1</value>
+  </data>
+  <data name="&gt;&gt;barManager1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarManager, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bar4.Name" xml:space="preserve">
+    <value>bar4</value>
+  </data>
+  <data name="&gt;&gt;bar4.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btn_AddNew.Name" xml:space="preserve">
+    <value>btn_AddNew</value>
+  </data>
+  <data name="&gt;&gt;btn_AddNew.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btn_Edit.Name" xml:space="preserve">
+    <value>btn_Edit</value>
+  </data>
+  <data name="&gt;&gt;btn_Edit.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btn_Delete.Name" xml:space="preserve">
+    <value>btn_Delete</value>
+  </data>
+  <data name="&gt;&gt;btn_Delete.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btn_Refresh.Name" xml:space="preserve">
+    <value>btn_Refresh</value>
+  </data>
+  <data name="&gt;&gt;btn_Refresh.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btn_ShowAccInfo.Name" xml:space="preserve">
+    <value>btn_ShowAccInfo</value>
+  </data>
+  <data name="&gt;&gt;btn_ShowAccInfo.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gv_AccManagement.Name" xml:space="preserve">
+    <value>gv_AccManagement</value>
+  </data>
+  <data name="&gt;&gt;gv_AccManagement.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gc_Code.Name" xml:space="preserve">
+    <value>gc_Code</value>
+  </data>
+  <data name="&gt;&gt;gc_Code.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gc_Name.Name" xml:space="preserve">
+    <value>gc_Name</value>
+  </data>
+  <data name="&gt;&gt;gc_Name.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gc_Username.Name" xml:space="preserve">
+    <value>gc_Username</value>
+  </data>
+  <data name="&gt;&gt;gc_Username.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gc_Password.Name" xml:space="preserve">
+    <value>gc_Password</value>
+  </data>
+  <data name="&gt;&gt;gc_Password.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;rep_Password.Name" xml:space="preserve">
+    <value>rep_Password</value>
+  </data>
+  <data name="&gt;&gt;rep_Password.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gc_Group.Name" xml:space="preserve">
+    <value>gc_Group</value>
+  </data>
+  <data name="&gt;&gt;gc_Group.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gc_Type.Name" xml:space="preserve">
+    <value>gc_Type</value>
+  </data>
+  <data name="&gt;&gt;gc_Type.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gc_Status.Name" xml:space="preserve">
+    <value>gc_Status</value>
+  </data>
+  <data name="&gt;&gt;gc_Status.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;rep_Status.Name" xml:space="preserve">
+    <value>rep_Status</value>
+  </data>
+  <data name="&gt;&gt;rep_Status.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gc_Desc.Name" xml:space="preserve">
+    <value>gc_Desc</value>
+  </data>
+  <data name="&gt;&gt;gc_Desc.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frm_AccountManagement</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
 </root>

@@ -225,7 +225,7 @@
     <value>Phục hồi dữ liệu</value>
   </data>
   <data name="PleaseChooseRestoreFile" xml:space="preserve">
-    <value>Vui lòng chọn dữ liệu khôi phục!</value>
+    <value>Vui lòng chọn tập tin khôi phục</value>
   </data>
   <data name="RestoreFailed" xml:space="preserve">
     <value>Khôi phục thất bại!</value>

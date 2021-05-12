@@ -141,7 +141,6 @@ namespace MyAccounts.Forms
         {
             try
             {
-                var resourcesExists = File.Exists("System//Images//add.svg") && File.Exists("System//Images//edit.svg");
                 var dbExists = File.Exists("System//config//initserver");
 
                 for (int i = 0; i < 50; i++)
@@ -149,7 +148,7 @@ namespace MyAccounts.Forms
                     Thread.Sleep(50);
                 }
 
-                if (!resourcesExists || !dbExists)
+                if (!dbExists)
                 {
                     WinCommons.ShowMessageDialog(_resources.GetString("SystemFilesCannotBeFound"), Enums.MessageBoxType.Error);
                     this.Dispose();

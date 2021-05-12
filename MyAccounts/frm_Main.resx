@@ -117,9 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="barManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="barManager.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>17, 17</value>
-  </metadata>
+  </data>
   <data name="barSubItem1.Caption" xml:space="preserve">
     <value>Home</value>
   </data>
@@ -311,7 +312,6 @@
   <data name="lbl_Server.Caption" xml:space="preserve">
     <value>Server:</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lbl_Server.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
@@ -409,9 +409,10 @@
   <data name="&gt;&gt;barDockControlRight.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
+  </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
@@ -527,6 +528,9 @@
         Zz4L
 </value>
   </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>MyAccounts</value>
   </data>
@@ -641,7 +645,13 @@
   <data name="barButtonItem3.Caption" xml:space="preserve">
     <value>Thiết lập kết nối</value>
   </data>
-  <metadata name="xtraTabbedMdiManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <data name="xtraTabbedMdiManager.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>142, 17</value>
-  </metadata>
+  </data>
+  <data name="Server" xml:space="preserve">
+    <value>Server:</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>User:</value>
+  </data>
 </root>

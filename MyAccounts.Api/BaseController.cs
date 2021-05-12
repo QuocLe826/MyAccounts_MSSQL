@@ -28,7 +28,7 @@ namespace MyAccounts.Api
                 return;
             }
             var dicData = JsonConvert.DeserializeObject<Dictionary<string, string>>(fileData);
-            if(dicData.Count == 0)
+            if(dicData == null || dicData.Count == 0)
             {
                 return;
             }

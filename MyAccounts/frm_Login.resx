@@ -125,26 +125,17 @@
   <data name="chk_English.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
   </data>
-  <data name="btn_Exit.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
   <data name="IncorrectUserNameOrPassword" xml:space="preserve">
     <value>Incorrect Username or password!</value>
   </data>
   <data name="chk_English.Caption" xml:space="preserve">
     <value>English</value>
   </data>
-  <data name="SystemFilesCannotBeFound" xml:space="preserve">
-    <value>System files cannot be found!</value>
-  </data>
   <data name="&gt;&gt;txt_Username.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="btn_Languages.Text" xml:space="preserve">
     <value>Languages</value>
-  </data>
-  <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
-    <value>barDockControlRight</value>
   </data>
   <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
     <value>barDockControlLeft</value>
@@ -231,23 +222,17 @@
   <data name="&gt;&gt;barDockControlTop.Name" xml:space="preserve">
     <value>barDockControlTop</value>
   </data>
-  <data name="&gt;&gt;barDockControlRight.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;barDockControlRight.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;txt_Username.Name" xml:space="preserve">
+    <value>txt_Username</value>
   </data>
   <data name="chk_Vietnamese.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
   </data>
-  <data name="&gt;&gt;popupMenu1.Name" xml:space="preserve">
-    <value>popupMenu1</value>
-  </data>
   <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
     <value>barDockControlBottom</value>
   </data>
-  <data name="labelControl1.Text" xml:space="preserve">
-    <value>Username</value>
+  <data name="btn_Exit.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;pic_Logo.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -279,8 +264,8 @@
   <data name="labelControl1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
-  <data name="btn_Exit.Text" xml:space="preserve">
-    <value>Exit</value>
+  <data name="labelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 13</value>
   </data>
   <data name="&gt;&gt;barDockControlLeft.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -337,8 +322,8 @@
   <data name="labelControl2.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
-  <data name="btn_Login.Text" xml:space="preserve">
-    <value>Login</value>
+  <data name="&gt;&gt;barDockControlRight.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="&gt;&gt;txt_Password.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -346,8 +331,8 @@
   <data name="&gt;&gt;btn_Exit.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="btn_Login.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="&gt;&gt;popupMenu1.Name" xml:space="preserve">
+    <value>popupMenu1</value>
   </data>
   <data name="&gt;&gt;txt_Password.Parent" xml:space="preserve">
     <value>$this</value>
@@ -355,8 +340,8 @@
   <data name="txt_Username.Size" type="System.Drawing.Size, System.Drawing">
     <value>275, 20</value>
   </data>
-  <data name="&gt;&gt;barDockControlLeft.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="SystemFilesCannotBeFound" xml:space="preserve">
+    <value>System files cannot be found!</value>
   </data>
   <data name="&gt;&gt;btn_Login.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -364,14 +349,17 @@
   <data name="pic_Logo.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
+  <data name="labelControl1.Text" xml:space="preserve">
+    <value>Username</value>
+  </data>
   <data name="&gt;&gt;btn_Languages.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.DropDownButton, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelControl2.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;btn_Login.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
+    <value>barDockControlRight</value>
   </data>
   <data name="&gt;&gt;btn_Languages.Parent" xml:space="preserve">
     <value>$this</value>
@@ -382,11 +370,20 @@
   <data name="barDockControlLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
   </data>
+  <data name="&gt;&gt;btn_Login.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;pic_Logo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PictureEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="UsernameCannotBeEmptyValue" xml:space="preserve">
     <value>Username cannot be empty value!</value>
   </data>
   <data name="pic_Logo.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 12</value>
+  </data>
+  <data name="barDockControlLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
   <data name="labelControl2.Text" xml:space="preserve">
     <value>Password</value>
@@ -403,17 +400,20 @@
   <data name="btn_Login.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="chk_Vietnamese.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="&gt;&gt;barDockControlLeft.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="barDockControlBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
   </data>
+  <data name="btn_Login.Text" xml:space="preserve">
+    <value>Login</value>
+  </data>
   <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
     <value>0, 153</value>
   </data>
-  <data name="&gt;&gt;txt_Username.Name" xml:space="preserve">
-    <value>txt_Username</value>
+  <data name="&gt;&gt;btn_Login.Name" xml:space="preserve">
+    <value>btn_Login</value>
   </data>
   <data name="&gt;&gt;labelControl1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -424,8 +424,8 @@
   <data name="chk_English.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="&gt;&gt;pic_Logo.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PictureEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;barDockControlRight.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <assembly alias="DevExpress.Data.v20.1" name="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
   <data name="pic_Logo.EditValue" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -501,11 +501,14 @@
   <data name="&gt;&gt;barDockControlTop.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="btn_Exit.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="chk_Vietnamese.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="btn_Login.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
-  <data name="barDockControlLeft.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="btn_Exit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
   </data>
   <data name="&gt;&gt;barManager1.Name" xml:space="preserve">
     <value>barManager1</value>
@@ -555,9 +558,6 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Login</value>
   </data>
-  <data name="labelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 13</value>
-  </data>
   <data name="&gt;&gt;txt_Username.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
@@ -567,8 +567,8 @@
   <data name="&gt;&gt;barDockControlTop.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;btn_Login.Name" xml:space="preserve">
-    <value>btn_Login</value>
+  <data name="btn_Exit.Text" xml:space="preserve">
+    <value>Exit</value>
   </data>
   <data name="&gt;&gt;chk_Vietnamese.Name" xml:space="preserve">
     <value>chk_Vietnamese</value>

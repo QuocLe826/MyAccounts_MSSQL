@@ -25,7 +25,7 @@ namespace MyAccounts.Forms.Categories
         {
             InitializeComponent();
             this.Text = _resources.GetString("AddNewAccount");
-            this.IconOptions.SvgImage = SvgImage.FromFile("System//images//add.svg");
+            this.IconOptions.SvgImage = svgImageCollection[0];
             txt_Code.ReadOnly = false;
             _actionType = actionType;
         }
@@ -35,7 +35,7 @@ namespace MyAccounts.Forms.Categories
             InitializeComponent();
 
             this.Text = _resources.GetString("EditAccount");
-            this.IconOptions.SvgImage = SvgImage.FromFile("System//images//edit.svg");
+            this.IconOptions.SvgImage = svgImageCollection[1];
             txt_Code.ReadOnly = true;
             _actionType = actionType;
             _accCode = code;
@@ -171,13 +171,13 @@ namespace MyAccounts.Forms.Categories
                     if (txt_Password.Properties.UseSystemPasswordChar)
                     {
                         txt_Password.Properties.UseSystemPasswordChar = false;
-                        e.Button.ImageOptions.SvgImage = SvgImage.FromFile("System//images//hide.svg");
+                        e.Button.ImageOptions.SvgImage = svgImageCollection[2];
                         e.Button.ToolTip = _resources.GetString("HidePassword");
                     }
                     else
                     {
                         txt_Password.Properties.UseSystemPasswordChar = true;
-                        e.Button.ImageOptions.SvgImage = SvgImage.FromFile("System//images//show.svg");
+                        e.Button.ImageOptions.SvgImage = svgImageCollection[3];
                         e.Button.ToolTip = _resources.GetString("ShowPassword");
                     }
                 }

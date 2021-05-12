@@ -1,17 +1,11 @@
 ﻿using DevExpress.XtraSplashScreen;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
 using System.Globalization;
 using System.IO;
 using System.Resources;
-using System.Text;
 using System.Threading;
-using System.Windows.Forms;
-using MyAccounts.Libraries.Constants;
 using MyAccounts.Libraries.Enums;
 using MyAccounts.Libraries.Helpers;
 using MyAccounts.Libraries.Logging;
@@ -22,7 +16,7 @@ namespace MyAccounts.Forms
 {
     public partial class frm_SplashScreen : SplashScreen
     {
-        private ResourceManager _resources = new ResourceManager(typeof(frm_Login));
+        private readonly ResourceManager _resources = new ResourceManager(typeof(frm_Login));
 
         public frm_SplashScreen()
         {
@@ -42,7 +36,7 @@ namespace MyAccounts.Forms
                 }
 
                 var dicData = JsonConvert.DeserializeObject<Dictionary<string, string>>(fileData);
-                if (dicData.Count == 0 || dicData.Count != 7)
+                if (dicData == null || dicData.Count == 0 || dicData.Count != 7)
                 {
                     WinCommons.ShowMessageDialog(_resources.GetString("LoadConfigFailed"),  Enums.MessageBoxType.Error);
                     return;

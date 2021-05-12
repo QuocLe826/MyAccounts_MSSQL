@@ -90,9 +90,8 @@ namespace MyAccounts.Forms
         {
             try
             {
-                var resourcesExists = File.Exists("System//Images//add.svg") && File.Exists("System//Images//edit.svg");
                 var dbExists = File.Exists("System//config//initserver");
-                if (!resourcesExists || !dbExists)
+                if (!dbExists)
                 {
                     WinCommons.ShowMessageDialog(_resource.GetString("SystemFilesCannotBeFound"), Enums.MessageBoxType.Error);
                     this.Close();

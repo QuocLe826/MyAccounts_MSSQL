@@ -29,6 +29,7 @@ namespace MyAccounts.Forms.Categories
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_AddUpdateAccount));
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
@@ -53,6 +54,7 @@ namespace MyAccounts.Forms.Categories
             this.btn_OK = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Cancel = new DevExpress.XtraEditors.SimpleButton();
             this.txt_Password = new DevExpress.XtraEditors.ButtonEdit();
+            this.svgImageCollection = new DevExpress.Utils.SvgImageCollection(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.txt_Code.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Name.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Username.Properties)).BeginInit();
@@ -61,6 +63,7 @@ namespace MyAccounts.Forms.Categories
             ((System.ComponentModel.ISupportInitialize)(this.lk_Status.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mno_Desc.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Password.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.svgImageCollection)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_Code
@@ -117,6 +120,7 @@ namespace MyAccounts.Forms.Categories
             this.lk_AccountGroup.Properties.DisplayMember = "Name";
             this.lk_AccountGroup.Properties.KeyMember = "Code";
             this.lk_AccountGroup.Properties.NullText = resources.GetString("lk_AccountGroup.Properties.NullText");
+            this.lk_AccountGroup.Properties.SearchMode = DevExpress.XtraEditors.Controls.SearchMode.AutoSearch;
             this.lk_AccountGroup.Properties.ShowHeader = false;
             this.lk_AccountGroup.Properties.ValueMember = "Code";
             // 
@@ -136,6 +140,7 @@ namespace MyAccounts.Forms.Categories
             this.lk_AccountType.Properties.DisplayMember = "Name";
             this.lk_AccountType.Properties.KeyMember = "Code";
             this.lk_AccountType.Properties.NullText = resources.GetString("lk_AccountType.Properties.NullText");
+            this.lk_AccountType.Properties.SearchMode = DevExpress.XtraEditors.Controls.SearchMode.AutoSearch;
             this.lk_AccountType.Properties.ShowHeader = false;
             this.lk_AccountType.Properties.ValueMember = "Code";
             // 
@@ -171,16 +176,16 @@ namespace MyAccounts.Forms.Categories
             // 
             // btn_OK
             // 
-            resources.ApplyResources(this.btn_OK, "btn_OK");
             this.btn_OK.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_OK.ImageOptions.Image")));
+            resources.ApplyResources(this.btn_OK, "btn_OK");
             this.btn_OK.Name = "btn_OK";
             this.btn_OK.Click += new System.EventHandler(this.btn_OK_Click);
             // 
             // btn_Cancel
             // 
-            resources.ApplyResources(this.btn_Cancel, "btn_Cancel");
             this.btn_Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btn_Cancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancel.ImageOptions.Image")));
+            resources.ApplyResources(this.btn_Cancel, "btn_Cancel");
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
             // 
@@ -195,6 +200,13 @@ namespace MyAccounts.Forms.Categories
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txt_Password.Properties.Buttons"))), resources.GetString("txt_Password.Properties.Buttons1"), ((int)(resources.GetObject("txt_Password.Properties.Buttons2"))), ((bool)(resources.GetObject("txt_Password.Properties.Buttons3"))), ((bool)(resources.GetObject("txt_Password.Properties.Buttons4"))), ((bool)(resources.GetObject("txt_Password.Properties.Buttons5"))), editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, resources.GetString("txt_Password.Properties.Buttons6"), ((object)(resources.GetObject("txt_Password.Properties.Buttons7"))), ((DevExpress.Utils.SuperToolTip)(resources.GetObject("txt_Password.Properties.Buttons8"))), ((DevExpress.Utils.ToolTipAnchor)(resources.GetObject("txt_Password.Properties.Buttons9"))))});
             this.txt_Password.Properties.UseSystemPasswordChar = true;
             this.txt_Password.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.txt_Password_ButtonClick);
+            // 
+            // svgImageCollection
+            // 
+            this.svgImageCollection.Add("add", ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("svgImageCollection.add"))));
+            this.svgImageCollection.Add("edit", ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("svgImageCollection.edit"))));
+            this.svgImageCollection.Add("hide", ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("svgImageCollection.hide"))));
+            this.svgImageCollection.Add("show", ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("svgImageCollection.show"))));
             // 
             // frm_AddUpdateAccount
             // 
@@ -234,6 +246,7 @@ namespace MyAccounts.Forms.Categories
             ((System.ComponentModel.ISupportInitialize)(this.lk_Status.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mno_Desc.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Password.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.svgImageCollection)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -259,5 +272,6 @@ namespace MyAccounts.Forms.Categories
         private DevExpress.XtraEditors.SimpleButton btn_OK;
         private DevExpress.XtraEditors.SimpleButton btn_Cancel;
         private DevExpress.XtraEditors.ButtonEdit txt_Password;
+        private DevExpress.Utils.SvgImageCollection svgImageCollection;
     }
 }

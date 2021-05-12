@@ -41,7 +41,6 @@ namespace MyAccounts.Forms
             // 
             resources.ApplyResources(this.progressBarControl, "progressBarControl");
             this.progressBarControl.Name = "progressBarControl";
-            this.progressBarControl.Properties.AutoHeight = ((bool)(resources.GetObject("progressBarControl.Properties.AutoHeight")));
             this.progressBarControl.Properties.LookAndFeel.SkinName = "Office 2013";
             this.progressBarControl.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.progressBarControl.Properties.MarqueeAnimationSpeed = 50;
@@ -57,8 +56,6 @@ namespace MyAccounts.Forms
             resources.ApplyResources(this.peImage, "peImage");
             this.peImage.Name = "peImage";
             this.peImage.Properties.AllowFocused = false;
-            this.peImage.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.peImage.Properties.Appearance.Options.UseBackColor = true;
             this.peImage.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.peImage.Properties.ShowMenu = false;
             this.peImage.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
@@ -66,11 +63,14 @@ namespace MyAccounts.Forms
             // 
             // frm_SplashScreen
             // 
+            this.ActiveGlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.peImage);
             this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.progressBarControl);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frm_SplashScreen";
             ((System.ComponentModel.ISupportInitialize)(this.progressBarControl.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.peImage.Properties)).EndInit();
