@@ -132,7 +132,7 @@ namespace MyAccounts.Forms.Categories
                 dicData.Add("Code", txt_Code.Text.Trim());
                 dicData.Add("Name", txt_Name.Text.Trim());
                 dicData.Add("Username", txt_Username.Text.Trim());
-                dicData.Add("Password", RSASecurity.Encrypt(txt_Password.Text.Trim()));
+                dicData.Add("Password", txt_Password.Text.Trim());
                 dicData.Add("AccGroup", Functions.ToString(lk_AccountGroup.EditValue));
                 dicData.Add("AccType", Functions.ToString(lk_AccountType.EditValue));
                 dicData.Add("Status", Functions.ToString(lk_Status.EditValue));

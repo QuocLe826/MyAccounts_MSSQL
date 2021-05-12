@@ -2,7 +2,7 @@ create table AccountManagement
 (
 	Code varchar(20) primary key not null,
 	Name nvarchar(254) null,
-	Username varchar(150) null,
+	Username varchar(500) null,
 	Password varchar(500) null,
 	AccGroup varchar(10) null,
 	AccType varchar(10) null,
@@ -13,3 +13,4 @@ create table AccountManagement
 	UpdateDate date null,
 	UpdateTime time null
 )
+

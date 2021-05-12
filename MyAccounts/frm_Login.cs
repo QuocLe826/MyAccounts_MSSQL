@@ -126,6 +126,7 @@ namespace MyAccounts.Forms
         {
             if (e.KeyCode == Keys.Enter)
             {
+                btn_Login.Focus();
                 btn_Login_Click(sender, null);
             }
         }
@@ -187,11 +188,6 @@ namespace MyAccounts.Forms
             chk_Vietnamese.Checked = true;
             SetLanguage("vi-VN");
             WriteLanguageConfig("vi-VN");
-        }
-
-        private void frm_Login_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            
         }
     }
 }

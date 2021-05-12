@@ -203,7 +203,6 @@ namespace MyAccounts.Forms
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frm_Login";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frm_Login_FormClosing);
             this.Load += new System.EventHandler(this.frm_Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pic_Logo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Username.Properties)).EndInit();

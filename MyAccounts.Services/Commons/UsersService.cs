@@ -22,7 +22,7 @@ namespace MyAccounts.Services.Commons
                 var dt = ExecuteDataTable(query, CommandType.Text, new SqlParameter("@username", username), new SqlParameter("@password", password));
                 if (dt.Rows.Count == 1)
                 {
-                    var passDecrypt = RSASecurity.Decrypt(Functions.ToString(dt.Rows[0]["Password"]));
+                    var passDecrypt = RSASecurity.Decrypt(Functions.ToString(dt.Rows[0]["Password"]) + "=");
                     if (!password.Equals(passDecrypt))
                     {
                         return "Incorrect Username or Password!";

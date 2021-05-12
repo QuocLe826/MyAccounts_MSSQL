@@ -7,7 +7,7 @@ create procedure AccountManagement_ProcessData
 (
 	@code varchar(10), 
 	@name nvarchar(254), 
-	@username varchar(150), 
+	@username varchar(500), 
 	@password varchar(500), 
 	@accGroup varchar(10),
 	@accType varchar(10),

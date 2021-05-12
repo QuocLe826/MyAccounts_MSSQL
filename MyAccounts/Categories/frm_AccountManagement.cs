@@ -8,6 +8,8 @@ using MyAccounts.Libraries.Enums;
 using MyAccounts.Libraries.Helpers;
 using MyAccounts.Libraries.Logging;
 using DevExpress.XtraEditors;
+using DevExpress.XtraGrid.Views.Grid;
+using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 
 namespace MyAccounts.Forms.Categories
 {
@@ -170,6 +172,23 @@ namespace MyAccounts.Forms.Categories
                 WinCommons.ShowMessageDialog(ex.Message,  Enums.MessageBoxType.Error);
             }
             WinCommons.CloseCursorProcessing(this);
+        }
+
+        private void gv_AccManagement_CustomDrawGroupRow(object sender, DevExpress.XtraGrid.Views.Base.RowObjectCustomDrawEventArgs e)
+        {
+            try
+            {
+                var gv = sender as GridView;
+                var info = e.Info as GridGroupRowInfo;
+                if (info == null)
+                    return;
+                info.GroupText = string.Format("{1} ({2})", info.Column.Caption, info.GroupValueText, gv.GetChildRowCount(e.RowHandle));
+            }
+            catch (Exception ex)
+            {
+                Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
+                WinCommons.ShowMessageDialog(ex.Message, Enums.MessageBoxType.Error);
+            }
         }
     }
 }

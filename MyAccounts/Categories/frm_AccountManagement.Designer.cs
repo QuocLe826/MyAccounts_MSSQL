@@ -322,6 +322,7 @@ namespace MyAccounts.Forms.Categories
             this.gv_AccManagement.OptionsView.ShowVerticalLines = DevExpress.Utils.DefaultBoolean.True;
             this.gv_AccManagement.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.gc_Group, DevExpress.Data.ColumnSortOrder.Ascending)});
+            this.gv_AccManagement.CustomDrawGroupRow += new DevExpress.XtraGrid.Views.Base.RowObjectCustomDrawEventHandler(this.gv_AccManagement_CustomDrawGroupRow);
             // 
             // gc_Code
             // 

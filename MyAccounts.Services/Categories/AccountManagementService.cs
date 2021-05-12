@@ -57,7 +57,8 @@ namespace MyAccounts.Services.Categories
                 {
                     foreach (DataRow row in dt.Rows)
                     {
-                        row["Password"] = RSASecurity.Decrypt(Functions.ToString(row["Password"]));
+                        row["Username"] = RSASecurity.Decrypt(Functions.ToString(row["Username"]) + "=");
+                        row["Password"] = RSASecurity.Decrypt(Functions.ToString(row["Password"]) + "=");
                     }
                     dt.AcceptChanges();
                 }
@@ -79,7 +80,8 @@ namespace MyAccounts.Services.Categories
                 {
                     foreach (DataRow row in dt.Rows)
                     {
-                        row["Password"] = RSASecurity.Decrypt(Functions.ToString(row["Password"]));
+                        row["Username"] = RSASecurity.Decrypt(Functions.ToString(row["Username"]) + "=");
+                        row["Password"] = RSASecurity.Decrypt(Functions.ToString(row["Password"]) + "=");
                     }
                     dt.AcceptChanges();
                 }
@@ -118,6 +120,11 @@ namespace MyAccounts.Services.Categories
         {
             try
             {
+                var userEncrypt = RSASecurity.Encrypt(dicData["Username"]);
+                var pwdEncrypt = RSASecurity.Encrypt(dicData["Password"]);
+                dicData["Username"] = userEncrypt.Substring(0, userEncrypt.Length - 1);
+                dicData["Password"] = pwdEncrypt.Substring(0, pwdEncrypt.Length - 1);
+
                 var query = "AccountManagement_ProcessData";
                 var result = ExecuteDataTable(query, CommandType.StoredProcedure,
                     new SqlParameter("@code", dicData["Code"]),
@@ -129,6 +136,7 @@ namespace MyAccounts.Services.Categories
                     new SqlParameter("@status", dicData["Status"]),
                     new SqlParameter("@descriptions", dicData["Descriptions"]),
                     new SqlParameter("@actionType", actionType));
+
                 if (result.Rows.Count > 0)
                 {
                     return "";

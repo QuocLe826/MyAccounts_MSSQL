@@ -74,6 +74,7 @@ namespace MyAccounts.Forms
                     resource.ApplyResources(control, control.Name, new CultureInfo(language));
                 }
                 _language = language;
+                GlobalData.DefaultLanguage = language;
             }
             catch (Exception ex)
             {
@@ -191,7 +192,10 @@ namespace MyAccounts.Forms
                     if (WriteConfig("MYACCOUNTS"))
                     {
                         api = new CommonsController();
-                        result = api.InsertUserInfo(txt_FirstName.Text.Trim(), txt_LastName.Text.Trim(), txt_UserLogin.Text.Trim(), RSASecurity.Encrypt(txt_Password.Text.Trim()));
+                        var passEncrypt = RSASecurity.Encrypt(txt_Password.Text.Trim());
+                        var passEncrypt1 = passEncrypt.Substring(0, passEncrypt.Length - 1);
+
+                        result = api.InsertUserInfo(txt_FirstName.Text.Trim(), txt_LastName.Text.Trim(), txt_UserLogin.Text.Trim(), passEncrypt1);
                         if (!string.IsNullOrEmpty(result))
                         {
                             WinCommons.ShowMessageDialog(result,  Enums.MessageBoxType.Error);
