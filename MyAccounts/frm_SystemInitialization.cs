@@ -20,16 +20,19 @@ namespace MyAccounts.Forms
 {
     public partial class frm_SystemInitialization : XtraForm
     {
-        private string _language = string.Empty;
+        private string _language = "en-US";
         private readonly ResourceManager _resource = new ResourceManager(typeof(frm_SystemInitialization));
 
         #region Constructor
         public frm_SystemInitialization()
         {
             InitializeComponent();
+            GlobalData.DefaultLanguage = "en-US";
         }
 
         #endregion
+
+        #region Methods
 
         private bool WriteConfig(string databaseName)
         {
@@ -59,11 +62,12 @@ namespace MyAccounts.Forms
             }
         }
 
-        private void ChangeLanguage(string language)
+        private void SetLanguage(string language)
         {
             try
             {
                 Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
+                this.Text = language == "en-US" ? "System Initialization" : "Khởi tạo hệ thống";
                 foreach (Control control in this.Controls)
                 {
                     var resource = new ComponentResourceManager(typeof(frm_SystemInitialization));
@@ -77,17 +81,34 @@ namespace MyAccounts.Forms
             }
         }
 
+        #endregion
+
         #region Events
 
         private void frm_SystemInitialization_Load(object sender, EventArgs e)
         {
-            lk_Authentication.Properties.DataSource = CommonConstants.DicAuthentications;
+            try
+            {
+                var resourcesExists = File.Exists("System//Images//add.svg") && File.Exists("System//Images//edit.svg");
+                var dbExists = File.Exists("System//config//initserver");
+                if (!resourcesExists || !dbExists)
+                {
+                    WinCommons.ShowMessageDialog(_resource.GetString("SystemFilesCannotBeFound"), Enums.MessageBoxType.Error);
+                    this.Close();
+                    return;
+                }
+                lk_Authentication.Properties.DataSource = CommonConstants.DicAuthentications;
+            }
+            catch (Exception ex)
+            {
+                Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
+                WinCommons.ShowMessageDialog(ex.Message, Enums.MessageBoxType.Error);
+            }
         }
 
         private void btn_Cancel_Click(object sender, EventArgs e)
         {
-            this.Dispose();
-            Application.Exit();
+            this.Close();
         }
 
         private void btn_OK_Click(object sender, EventArgs e)
@@ -231,15 +252,15 @@ namespace MyAccounts.Forms
         private void rd_Languages_SelectedIndexChanged(object sender, EventArgs e)
         {
             var language = rd_Languages.SelectedIndex == 0 ? "en-US" : "vi-VN";
-            ChangeLanguage(language);
+            SetLanguage(language);
         }
-
-        #endregion
 
         private void frm_SystemInitialization_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.Dispose();
             Application.Exit();
         }
+
+        #endregion
     }
 }

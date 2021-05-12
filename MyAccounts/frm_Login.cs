@@ -33,6 +33,7 @@ namespace MyAccounts.Forms
             try
             {
                 Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
+                this.Text = language == "en-US" ? "Login" : "Đăng nhập";
                 foreach (Control control in this.Controls)
                 {
                     var resource = new ComponentResourceManager(typeof(frm_Login));
@@ -190,8 +191,7 @@ namespace MyAccounts.Forms
 
         private void frm_Login_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.Dispose();
-            Application.Exit();
+            
         }
     }
 }

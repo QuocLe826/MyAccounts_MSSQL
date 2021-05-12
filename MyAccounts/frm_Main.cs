@@ -13,7 +13,6 @@ namespace MyAccounts.Forms
 {
     public partial class frm_Main : XtraForm
     {
-
         private readonly ResourceManager _resources = new ResourceManager(typeof(frm_Main));
 
         public frm_Main()
@@ -99,8 +98,7 @@ namespace MyAccounts.Forms
 
         private void btn_Exit_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            this.Dispose();
-            Application.Exit();
+            this.Close();
         }
 
         private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

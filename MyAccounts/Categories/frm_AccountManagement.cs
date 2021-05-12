@@ -121,7 +121,7 @@ namespace MyAccounts.Forms.Categories
 
         private void grd_AccManagement_DoubleClick(object sender, EventArgs e)
         {
-            if (gv_AccManagement.IsRowSelected(gv_AccManagement.FocusedRowHandle))
+            if (gv_AccManagement.IsRowSelected(gv_AccManagement.FocusedRowHandle) && !gv_AccManagement.IsGroupRow(gv_AccManagement.FocusedRowHandle))
             {
                 btn_ShowAccInfo_ItemClick(sender, null);
             }

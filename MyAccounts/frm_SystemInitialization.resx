@@ -133,8 +133,8 @@
   <data name="&gt;&gt;txt_ServerPassword.Name" xml:space="preserve">
     <value>txt_ServerPassword</value>
   </data>
-  <data name="&gt;&gt;lk_Authentication.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;labelControl6.Name" xml:space="preserve">
+    <value>labelControl6</value>
   </data>
   <data name="&gt;&gt;txt_ServerUser.ZOrder" xml:space="preserve">
     <value>9</value>
@@ -177,23 +177,20 @@
   <data name="&gt;&gt;lbl_ServerPassword.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="txt_FirstName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>308, 20</value>
-  </data>
   <data name="btn_OK.Text" xml:space="preserve">
     <value>OK</value>
   </data>
-  <data name="&gt;&gt;lbl_ServerUser.ZOrder" xml:space="preserve">
-    <value>16</value>
+  <data name="&gt;&gt;btn_OK.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lk_Authentication.Location" type="System.Drawing.Point, System.Drawing">
+    <value>292, 123</value>
   </data>
   <data name="&gt;&gt;labelControl8.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_Cancel.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="&gt;&gt;rd_Languages.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="&gt;&gt;lk_Authentication.Parent" xml:space="preserve">
     <value>$this</value>
@@ -207,14 +204,14 @@
   <data name="&gt;&gt;txt_ServerUser.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>609, 454</value>
+  <data name="&gt;&gt;lbl_ServerUser.ZOrder" xml:space="preserve">
+    <value>16</value>
   </data>
   <data name="&gt;&gt;txt_ServerName.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="&gt;&gt;lbl_ServerUser.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="txt_Password.Size" type="System.Drawing.Size, System.Drawing">
+    <value>308, 20</value>
   </data>
   <data name="labelControl6.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 13</value>
@@ -234,8 +231,8 @@
   <data name="&gt;&gt;txt_Password.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;btn_OK.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="txt_FirstName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>308, 20</value>
   </data>
   <data name="lbl_ServerPassword.Location" type="System.Drawing.Point, System.Drawing">
     <value>292, 194</value>
@@ -243,27 +240,8 @@
   <data name="btn_Cancel.Location" type="System.Drawing.Point, System.Drawing">
     <value>525, 418</value>
   </data>
-  <data name="btn_OK.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACF0RVh0VGl0
-        bGUAQXBwbHk7T0s7Q2hlY2s7QmFycztSaWJib247ZGPIaAAAA6ZJREFUOE9Nk31Q03Ucx3+iqwzOhE6t
-        MxsDOcbDhgPtziPoCGXkJIq6FQsn0WSOjRKIpzTmgRMfuKwpA2zLjFUzIPAIXCDIIiYPTWyDxThQntp4
-        iAeBjP569/3Nuut397r73X0/79fn87n7fqnJlQZq7qGJIt86wvqMC+yYXG2o7ng1p19pCFtQfsvtP6Hn
-        NGSVBwvJ+WMEj/m/zJTrzxvU1Eo9RblWje5wUhZrW6Y6yFhasw+tVhXsTgPmVrswNFMD09BZqJsFKPgy
-        tE9U6BdIN5p9eOuRgA4L0pnPZHwaPGwwHcPkchOGlyoxMK/Cnblc2BfPYHRZC9dqCxotBcjXcWeT8/24
-        JOcxsVznFmx47zS7qc5cAMfCZXT8fgSdLgnMLhm6p+XomVGgZ1aOZrsYv81XoNV2GorPQqzbd3p60c2p
-        pGw//nFtLOx/lKPlvghtE2LcmnoXJqcEXU4pbk9LUXR1Lw5kMiE5z4ZjsRJltQk4VBSQSTen3v4ooKah
-        Ox83x9JwY1RIJMloG09BOxGZpg5DWsZG3icyjIw7wZdvww9Dh9E2WII0VaCZCDZSwkL/kXZHAa4PJ0Hd
-        EoUY2UbkacNgvPcWcqo4KNLkwDW7BMWZRFxuFeHHe+/g9oQSaaXsNSLwot7M8182OtJhsMUhRuqJPqsV
-        +RcyECv3docnpx/g/FfZUH0TR6YTo95xED9NyJF6KhAhkd7PUq9l+97X9wpgsO6DujERGcWvwjmzhKbO
-        DoxOLmJg9A4Sc7fDOJKK2qF4fGfno3bgdYg+DqAn2EQlKFjNZY1RuGLZi2uDAhRXx6K4QoaFB2tYWPkb
-        h5R7cPVnIQyDsdDboqH/9UWU34zBGzksCxF4Ui+Ld4jTz3HxhSUSFb27cM0mQFb5bujqS2Hqv47Uc/5k
-        vf240v8CPrdEoPpuNI5d4oEveV5JBI8TqCcFct+7J77moqo3AppuLlnnIFJKfBEppaBp34+qPh4qCdpf
-        dqOkjofED1g2Lx/G0yTrQQvWR8Rv5SVk+s1/qAsigjBoerhkTyGaho9CRybT9Owi8nAU6kOQlOO/Fh63
-        JYrkGJ0T71OUaVxGSxjh8Vv3HJD5jqSc3Imi2iCou0JxqZuDi2YOTn4fjFRVAF45yhzgPQrTo69zZzvG
-        JLSAfokbyFg+0cnPFcZJmGaBnAU3Chb4R5jWl0Q7Tnk+xdhC6hh0PZ1zZ//7+VdE70Tb6Xu+meBD8CZs
-        IjxB8Ph/fceYhPoHAkQRj5PgdPMAAAAASUVORK5CYII=
-</value>
+  <data name="&gt;&gt;lk_Authentication.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="btn_Cancel.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -292,9 +270,6 @@
   <data name="&gt;&gt;rd_Languages.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="txt_Password.Size" type="System.Drawing.Size, System.Drawing">
-    <value>308, 20</value>
-  </data>
   <data name="&gt;&gt;labelControl1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -307,14 +282,17 @@
   <data name="txt_ServerPassword.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;txt_ServerPassword.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;rd_Languages.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="txt_LastName.Size" type="System.Drawing.Size, System.Drawing">
     <value>308, 20</value>
   </data>
-  <data name="labelControl2.Text" xml:space="preserve">
-    <value>Authentication</value>
+  <data name="&gt;&gt;lbl_ServerUser.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_ServerPassword.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="&gt;&gt;labelControl8.ZOrder" xml:space="preserve">
     <value>11</value>
@@ -334,23 +312,14 @@
   <data name="LastNameCannotBeEmptyValue" xml:space="preserve">
     <value>Last Name cannot be empty value!</value>
   </data>
-  <data name="PasswordCannotBeEmptyValue" xml:space="preserve">
-    <value>Password cannot be empty value!</value>
-  </data>
   <data name="labelControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;labelControl6.Name" xml:space="preserve">
-    <value>labelControl6</value>
   </data>
   <data name="&gt;&gt;labelControl2.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;labelControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="txt_ServerPassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>308, 20</value>
+  <data name="ServerNameCannotBeEmptyValue" xml:space="preserve">
+    <value>Server Name cannot be empty value!</value>
   </data>
   <data name="&gt;&gt;txt_LastName.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -370,11 +339,14 @@
   <data name="rd_Languages.Properties.Items1" xml:space="preserve">
     <value>English</value>
   </data>
+  <data name="&gt;&gt;txt_Password.Name" xml:space="preserve">
+    <value>txt_Password</value>
+  </data>
   <data name="&gt;&gt;rd_Languages.Name" xml:space="preserve">
     <value>rd_Languages</value>
   </data>
-  <data name="&gt;&gt;labelControl2.ZOrder" xml:space="preserve">
-    <value>17</value>
+  <data name="labelControl3.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="txt_ServerPassword.Location" type="System.Drawing.Point, System.Drawing">
     <value>292, 213</value>
@@ -387,6 +359,9 @@
   </data>
   <data name="lbl_ServerPassword.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="labelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 13</value>
   </data>
   <data name="labelControl5.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -433,9 +408,6 @@
   <data name="labelControl7.Text" xml:space="preserve">
     <value>First Name</value>
   </data>
-  <data name="FirstNameCannotBeEmptyValue" xml:space="preserve">
-    <value>First Name cannot be empty value!</value>
-  </data>
   <data name="&gt;&gt;labelControl6.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
@@ -464,17 +436,17 @@
         8j91kUbX3K/WKgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="lk_Authentication.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 123</value>
-  </data>
   <data name="labelControl5.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;txt_Password.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="pictureEdit1.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 114</value>
   </data>
-  <data name="&gt;&gt;txt_Password.Name" xml:space="preserve">
-    <value>txt_Password</value>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="lbl_ServerUser.Location" type="System.Drawing.Point, System.Drawing">
     <value>292, 149</value>
@@ -503,14 +475,17 @@
   <data name="lbl_ServerUser.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
+  <data name="txt_ServerUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>292, 168</value>
+  </data>
   <data name="&gt;&gt;txt_ServerName.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="txt_LastName.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="txt_ServerName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
+  <data name="PasswordCannotBeEmptyValue" xml:space="preserve">
+    <value>Password cannot be empty value!</value>
   </data>
   <data name="lbl_ServerPassword.Size" type="System.Drawing.Size, System.Drawing">
     <value>95, 13</value>
@@ -518,11 +493,11 @@
   <data name="&gt;&gt;txt_Password.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;txt_ServerPassword.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;labelControl2.ZOrder" xml:space="preserve">
+    <value>17</value>
   </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
+  <data name="&gt;&gt;lk_Authentication.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="labelControl7.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -541,9 +516,6 @@
   </data>
   <data name="&gt;&gt;txt_FirstName.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="rd_Languages.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 28</value>
   </data>
   <data name="labelControl8.Location" type="System.Drawing.Point, System.Drawing">
     <value>292, 284</value>
@@ -743,12 +715,6 @@
   <data name="&gt;&gt;labelControl1.Name" xml:space="preserve">
     <value>labelControl1</value>
   </data>
-  <data name="labelControl3.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="labelControl8.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
   <data name="frm_SystemInitialization.IconOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIwLjEsIFZlcnNpb249MjAuMS4z
@@ -931,9 +897,6 @@
         PGcgLz4NCjwvc3ZnPgs=
 </value>
   </data>
-  <data name="txt_Password.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
   <data name="labelControl8.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -949,14 +912,11 @@
   <data name="&gt;&gt;txt_FirstName.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
   <data name="txt_LastName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="&gt;&gt;labelControl8.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="rd_Languages.Properties.Items2" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -967,11 +927,17 @@
   <data name="rd_Languages.Properties.Items" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
+  <data name="labelControl6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>292, 373</value>
+  </data>
   <data name="labelControl1.Text" xml:space="preserve">
     <value>Server Name</value>
   </data>
   <data name="labelControl7.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="UserLoginCannotBeEmptyValue" xml:space="preserve">
+    <value>User login cannot be empty value!</value>
   </data>
   <data name="txt_Password.Location" type="System.Drawing.Point, System.Drawing">
     <value>292, 392</value>
@@ -988,41 +954,66 @@
   <data name="&gt;&gt;labelControl7.Name" xml:space="preserve">
     <value>labelControl7</value>
   </data>
+  <data name="&gt;&gt;labelControl1.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
   <data name="txt_ServerUser.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="&gt;&gt;txt_UserLogin.Name" xml:space="preserve">
-    <value>txt_UserLogin</value>
+  <data name="FirstNameCannotBeEmptyValue" xml:space="preserve">
+    <value>First Name cannot be empty value!</value>
   </data>
   <data name="txt_UserLogin.Size" type="System.Drawing.Size, System.Drawing">
     <value>308, 20</value>
   </data>
-  <data name="UserLoginCannotBeEmptyValue" xml:space="preserve">
-    <value>User login cannot be empty value!</value>
+  <data name="labelControl2.Text" xml:space="preserve">
+    <value>Authentication</value>
   </data>
-  <data name="&gt;&gt;labelControl1.ZOrder" xml:space="preserve">
-    <value>19</value>
+  <data name="btn_OK.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACF0RVh0VGl0
+        bGUAQXBwbHk7T0s7Q2hlY2s7QmFycztSaWJib247ZGPIaAAAA6ZJREFUOE9Nk31Q03Ucx3+iqwzOhE6t
+        MxsDOcbDhgPtziPoCGXkJIq6FQsn0WSOjRKIpzTmgRMfuKwpA2zLjFUzIPAIXCDIIiYPTWyDxThQntp4
+        iAeBjP569/3Nuut397r73X0/79fn87n7fqnJlQZq7qGJIt86wvqMC+yYXG2o7ng1p19pCFtQfsvtP6Hn
+        NGSVBwvJ+WMEj/m/zJTrzxvU1Eo9RblWje5wUhZrW6Y6yFhasw+tVhXsTgPmVrswNFMD09BZqJsFKPgy
+        tE9U6BdIN5p9eOuRgA4L0pnPZHwaPGwwHcPkchOGlyoxMK/Cnblc2BfPYHRZC9dqCxotBcjXcWeT8/24
+        JOcxsVznFmx47zS7qc5cAMfCZXT8fgSdLgnMLhm6p+XomVGgZ1aOZrsYv81XoNV2GorPQqzbd3p60c2p
+        pGw//nFtLOx/lKPlvghtE2LcmnoXJqcEXU4pbk9LUXR1Lw5kMiE5z4ZjsRJltQk4VBSQSTen3v4ooKah
+        Ox83x9JwY1RIJMloG09BOxGZpg5DWsZG3icyjIw7wZdvww9Dh9E2WII0VaCZCDZSwkL/kXZHAa4PJ0Hd
+        EoUY2UbkacNgvPcWcqo4KNLkwDW7BMWZRFxuFeHHe+/g9oQSaaXsNSLwot7M8182OtJhsMUhRuqJPqsV
+        +RcyECv3docnpx/g/FfZUH0TR6YTo95xED9NyJF6KhAhkd7PUq9l+97X9wpgsO6DujERGcWvwjmzhKbO
+        DoxOLmJg9A4Sc7fDOJKK2qF4fGfno3bgdYg+DqAn2EQlKFjNZY1RuGLZi2uDAhRXx6K4QoaFB2tYWPkb
+        h5R7cPVnIQyDsdDboqH/9UWU34zBGzksCxF4Ui+Ld4jTz3HxhSUSFb27cM0mQFb5bujqS2Hqv47Uc/5k
+        vf240v8CPrdEoPpuNI5d4oEveV5JBI8TqCcFct+7J77moqo3AppuLlnnIFJKfBEppaBp34+qPh4qCdpf
+        dqOkjofED1g2Lx/G0yTrQQvWR8Rv5SVk+s1/qAsigjBoerhkTyGaho9CRybT9Owi8nAU6kOQlOO/Fh63
+        JYrkGJ0T71OUaVxGSxjh8Vv3HJD5jqSc3Imi2iCou0JxqZuDi2YOTn4fjFRVAF45yhzgPQrTo69zZzvG
+        JLSAfokbyFg+0cnPFcZJmGaBnAU3Chb4R5jWl0Q7Tnk+xdhC6hh0PZ1zZ//7+VdE70Tb6Xu+meBD8CZs
+        IjxB8Ph/fceYhPoHAkQRj5PgdPMAAAAASUVORK5CYII=
+</value>
   </data>
   <data name="&gt;&gt;txt_UserLogin.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;txt_Password.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;labelControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;txt_ServerPassword.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="txt_ServerPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>308, 20</value>
   </data>
   <data name="labelControl3.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 13</value>
   </data>
-  <data name="&gt;&gt;lk_Authentication.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;labelControl8.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="txt_LastName.Location" type="System.Drawing.Point, System.Drawing">
     <value>292, 303</value>
   </data>
-  <data name="btn_OK.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="&gt;&gt;txt_ServerPassword.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="txt_Password.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <assembly alias="DevExpress.Utils.v20.1" name="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
   <data name="lk_Authentication.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.1">
@@ -1031,8 +1022,8 @@
   <data name="labelControl3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="labelControl6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 373</value>
+  <data name="txt_ServerName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="txt_ServerName.Size" type="System.Drawing.Size, System.Drawing">
     <value>308, 20</value>
@@ -1040,17 +1031,14 @@
   <data name="&gt;&gt;txt_ServerUser.Name" xml:space="preserve">
     <value>txt_ServerUser</value>
   </data>
-  <data name="&gt;&gt;pictureEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PictureEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
   <data name="labelControl6.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;lbl_ServerPassword.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="labelControl8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 13</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>609, 454</value>
   </data>
   <data name="&gt;&gt;btn_Cancel.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1061,8 +1049,8 @@
   <data name="txt_FirstName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="labelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 13</value>
+  <data name="&gt;&gt;pictureEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PictureEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="labelControl2.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 13</value>
@@ -1070,8 +1058,17 @@
   <data name="ConnectToServerFailed" xml:space="preserve">
     <value>Connect to Server failed!</value>
   </data>
+  <data name="lk_Authentication.Size" type="System.Drawing.Size, System.Drawing">
+    <value>308, 20</value>
+  </data>
+  <data name="&gt;&gt;lk_Authentication.Name" xml:space="preserve">
+    <value>lk_Authentication</value>
+  </data>
   <data name="lbl_ServerUser.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;txt_ServerPassword.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="txt_UserLogin.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -1079,11 +1076,8 @@
   <data name="lk_Authentication.Properties.NullText" xml:space="preserve">
     <value>Select Authentication</value>
   </data>
-  <data name="lk_Authentication.Size" type="System.Drawing.Size, System.Drawing">
-    <value>308, 20</value>
-  </data>
-  <data name="ServerNameCannotBeEmptyValue" xml:space="preserve">
-    <value>Server Name cannot be empty value!</value>
+  <data name="rd_Languages.Location" type="System.Drawing.Point, System.Drawing">
+    <value>292, 28</value>
   </data>
   <data name="txt_ServerUser.Size" type="System.Drawing.Size, System.Drawing">
     <value>308, 20</value>
@@ -1097,11 +1091,17 @@
   <data name="&gt;&gt;pictureEdit1.ZOrder" xml:space="preserve">
     <value>20</value>
   </data>
+  <data name="labelControl8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
   <data name="&gt;&gt;lbl_ServerUser.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;lk_Authentication.Name" xml:space="preserve">
-    <value>lk_Authentication</value>
+  <data name="btn_OK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="labelControl8.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="pictureEdit1.Size" type="System.Drawing.Size, System.Drawing">
     <value>281, 232</value>
@@ -1109,8 +1109,8 @@
   <data name="&gt;&gt;labelControl5.Name" xml:space="preserve">
     <value>labelControl5</value>
   </data>
-  <data name="txt_ServerUser.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 168</value>
+  <data name="&gt;&gt;txt_UserLogin.Name" xml:space="preserve">
+    <value>txt_UserLogin</value>
   </data>
   <data name="&gt;&gt;labelControl2.Name" xml:space="preserve">
     <value>labelControl2</value>
@@ -1118,10 +1118,10 @@
   <data name="lk_Authentication.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>vi-VN</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
+  </data>
+  <data name="SystemFilesCannotBeFound" xml:space="preserve">
+    <value>System files cannot be found!</value>
+  </data>
 </root>

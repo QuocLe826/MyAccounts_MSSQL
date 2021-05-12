@@ -590,4 +590,7 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Khởi tạo hệ thống</value>
   </data>
+  <data name="SystemFilesCannotBeFound" xml:space="preserve">
+    <value>Không tìm thấy tập tin hệ thống!</value>
+  </data>
 </root>

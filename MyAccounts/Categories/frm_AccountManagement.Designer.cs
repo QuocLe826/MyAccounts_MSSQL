@@ -309,9 +309,19 @@ namespace MyAccounts.Forms.Categories
             this.gc_Status,
             this.gc_Desc});
             this.gv_AccManagement.GridControl = this.grd_AccManagement;
+            this.gv_AccManagement.GroupCount = 1;
+            this.gv_AccManagement.GroupRowHeight = 25;
             this.gv_AccManagement.Name = "gv_AccManagement";
+            this.gv_AccManagement.OptionsBehavior.AutoExpandAllGroups = true;
             this.gv_AccManagement.OptionsBehavior.Editable = false;
+            this.gv_AccManagement.OptionsView.BestFitMode = DevExpress.XtraGrid.Views.Grid.GridBestFitMode.Fast;
+            this.gv_AccManagement.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.True;
+            this.gv_AccManagement.OptionsView.GroupDrawMode = DevExpress.XtraGrid.Views.Grid.GroupDrawMode.Standard;
+            this.gv_AccManagement.OptionsView.RowAutoHeight = true;
             this.gv_AccManagement.OptionsView.ShowGroupPanel = false;
+            this.gv_AccManagement.OptionsView.ShowVerticalLines = DevExpress.Utils.DefaultBoolean.True;
+            this.gv_AccManagement.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
+            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.gc_Group, DevExpress.Data.ColumnSortOrder.Ascending)});
             // 
             // gc_Code
             // 
@@ -358,7 +368,10 @@ namespace MyAccounts.Forms.Categories
             // 
             resources.ApplyResources(this.gc_Group, "gc_Group");
             this.gc_Group.FieldName = "AccGroupName";
+            this.gc_Group.GroupFormat.FormatString = "{1}";
             this.gc_Group.Name = "gc_Group";
+            this.gc_Group.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
+            this.gc_Group.OptionsColumn.ShowCaption = false;
             this.gc_Group.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem()});
             // 
