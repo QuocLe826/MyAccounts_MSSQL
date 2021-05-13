@@ -133,7 +133,6 @@ namespace MyAccounts.Forms.Categories
             this.MinimizeBox = false;
             this.Name = "frm_ShowAccountInfo";
             this.ShowInTaskbar = false;
-            this.Load += new System.EventHandler(this.frm_ShowAccountInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txt_Name.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Username.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Password.Properties)).EndInit();

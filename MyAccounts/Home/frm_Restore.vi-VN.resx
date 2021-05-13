@@ -233,4 +233,7 @@
   <data name="RestoreSuccessfully" xml:space="preserve">
     <value>Khôi phục thành công</value>
   </data>
+  <data name="AreYouSureToRestoreSystem" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn khôi phục lại hệ thống?</value>
+  </data>
 </root>

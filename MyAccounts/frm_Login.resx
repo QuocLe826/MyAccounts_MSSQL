@@ -340,7 +340,8 @@
   <data name="txt_Username.Size" type="System.Drawing.Size, System.Drawing">
     <value>275, 20</value>
   </data>
-  <data name="SystemFilesCannotBeFound" xml:space="preserve">
+  <data name="
+		" xml:space="preserve">
     <value>System files cannot be found!</value>
   </data>
   <data name="&gt;&gt;btn_Login.ZOrder" xml:space="preserve">

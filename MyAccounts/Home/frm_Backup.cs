@@ -34,15 +34,15 @@ namespace MyAccounts.Forms.Home
                 {
                     var path = xtraSaveFileDialog.FileName;
                     var res = _commonApi.BackupDatabase(path);
-                    if (string.IsNullOrEmpty(res))
+                    if (!string.IsNullOrEmpty(res.Item1) && !string.IsNullOrEmpty(res.Item2))
                     {
-                        WinCommons.ShowMessageDialog(_resources.GetString("BackupSuccessfully"), Enums.MessageBoxType.Information);
-                        this.Close();
+                        var message = string.Format(@"{0}{1}{2}", _resources.GetString("BackupFailed"), Environment.NewLine,
+                            GlobalData.DefaultLanguage == "en-US" ? res.Item1 : res.Item2);
+                        WinCommons.ShowMessageDialog(message, Enums.MessageBoxType.Error);
+                        return;
                     }
-                    else
-                    {
-                        WinCommons.ShowMessageDialog(_resources.GetString("BackupFailed"),  Enums.MessageBoxType.Error);
-                    }
+                    WinCommons.ShowMessageDialog(_resources.GetString("BackupSuccessfully"), Enums.MessageBoxType.Information);
+                    this.Close();
                 }
             }
             catch (Exception ex)

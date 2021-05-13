@@ -3,7 +3,6 @@ using System.Diagnostics;
 using System.Resources;
 using System.Windows.Forms;
 using MyAccounts.Api.Commons;
-using MyAccounts.Libraries.Constants;
 using MyAccounts.Libraries.Enums;
 using MyAccounts.Libraries.Logging;
 
@@ -29,18 +28,23 @@ namespace MyAccounts.Forms.Home
                     btn_RestoreFile.Focus();
                     return;
                 }
-                var path = xtraOpenFileDialog.FileName;
-                var res = _commonApi.RestoreDatabase(path);
-                if (string.IsNullOrEmpty(res))
+
+                if (WinCommons.ShowMessageDialog(_resources.GetString("AreYouSureToRestoreSystem"), Enums.MessageBoxType.Question) == DialogResult.Yes)
                 {
-                    WinCommons.ShowMessageDialog(_resources.GetString("RestoreSuccessfully"), Enums.MessageBoxType.Information);
-                    this.Close();
-                    Application.Restart();
+                    var path = xtraOpenFileDialog.FileName;
+                    var res = _commonApi.RestoreDatabase(path);
+                    if (string.IsNullOrEmpty(res.Item1))
+                    {
+                        WinCommons.ShowMessageDialog(_resources.GetString("RestoreSuccessfully"), Enums.MessageBoxType.Information);
+                        this.Close();
+                        Application.Restart();
+                    }
+                    else
+                    {
+                        WinCommons.ShowMessageDialog(_resources.GetString("RestoreFailed"), Enums.MessageBoxType.Error);
+                    }
                 }
-                else
-                {
-                    WinCommons.ShowMessageDialog(_resources.GetString("RestoreFailed"),  Enums.MessageBoxType.Error);
-                }
+               
             }
             catch (Exception ex)
             {

@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.IO;
 using MyAccounts.Libraries.Security;
+using System.Windows.Forms;
 
 namespace MyAccounts.Api
 {
     public class BaseController
     {
-        private const string CONFIG_FILE = "System//config//serverconfig.json";
+        private readonly string CONFIG_FILE = Application.StartupPath + "//System//config//serverconfig.json";
         public string ConnectionString { get; set; }
 
         public BaseController()

@@ -1,4 +1,5 @@
-﻿using MyAccounts.Services.Commons;
+﻿using System;
+using MyAccounts.Services.Commons;
 
 namespace MyAccounts.Api.Commons
 {
@@ -10,17 +11,17 @@ namespace MyAccounts.Api.Commons
              _service = new CommonsService(ConnectionString);
         }
 
-        public string InsertUserInfo(string firstName, string lastName, string userName, string password)
+        public Tuple<string, string> InsertUserInfo(string firstName, string lastName, string userName, string password)
         {
             return _service.InsertUserInfo(firstName, lastName, userName, password);
         }
 
-        public string BackupDatabase(string path)
+        public Tuple<string, string> BackupDatabase(string path)
         {
             return _service.BackupDatabase(path);
         }
 
-        public string RestoreDatabase(string path)
+        public Tuple<string, string> RestoreDatabase(string path)
         {
             return _service.RestoreDatabase(path);
         }

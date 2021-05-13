@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MyAccounts.Libraries.Helpers;
 using MyAccounts.Services.BaseServices;
 
@@ -17,7 +13,7 @@ namespace MyAccounts.Services.Commons
             ConnectionString = connectionString;
         }
 
-        public string InsertUserInfo(string firstName, string lastName, string userName, string password)
+        public Tuple<string, string> InsertUserInfo(string firstName, string lastName, string userName, string password)
         {
             try
             {
@@ -29,35 +25,40 @@ namespace MyAccounts.Services.Commons
                     new SqlParameter("@password", password));
                 if (res.Rows.Count <= 0)
                 {
-                    return "Create new user failed!";
+                    return new Tuple<string, string>("Create new user failed!", "Tạo người dùng thất bại!");
                 }
-                return "";
+                return new Tuple<string, string>("", "");
             }
             catch (Exception ex)
             {
-                return ex.Message;
+                return new Tuple<string, string>("", "");
             }
         }
 
-        public string BackupDatabase(string path)
+        public Tuple<string, string> BackupDatabase(string path)
         {
             try
             {
                 var query = string.Format(@"BACKUP DATABASE MYACCOUNTS TO DISK = '{0}'", path);
                 var res = ExecuteNonQuery(query);
-                return "";
+                return new Tuple<string, string>("", "");
             }
             catch (Exception ex)
             {
-                return ex.Message;
+                return new Tuple<string, string>(ex.Message, ex.Message);
             }
         }
 
-        public string RestoreDatabase(string path)
+        public Tuple<string, string> RestoreDatabase(string path)
         {
             try
             {
-                var query = string.Format(@"RESTORE DATABASE MYACCOUNTS FROM DISK = '{0}'
+                var query = string.Format(@"IF EXISTS(SELECT 1 FROM sys.DATABASES where name = 'MYACCOUNTS')
+                                            BEGIN
+                                                USE master
+                                                DROP DATABASE MYACCOUNTS
+                                            END
+                                            RESTORE DATABASE MYACCOUNTS FROM DISK = '{0}'
                                             IF EXISTS(SELECT 1 FROM SYS.DATABASES WHERE NAME = 'MYACCOUNTS')
                                             BEGIN
 	                                            SELECT 1
@@ -65,13 +66,13 @@ namespace MyAccounts.Services.Commons
                 var dt = ExecuteDataTable(query);
                 if (dt.Rows.Count > 0 && Functions.ParseInteger(dt.Rows[0][0]) == 1)
                 {
-                    return "";
+                    return new Tuple<string, string>("", "");
                 }
-                return "Initialized system failed!";
+                return new Tuple<string, string>("Restore system failed!", "Khôi phục hệ thống thất bại!");
             }
             catch (Exception ex)
             {
-                return ex.Message;
+                return new Tuple<string, string>(ex.Message, ex.Message);
             }
         }
     }

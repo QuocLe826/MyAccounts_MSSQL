@@ -180,9 +180,9 @@ namespace MyAccounts.Forms
                     var path = string.Format(@"{0}//System//config//initserver", Application.StartupPath);
                     var api = new CommonsController();
                     var result = api.RestoreDatabase(path);
-                    if (!string.IsNullOrEmpty(result))
+                    if (!string.IsNullOrEmpty(result.Item1) && !string.IsNullOrEmpty(result.Item2))
                     {
-                        WinCommons.ShowMessageDialog(result,  Enums.MessageBoxType.Error);
+                        WinCommons.ShowMessageDialog(GlobalData.DefaultLanguage == "en-US" ? result.Item1 : result.Item2, Enums.MessageBoxType.Error);
                         File.Delete(GlobalData.CONFIG_PATH);
                         WinCommons.CloseCursorProcessing(this);
                         return;
@@ -195,9 +195,9 @@ namespace MyAccounts.Forms
                         var passEncrypt1 = passEncrypt.Substring(0, passEncrypt.Length - 1);
 
                         result = api.InsertUserInfo(txt_FirstName.Text.Trim(), txt_LastName.Text.Trim(), txt_UserLogin.Text.Trim(), passEncrypt1);
-                        if (!string.IsNullOrEmpty(result))
+                        if (!string.IsNullOrEmpty(result.Item1) && !string.IsNullOrEmpty(result.Item2))
                         {
-                            WinCommons.ShowMessageDialog(result,  Enums.MessageBoxType.Error);
+                            WinCommons.ShowMessageDialog(GlobalData.DefaultLanguage == "en-US" ? result.Item1 : result.Item2, Enums.MessageBoxType.Error);
                             File.Delete(GlobalData.CONFIG_PATH);
                             WinCommons.CloseCursorProcessing(this);
                             return;
