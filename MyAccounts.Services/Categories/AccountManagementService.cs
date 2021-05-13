@@ -104,7 +104,8 @@ namespace MyAccounts.Services.Categories
                 {
                     foreach (DataRow row in dt.Rows)
                     {
-                        row["Password"] = RSASecurity.Decrypt(Functions.ToString(row["Password"]));
+                        row["Username"] = RSASecurity.Decrypt(Functions.ToString(row["Username"]) + "=");
+                        row["Password"] = RSASecurity.Decrypt(Functions.ToString(row["Password"]) + "=");
                     }
                     dt.AcceptChanges();
                 }

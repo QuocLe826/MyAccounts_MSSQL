@@ -66,14 +66,19 @@ namespace MyAccounts.Forms.Categories
             }
         }
 
-        private void btn_AddNew_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void ClearTextControls()
         {
-            _actionType = "A";
             txt_Code.ResetText();
             txt_Name.ResetText();
             lk_Status.ItemIndex = 0;
             txt_Desc.ResetText();
             txt_Code.Focus();
+        }
+
+        private void btn_AddNew_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            _actionType = "A";
+            ClearTextControls();
             EnableDisableControls(_actionType);
         }
 
@@ -200,6 +205,7 @@ namespace MyAccounts.Forms.Categories
         private void btn_Cancel_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             _actionType = string.Empty;
+            ClearTextControls();
             EnableDisableControls(_actionType);
         }
 
@@ -207,8 +213,7 @@ namespace MyAccounts.Forms.Categories
         {
             try
             {
-                if (WinCommons.ShowMessageDialog(_resources.GetString("AreYouSureToRemoveThisRecord"),
-                        Enums.MessageBoxType.Question) == DialogResult.Yes)
+                if (WinCommons.ShowMessageDialog(_resources.GetString("AreYouSureToRemoveThisRecord"), Enums.MessageBoxType.Question) == DialogResult.Yes)
                 {
                     WinCommons.OpenCursorProcessing(this);
                     var result = _accountGrpsApi.DeleteAccountGroups(txt_Code.Text.Trim());

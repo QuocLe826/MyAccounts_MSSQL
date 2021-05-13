@@ -66,6 +66,15 @@ namespace MyAccounts.Forms.Categories
             }
         }
 
+        private void ClearTextControls()
+        {
+            txt_Code.ResetText();
+            txt_Name.ResetText();
+            lk_Status.ItemIndex = 0;
+            txt_Desc.ResetText();
+            txt_Code.Focus();
+        }
+
         private void gv_AccountType_FocusedRowObjectChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowObjectChangedEventArgs e)
         {
             try
@@ -91,11 +100,7 @@ namespace MyAccounts.Forms.Categories
         private void btn_AddNew_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             _actionType = "A";
-            txt_Code.ResetText();
-            txt_Name.ResetText();
-            lk_Status.ItemIndex = 0;
-            txt_Desc.ResetText();
-            txt_Code.Focus();
+            ClearTextControls();
             EnableDisableControls(_actionType);
         }
 
@@ -189,6 +194,7 @@ namespace MyAccounts.Forms.Categories
         private void btn_Cancel_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             _actionType = string.Empty;
+            ClearTextControls();
             EnableDisableControls(_actionType);
         }
 

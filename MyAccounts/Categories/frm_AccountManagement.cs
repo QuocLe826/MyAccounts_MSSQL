@@ -112,13 +112,25 @@ namespace MyAccounts.Forms.Categories
 
         private void btn_ShowAccInfo_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            var frm = new frm_ShowAccountInfo(
-                Functions.ToString(gv_AccManagement.GetRowCellValue(gv_AccManagement.FocusedRowHandle, "Name")),
-                Functions.ToString(gv_AccManagement.GetRowCellValue(gv_AccManagement.FocusedRowHandle, "AccTypeName")),
-                Functions.ToString(gv_AccManagement.GetRowCellValue(gv_AccManagement.FocusedRowHandle, "Username")),
-                Functions.ToString(gv_AccManagement.GetRowCellValue(gv_AccManagement.FocusedRowHandle, "Password")),
-                Functions.ToString(gv_AccManagement.GetRowCellValue(gv_AccManagement.FocusedRowHandle, "Descriptions")));
-            frm.ShowDialog(this);
+            try
+            {
+                if (gv_AccManagement.IsGroupRow(gv_AccManagement.FocusedRowHandle))
+                {
+                    return;
+                }
+                var frm = new frm_ShowAccountInfo(
+                    Functions.ToString(gv_AccManagement.GetRowCellValue(gv_AccManagement.FocusedRowHandle, "Name")),
+                    Functions.ToString(gv_AccManagement.GetRowCellValue(gv_AccManagement.FocusedRowHandle, "AccTypeName")),
+                    Functions.ToString(gv_AccManagement.GetRowCellValue(gv_AccManagement.FocusedRowHandle, "Username")),
+                    Functions.ToString(gv_AccManagement.GetRowCellValue(gv_AccManagement.FocusedRowHandle, "Password")),
+                    Functions.ToString(gv_AccManagement.GetRowCellValue(gv_AccManagement.FocusedRowHandle, "Descriptions")));
+                frm.ShowDialog(this);
+            }
+            catch (Exception ex)
+            {
+                Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
+                WinCommons.ShowMessageDialog(ex.Message, Enums.MessageBoxType.Error);
+            }
         }
 
         private void grd_AccManagement_DoubleClick(object sender, EventArgs e)

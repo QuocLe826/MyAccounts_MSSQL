@@ -158,8 +158,8 @@
   <data name="&gt;&gt;barDockControlTop.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;btn_Search.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="lbl_Name.Text" xml:space="preserve">
+    <value>Name</value>
   </data>
   <assembly alias="DevExpress.XtraEditors.v20.1" name="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
   <data name="grd_AccountGroups.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v20.1">
@@ -173,9 +173,6 @@
   </data>
   <data name="&gt;&gt;lbl_Code.ZOrder" xml:space="preserve">
     <value>9</value>
-  </data>
-  <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 471</value>
   </data>
   <data name="btn_Cancel.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
@@ -204,6 +201,9 @@
   <data name="&gt;&gt;lbl_Name.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="txt_Desc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 67</value>
+  </data>
   <data name="&gt;&gt;barDockControlBottom.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -216,17 +216,20 @@
   <data name="lbl_Name.Location" type="System.Drawing.Point, System.Drawing">
     <value>297, 44</value>
   </data>
+  <data name="&gt;&gt;lk_Status.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
     <value>806, 28</value>
   </data>
   <data name="&gt;&gt;txt_Desc.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
   <data name="&gt;&gt;barDockControlRight.ZOrder" xml:space="preserve">
     <value>11</value>
+  </data>
+  <data name="lk_Status.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;grd_AccountGroups.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -290,6 +293,9 @@
   <data name="&gt;&gt;barDockControlLeft.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
+  <data name="btn_Save.Caption" xml:space="preserve">
+    <value>Save</value>
+  </data>
   <data name="&gt;&gt;btn_Cancel.Name" xml:space="preserve">
     <value>btn_Cancel</value>
   </data>
@@ -313,9 +319,6 @@
   </data>
   <data name="&gt;&gt;lbl_Status.Name" xml:space="preserve">
     <value>lbl_Status</value>
-  </data>
-  <data name="&gt;&gt;btn_Refresh.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barDockControlBottom.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -367,9 +370,6 @@
   <data name="grd_AccountGroups.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="btn_Save.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
   <data name="&gt;&gt;barDockControlRight.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
@@ -400,11 +400,17 @@
   <data name="grd_AccountGroups.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left</value>
   </data>
+  <data name="CodeCannotBeEmptyValue" xml:space="preserve">
+    <value>Code cannot be empty value!</value>
+  </data>
   <data name="btn_AddNew.Caption" xml:space="preserve">
     <value>Add New</value>
   </data>
   <data name="&gt;&gt;lbl_Name.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="NameCannotBeEmptyValue" xml:space="preserve">
+    <value>Name cannot be empty value!</value>
   </data>
   <data name="txt_Code.Location" type="System.Drawing.Point, System.Drawing">
     <value>52, 41</value>
@@ -414,9 +420,6 @@
   </data>
   <data name="&gt;&gt;txt_Desc.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="lbl_Name.Text" xml:space="preserve">
-    <value>Name</value>
   </data>
   <data name="grd_AccountGroups.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v20.1">
     <value>None</value>
@@ -429,9 +432,6 @@
   </data>
   <data name="lbl_Desc.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 13</value>
-  </data>
-  <data name="barDockControlTop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
   </data>
   <data name="lbl_Name.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -463,9 +463,6 @@
   <data name="txt_Name.Location" type="System.Drawing.Point, System.Drawing">
     <value>366, 41</value>
   </data>
-  <data name="lk_Status.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.1">
-    <value>Combo</value>
-  </data>
   <data name="&gt;&gt;barManager1.Name" xml:space="preserve">
     <value>barManager1</value>
   </data>
@@ -479,9 +476,6 @@
     <value>btn_Search</value>
   </data>
   <data name="btn_Refresh.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="btn_AddNew.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
   </data>
   <data name="btn_Delete.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
@@ -511,8 +505,11 @@
   <data name="grd_AccountGroups.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="btn_Save.Caption" xml:space="preserve">
-    <value>Save</value>
+  <data name="txt_Desc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 20</value>
+  </data>
+  <data name="btn_Save.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="&gt;&gt;grd_AccountGroups.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -562,6 +559,9 @@
   <data name="&gt;&gt;gv_AccountGroups.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>806, 0</value>
+  </data>
   <data name="gc_Name.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -571,20 +571,20 @@
   <data name="&gt;&gt;bar1.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="grd_AccountGroups.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Inherit</value>
-  </data>
   <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
     <value>barDockControlRight</value>
   </data>
-  <data name="&gt;&gt;barDockControlLeft.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="DoYouWantToAddNew" xml:space="preserve">
+    <value>Do you want to add new?</value>
+  </data>
+  <data name="&gt;&gt;txt_Name.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;lbl_Code.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="txt_Desc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 20</value>
+  <data name="&gt;&gt;btn_Search.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="lbl_Status.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -597,6 +597,9 @@
   </data>
   <data name="grd_AccountGroups.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;lbl_Name.Name" xml:space="preserve">
     <value>lbl_Name</value>
@@ -613,11 +616,14 @@
   <data name="grd_AccountGroups.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;btn_Delete.Name" xml:space="preserve">
-    <value>btn_Delete</value>
+  <data name="&gt;&gt;lbl_Status.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="gc_Name.VisibleIndex" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="grd_AccountGroups.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v20.1">
+    <value>Default</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -648,11 +654,8 @@
         Yy0xNy42NjQwNjIgMC0zMiAxNC4zMzU5MzgtMzIgMzJ6bTAgMCIgLz4NCiAgPC9nPg0KPC9zdmc+Cw==
 </value>
   </data>
-  <data name="&gt;&gt;txt_Name.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;barDockControlLeft.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="btn_AddNew.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="btn_Delete.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -706,14 +709,17 @@
   <data name="&gt;&gt;lbl_Code.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="lk_Status.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="grd_AccountGroups.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
   </data>
   <data name="&gt;&gt;txt_Desc.Name" xml:space="preserve">
     <value>txt_Desc</value>
   </data>
   <data name="btn_Delete.Caption" xml:space="preserve">
     <value>Delete</value>
+  </data>
+  <data name="SaveFailed" xml:space="preserve">
+    <value>Save failed!</value>
   </data>
   <data name="&gt;&gt;btn_Edit.Name" xml:space="preserve">
     <value>btn_Edit</value>
@@ -729,6 +735,9 @@
   </data>
   <data name="&gt;&gt;lbl_Desc.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="&gt;&gt;txt_Name.Name" xml:space="preserve">
+    <value>txt_Name</value>
   </data>
   <data name="&gt;&gt;txt_Name.Parent" xml:space="preserve">
     <value>$this</value>
@@ -746,14 +755,17 @@
         cEbvylSsOXZyrRub4D+1dPLvBY5vGoEc6Ii8o88AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>806, 0</value>
+  <data name="&gt;&gt;btn_Refresh.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="lbl_Code.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 44</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>806, 471</value>
+  </data>
+  <data name="&gt;&gt;txt_Code.Name" xml:space="preserve">
+    <value>txt_Code</value>
   </data>
   <data name="btn_Search.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -764,14 +776,14 @@
   <data name="gc_Code.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;txt_Code.Name" xml:space="preserve">
-    <value>txt_Code</value>
+  <data name="barDockControlTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="&gt;&gt;lbl_Status.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="lk_Status.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v20.1">
+    <value>Combo</value>
   </data>
-  <data name="txt_Desc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 67</value>
+  <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 471</value>
   </data>
   <data name="btn_Search.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 20</value>
@@ -810,17 +822,20 @@
   <data name="lk_Status.Properties.NullText" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;lk_Status.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="AreYouSureToRemoveThisRecord" xml:space="preserve">
+    <value>Are you sure to remove this record?</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
   </data>
   <data name="lbl_Name.Size" type="System.Drawing.Size, System.Drawing">
     <value>27, 13</value>
   </data>
-  <data name="grd_AccountGroups.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v20.1">
-    <value>Default</value>
+  <data name="&gt;&gt;barDockControlLeft.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;txt_Name.Name" xml:space="preserve">
-    <value>txt_Name</value>
+  <data name="&gt;&gt;btn_Delete.Name" xml:space="preserve">
+    <value>btn_Delete</value>
   </data>
   <data name="txt_Desc.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -873,28 +888,13 @@
   <data name="&gt;&gt;lbl_Desc.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="barManager1.TrayLocation" type="System.Drawing.Point, System.Drawing">
+  <metadata name="barManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
-  </data>
-  <data name="$this.Localizable" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="$this.Language" type="System.Globalization.CultureInfo, mscorlib">
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>vi-VN</value>
-  </data>
-  <data name="AreYouSureToRemoveThisRecord" xml:space="preserve">
-    <value>Are you sure to remove this record?</value>
-  </data>
-  <data name="CodeCannotBeEmptyValue" xml:space="preserve">
-    <value>Code cannot be empty value!</value>
-  </data>
-  <data name="DoYouWantToAddNew" xml:space="preserve">
-    <value>Do you want to add new?</value>
-  </data>
-  <data name="NameCannotBeEmptyValue" xml:space="preserve">
-    <value>Name cannot be empty value!</value>
-  </data>
-  <data name="SaveFailed" xml:space="preserve">
-    <value>Save failed!</value>
-  </data>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

@@ -117,77 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btn_Search.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAABJ0RVh0VGl0bGUARmluZDtTZWFyY2g7rQePYgAAAY1JREFUOE+lkUtLAlEUx/0U
-        zmgT4yOFaN/WXbQINBodH/nKR8w3iNxE6cK+Sish0BxnnIdtArE+QSEtyjZCYJuB07njhA5qJP3gDJd7
-        7v93H+MAgH/V9GOxVdJCvqLWwHr1FlRSDU9eC1ltGwuCQEmrBMo6BE97cFgbQORqAP5SDzw5FdisUjEX
-        zWETkJ0DJR3C1QEMP75wagoZH1z0gc10gcl2962sCbZnAtxJ3xHubeEfnt8mECyqwKSlWytrgq2ZwFfU
-        x4nrJ7J+KdHaIzApeWRlTXB6TlDQxvH6agGHV2NSndUCz4mqbws6vLxPyHob5Ar+ggLu5C9XIL+KzWsG
-        ebDhaO4Rcbx3/gAbyQ64klLVyppgeyYgsNnuGf4u8OYUiFz2IYzFpmUMyyQMroRkuHmRNxcjCwICk+ns
-        bqaVJnMsj91pLDy2OyHVMYwCPEW8Y1CWZKlgFTTfFjAMNC8CzYkGxYn8WgICzbUFKtYCKiYCddT8XFtA
-        cEbvylSsOXZyrRub4D+1dPLvBY5vGoEc6Ii8o88AAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btn_Search.Location" type="System.Drawing.Point, System.Drawing">
-    <value>557, 41</value>
-  </data>
-  <data name="btn_Search.Text" xml:space="preserve">
-    <value>Tìm kiếm</value>
-  </data>
-  <data name="lk_Status.Location" type="System.Drawing.Point, System.Drawing">
-    <value>65, 67</value>
-  </data>
-  <data name="gc_Code.Caption" xml:space="preserve">
-    <value>Mã</value>
-  </data>
-  <data name="gc_Name.Caption" xml:space="preserve">
-    <value>Tên</value>
-  </data>
-  <data name="gc_Status.Caption" xml:space="preserve">
-    <value>Trạng thái</value>
-  </data>
-  <data name="gc_Desc.Caption" xml:space="preserve">
-    <value>Chú thích</value>
-  </data>
-  <data name="txt_Desc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 67</value>
-  </data>
-  <data name="txt_Name.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 41</value>
-  </data>
-  <data name="txt_Code.Location" type="System.Drawing.Point, System.Drawing">
-    <value>65, 41</value>
-  </data>
-  <data name="lbl_Desc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 13</value>
-  </data>
-  <data name="lbl_Desc.Text" xml:space="preserve">
-    <value>Chú thích</value>
-  </data>
-  <data name="lbl_Status.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 13</value>
-  </data>
-  <data name="lbl_Status.Text" xml:space="preserve">
-    <value>Trạng thái</value>
-  </data>
-  <data name="lbl_Name.Size" type="System.Drawing.Size, System.Drawing">
-    <value>18, 13</value>
-  </data>
-  <data name="lbl_Name.Text" xml:space="preserve">
-    <value>Tên</value>
-  </data>
-  <data name="lbl_Code.Size" type="System.Drawing.Size, System.Drawing">
-    <value>14, 13</value>
-  </data>
-  <data name="lbl_Code.Text" xml:space="preserve">
-    <value>Mã</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Nhóm tài khoản</value>
-  </data>
   <data name="btn_AddNew.Caption" xml:space="preserve">
     <value>Thêm mới</value>
   </data>
@@ -389,19 +318,75 @@
         PGcgLz4NCiAgPGcgLz4NCjwvc3ZnPgs=
 </value>
   </data>
-  <data name="AreYouSureToRemoveThisRecord" xml:space="preserve">
-    <value>Bạn có chắc chắn muốn xóa dữ liệu này?</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btn_Search.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wgAADsIBFShKgAAAABJ0RVh0VGl0bGUARmluZDtTZWFyY2g7rQePYgAAAY1JREFUOE+lkUtLAlEUx/0U
+        zmgT4yOFaN/WXbQINBodH/nKR8w3iNxE6cK+Sish0BxnnIdtArE+QSEtyjZCYJuB07njhA5qJP3gDJd7
+        7v93H+MAgH/V9GOxVdJCvqLWwHr1FlRSDU9eC1ltGwuCQEmrBMo6BE97cFgbQORqAP5SDzw5FdisUjEX
+        zWETkJ0DJR3C1QEMP75wagoZH1z0gc10gcl2962sCbZnAtxJ3xHubeEfnt8mECyqwKSlWytrgq2ZwFfU
+        x4nrJ7J+KdHaIzApeWRlTXB6TlDQxvH6agGHV2NSndUCz4mqbws6vLxPyHob5Ar+ggLu5C9XIL+KzWsG
+        ebDhaO4Rcbx3/gAbyQ64klLVyppgeyYgsNnuGf4u8OYUiFz2IYzFpmUMyyQMroRkuHmRNxcjCwICk+ns
+        bqaVJnMsj91pLDy2OyHVMYwCPEW8Y1CWZKlgFTTfFjAMNC8CzYkGxYn8WgICzbUFKtYCKiYCddT8XFtA
+        cEbvylSsOXZyrRub4D+1dPLvBY5vGoEc6Ii8o88AAAAASUVORK5CYII=
+</value>
   </data>
-  <data name="CodeCannotBeEmptyValue" xml:space="preserve">
-    <value>Mã không được để trống!</value>
+  <data name="btn_Search.Location" type="System.Drawing.Point, System.Drawing">
+    <value>557, 41</value>
   </data>
-  <data name="DoYouWantToAddNew" xml:space="preserve">
-    <value>Bạn có muốn thêm mới?</value>
+  <data name="btn_Search.Text" xml:space="preserve">
+    <value>Tìm kiếm</value>
   </data>
-  <data name="NameCannotBeEmptyValue" xml:space="preserve">
-    <value>Tên không được để trống!</value>
+  <data name="lk_Status.Location" type="System.Drawing.Point, System.Drawing">
+    <value>65, 67</value>
   </data>
-  <data name="SaveFailed" xml:space="preserve">
-    <value>Lưu thất bại</value>
+  <data name="gc_Code.Caption" xml:space="preserve">
+    <value>Mã</value>
+  </data>
+  <data name="gc_Name.Caption" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="gc_Status.Caption" xml:space="preserve">
+    <value>Trạng thái</value>
+  </data>
+  <data name="gc_Desc.Caption" xml:space="preserve">
+    <value>Chú thích</value>
+  </data>
+  <data name="txt_Desc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>348, 67</value>
+  </data>
+  <data name="txt_Name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>348, 41</value>
+  </data>
+  <data name="txt_Code.Location" type="System.Drawing.Point, System.Drawing">
+    <value>65, 41</value>
+  </data>
+  <data name="lbl_Desc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 13</value>
+  </data>
+  <data name="lbl_Desc.Text" xml:space="preserve">
+    <value>Chú thích</value>
+  </data>
+  <data name="lbl_Status.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="lbl_Status.Text" xml:space="preserve">
+    <value>Trạng thái</value>
+  </data>
+  <data name="lbl_Name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 13</value>
+  </data>
+  <data name="lbl_Name.Text" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="lbl_Code.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 13</value>
+  </data>
+  <data name="lbl_Code.Text" xml:space="preserve">
+    <value>Mã</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Nhóm tài khoản</value>
   </data>
 </root>

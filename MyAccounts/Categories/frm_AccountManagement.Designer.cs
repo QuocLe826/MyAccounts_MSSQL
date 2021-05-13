@@ -289,6 +289,7 @@ namespace MyAccounts.Forms.Categories
             this.gv_AccManagement.GridControl = this.grd_AccManagement;
             this.gv_AccManagement.GroupCount = 1;
             this.gv_AccManagement.GroupRowHeight = 25;
+            this.gv_AccManagement.IndicatorWidth = 30;
             this.gv_AccManagement.Name = "gv_AccManagement";
             this.gv_AccManagement.OptionsBehavior.AutoExpandAllGroups = true;
             this.gv_AccManagement.OptionsBehavior.Editable = false;
