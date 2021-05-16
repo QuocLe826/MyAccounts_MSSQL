@@ -14,6 +14,7 @@ namespace MyAccounts.Forms
     public partial class frm_Main : XtraForm
     {
         private readonly ResourceManager _resources = new ResourceManager(typeof(frm_Main));
+        public string FormActive = string.Empty; 
 
         public frm_Main()
         {
@@ -39,6 +40,7 @@ namespace MyAccounts.Forms
         {
             try
             {
+                FormActive = form.Name;
                 var tabForm = xtraTabbedMdiManager.Pages.AsEnumerable().FirstOrDefault(r => r.MdiChild.Text == form.Text);
                 if (tabForm != null)
                 {

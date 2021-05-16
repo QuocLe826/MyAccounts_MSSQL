@@ -203,9 +203,25 @@ namespace MyAccounts.Forms.Categories
             }
         }
 
-        private void frm_AccountManagement_FormClosing(object sender, FormClosingEventArgs e)
+        private void frm_AccountManagement_Activated(object sender, EventArgs e)
         {
-            Application.Exit();
+            try
+            {
+                var parentForm = this.ParentForm;
+                if (parentForm != null && parentForm.Name == "frm_Main")
+                {
+                    var formActive = (parentForm as frm_Main).FormActive;
+                    if (formActive == this.Name)
+                    {
+                        LoadData();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
+                WinCommons.ShowMessageDialog(ex.Message, Enums.MessageBoxType.Error);
+            }
         }
     }
 }
