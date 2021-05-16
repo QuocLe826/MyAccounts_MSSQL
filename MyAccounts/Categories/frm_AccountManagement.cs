@@ -202,5 +202,10 @@ namespace MyAccounts.Forms.Categories
                 WinCommons.ShowMessageDialog(ex.Message, Enums.MessageBoxType.Error);
             }
         }
+
+        private void frm_AccountManagement_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

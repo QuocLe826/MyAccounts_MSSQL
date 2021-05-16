@@ -391,6 +391,7 @@ namespace MyAccounts.Forms.Categories
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.Name = "frm_AccountManagement";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frm_AccountManagement_FormClosing);
             this.Load += new System.EventHandler(this.frm_AccountManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Username.Properties)).EndInit();

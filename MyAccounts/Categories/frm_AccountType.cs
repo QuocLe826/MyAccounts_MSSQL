@@ -252,5 +252,11 @@ namespace MyAccounts.Forms.Categories
             }
             WinCommons.CloseCursorProcessing(this);
         }
+
+        private void txt_Code_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsWhiteSpace(e.KeyChar))
+                e.Handled = true;
+        }
     }
 }

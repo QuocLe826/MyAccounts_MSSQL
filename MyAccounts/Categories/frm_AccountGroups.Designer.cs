@@ -199,6 +199,7 @@ namespace MyAccounts.Forms.Categories
             this.txt_Code.MenuManager = this.barManager1;
             this.txt_Code.Name = "txt_Code";
             this.txt_Code.Properties.MaxLength = 20;
+            this.txt_Code.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Code_KeyPress);
             // 
             // lbl_Status
             // 

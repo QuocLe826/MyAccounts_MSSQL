@@ -149,9 +149,6 @@
   <data name="gc_Code.Caption" xml:space="preserve">
     <value>Mã</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Loại tài khoản</value>
-  </data>
   <data name="btn_AddNew.Caption" xml:space="preserve">
     <value>Thêm mới</value>
   </data>
@@ -395,19 +392,7 @@
   <data name="lbl_Code.Text" xml:space="preserve">
     <value>Mã</value>
   </data>
-  <data name="AreYouSureToRemoveThisRecord" xml:space="preserve">
-    <value>Bạn có chắc chắn muốn xóa dữ liệu này?</value>
-  </data>
-  <data name="CodeCannotBeEmptyValue" xml:space="preserve">
-    <value>Mã không được để trống!</value>
-  </data>
-  <data name="DoYouWantToAddNew" xml:space="preserve">
-    <value>Bạn có muốn thêm mới?</value>
-  </data>
-  <data name="NameCannotBeEmptyValue" xml:space="preserve">
-    <value>Tên không được để trống!</value>
-  </data>
-  <data name="SaveFailed" xml:space="preserve">
-    <value>Lưu thất bại!</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Loại tài khoản</value>
   </data>
 </root>

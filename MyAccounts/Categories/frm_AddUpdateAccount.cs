@@ -188,5 +188,11 @@ namespace MyAccounts.Forms.Categories
                 WinCommons.ShowMessageDialog(ex.Message,  Enums.MessageBoxType.Error);
             }
         }
+
+        private void txt_Code_KeyPress(object sender, System.Windows.Forms.KeyPressEventArgs e)
+        {
+            if (char.IsWhiteSpace(e.KeyChar))
+                e.Handled = true;
+        }
     }
 }
