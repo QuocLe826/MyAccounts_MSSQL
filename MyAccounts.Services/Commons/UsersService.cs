@@ -64,7 +64,7 @@ namespace MyAccounts.Services.Commons
                 var dt = ExecuteDataTable(query, CommandType.Text, new SqlParameter("@username", username));
                 if (dt.Rows.Count > 0)
                 {
-                    var passDecrypt = RSASecurity.Decrypt(Functions.ToString(dt.Rows[0]["Password"]));
+                    var passDecrypt = RSASecurity.Decrypt(Functions.ToString(dt.Rows[0]["Password"]) + "=");
                     if (!curPassword.Equals(passDecrypt))
                     {
                         return "Incorrect Current password";
@@ -73,8 +73,11 @@ namespace MyAccounts.Services.Commons
                     {
                         return "Incorrect Confirm password";
                     }
+
+                    newPassword = RSASecurity.Encrypt(newPassword);
+                    newPassword = newPassword.Remove(newPassword.Length - 1, 1);
                     query = "Update Users set Password = @password where UserCode = @username and Status = 'Y'";
-                    var res = ExecuteNonQuery(query, CommandType.Text, new SqlParameter("@username", username), new SqlParameter("@password", RSASecurity.Encrypt(newPassword)));
+                    var res = ExecuteNonQuery(query, CommandType.Text, new SqlParameter("@username", username), new SqlParameter("@password", newPassword));
                     if (res <= 0)
                     {
                         return "Password change failed!";

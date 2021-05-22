@@ -107,6 +107,7 @@ namespace MyAccounts.Forms
                 GlobalData.UserLogin = Functions.ToString(dtInfo.Rows[0]["UserCode"]);
                 GlobalData.FirstName = Functions.ToString(dtInfo.Rows[0]["FirstName"]);
                 GlobalData.LastName = Functions.ToString(dtInfo.Rows[0]["LastName"]);
+                GlobalData.PasswordLogin = RSASecurity.Decrypt(Functions.ToString(dtInfo.Rows[0]["Password"]) + "=");
 
                 WinCommons.CloseCursorProcessing(this);
                 this.Hide();

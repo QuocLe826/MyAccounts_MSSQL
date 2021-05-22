@@ -41,6 +41,20 @@ namespace MyAccounts.Forms.Home
                     return;
                 }
 
+                if (txt_CurrentPassword.Text != GlobalData.PasswordLogin)
+                {
+                    WinCommons.ShowMessageDialog(_resource.GetString("IncorrectCurrentPassword"), Enums.MessageBoxType.Error);
+                    txt_CurrentPassword.Focus();
+                    return;
+                }
+
+                if (txt_NewPassword.Text != txt_ConfirmPassword.Text)
+                {
+                    WinCommons.ShowMessageDialog(_resource.GetString("IncorrectNewAndConfirmPassword"), Enums.MessageBoxType.Error);
+                    txt_NewPassword.Focus();
+                    return;
+                }
+
                 if (WinCommons.ShowMessageDialog(_resource.GetString("AreYouSureToChangePassword"),
                         Enums.MessageBoxType.Question) == DialogResult.Yes)
                 {
