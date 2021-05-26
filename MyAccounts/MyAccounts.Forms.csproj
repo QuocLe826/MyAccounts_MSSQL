@@ -41,6 +41,7 @@
     <Reference Include="DevExpress.Data.v20.1" />
     <Reference Include="DevExpress.Dialogs.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Images.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v20.1" />
     <Reference Include="DevExpress.XtraBars.v20.1" />
     <Reference Include="DevExpress.Sparkline.v20.1.Core" />
@@ -94,17 +95,29 @@
     <Compile Include="Categories\frm_ShowAccountInfo.Designer.cs">
       <DependentUpon>frm_ShowAccountInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_ChooseConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ChooseConfig.Designer.cs">
+      <DependentUpon>frm_ChooseConfig.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Main.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_Main.Designer.cs">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_SystemInitialization.cs">
+    <Compile Include="frm_SystemRestore.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_SystemInitialization.Designer.cs">
-      <DependentUpon>frm_SystemInitialization.cs</DependentUpon>
+    <Compile Include="frm_SystemRestore.Designer.cs">
+      <DependentUpon>frm_SystemRestore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CreateNewSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CreateNewSystem.Designer.cs">
+      <DependentUpon>frm_CreateNewSystem.cs</DependentUpon>
     </Compile>
     <Compile Include="GlobalData.cs" />
     <Compile Include="Home\frm_Backup.cs">
@@ -175,6 +188,9 @@
     <EmbeddedResource Include="Categories\frm_ShowAccountInfo.vi-VN.resx">
       <DependentUpon>frm_ShowAccountInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_ChooseConfig.resx">
+      <DependentUpon>frm_ChooseConfig.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_Login.resx">
       <DependentUpon>frm_Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -187,11 +203,17 @@
     <EmbeddedResource Include="frm_Main.vi-VN.resx">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_SystemInitialization.resx">
-      <DependentUpon>frm_SystemInitialization.cs</DependentUpon>
+    <EmbeddedResource Include="frm_SystemRestore.resx">
+      <DependentUpon>frm_SystemRestore.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_SystemInitialization.vi-VN.resx">
-      <DependentUpon>frm_SystemInitialization.cs</DependentUpon>
+    <EmbeddedResource Include="frm_CreateNewSystem.resx">
+      <DependentUpon>frm_CreateNewSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CreateNewSystem.vi-VN.resx">
+      <DependentUpon>frm_CreateNewSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SystemRestore.vi-VN.resx">
+      <DependentUpon>frm_SystemRestore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home\frm_Backup.resx">
       <DependentUpon>frm_Backup.cs</DependentUpon>

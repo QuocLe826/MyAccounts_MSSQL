@@ -33,11 +33,6 @@ namespace MyAccounts.Api.Categories
             return _service.GetAccountManagementByCode(code);
         }
 
-        public DataTable SearchData(string username, string accGroup, string accType)
-        {
-            return _service.SearchData(username, accGroup, accType);
-        }
-
         public string ProcessData(Dictionary<string, string> dicData, string actionType)
         {
             return _service.ProcessData(dicData, actionType);

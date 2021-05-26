@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Diagnostics;
 using System.Resources;
 using System.Windows.Forms;
@@ -18,6 +19,10 @@ namespace MyAccounts.Forms.Categories
         private readonly AccountManagementController _accManagementApi = new AccountManagementController();
         private readonly ResourceManager _resources = new ResourceManager(typeof(frm_AccountManagement));
         private string _actionType = string.Empty;
+        private string _filterString = string.Empty;
+        private string _stringEqual = "1=1";
+        private DataTable _dataClone = new DataTable();
+        private DataRow[] _rowSearch = null;
 
         public frm_AccountManagement()
         {
@@ -29,6 +34,7 @@ namespace MyAccounts.Forms.Categories
             try
             {
                 var dt = _accManagementApi.GetAccountManagement();
+                _dataClone = dt.Copy();
                 grd_AccManagement.DataSource = dt;
                 grd_AccManagement.RefreshDataSource();
                 gv_AccManagement.BestFitColumns();
@@ -168,24 +174,6 @@ namespace MyAccounts.Forms.Categories
             WinCommons.CloseCursorProcessing(this);
         }
 
-        private void btn_Search_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                WinCommons.OpenCursorProcessing(this);
-                var dt = _accManagementApi.SearchData(txt_Username.Text.Trim(), Functions.ToString(lk_AccGroups.EditValue), Functions.ToString(lk_AccType.EditValue));
-                grd_AccManagement.DataSource = dt;
-                grd_AccManagement.RefreshDataSource();
-                dt.Dispose();
-            }
-            catch (Exception ex)
-            {
-                Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
-                WinCommons.ShowMessageDialog(ex.Message,  Enums.MessageBoxType.Error);
-            }
-            WinCommons.CloseCursorProcessing(this);
-        }
-
         private void gv_AccManagement_CustomDrawGroupRow(object sender, DevExpress.XtraGrid.Views.Base.RowObjectCustomDrawEventArgs e)
         {
             try
@@ -210,8 +198,8 @@ namespace MyAccounts.Forms.Categories
                 var parentForm = this.ParentForm;
                 if (parentForm != null && parentForm.Name == "frm_Main")
                 {
-                    var formActive = (parentForm as frm_Main).FormActive;
-                    if (formActive == this.Name)
+                    var formActive = (parentForm as frm_Main);
+                    if (formActive != null && formActive.FormActive == this.Name)
                     {
                         LoadData();
                     }
@@ -222,6 +210,58 @@ namespace MyAccounts.Forms.Categories
                 Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
                 WinCommons.ShowMessageDialog(ex.Message, Enums.MessageBoxType.Error);
             }
+        }
+
+        private void SearchData(string username, string accGroup, string accType)
+        {
+            try
+            {
+                var dt = _dataClone.Copy();
+                if (string.IsNullOrEmpty(username) && string.IsNullOrEmpty(accGroup) && string.IsNullOrEmpty(accType))
+                {
+                    grd_AccManagement.DataSource = dt;
+                    grd_AccManagement.RefreshDataSource();
+                    return;
+                }
+                
+                var filterString = string.Format(@"1=1 
+                                    and (Username is null or Username like '{0}%') 
+                                    and (AccGroupCode is null or AccGroupCode like '{1}%') 
+                                    and (AccTypeCode is null or AccTypeCode like '{2}%') 
+                                    ", username, accGroup, accType);
+                _rowSearch = dt.Select(filterString);
+                if (_rowSearch != null && _rowSearch.Length > 0)
+                {
+                    dt = _rowSearch.CopyToDataTable();
+                    _rowSearch = null;
+                }
+                else
+                {
+                    dt = dt.Clone();
+                }
+                grd_AccManagement.DataSource = dt;
+                grd_AccManagement.RefreshDataSource();
+            }
+            catch (Exception ex)
+            {
+                Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
+                WinCommons.ShowMessageDialog(ex.Message, Enums.MessageBoxType.Error);
+            }
+        }
+
+        private void txt_Username_TextChanged(object sender, EventArgs e)
+        {
+            SearchData(txt_Username.Text, Functions.ToString(lk_AccGroups.EditValue), Functions.ToString(lk_AccType.EditValue));
+        }
+
+        private void lk_AccGroups_EditValueChanged(object sender, EventArgs e)
+        {
+            SearchData(txt_Username.Text, Functions.ToString(lk_AccGroups.EditValue), Functions.ToString(lk_AccType.EditValue));
+        }
+
+        private void lk_AccType_EditValueChanged(object sender, EventArgs e)
+        {
+            SearchData(txt_Username.Text, Functions.ToString(lk_AccGroups.EditValue), Functions.ToString(lk_AccType.EditValue));
         }
     }
 }

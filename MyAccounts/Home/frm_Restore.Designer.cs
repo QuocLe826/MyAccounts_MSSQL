@@ -44,6 +44,7 @@ namespace MyAccounts.Forms.Home
             // btn_Cancel
             // 
             resources.ApplyResources(this.btn_Cancel, "btn_Cancel");
+            this.btn_Cancel.AllowFocus = false;
             this.btn_Cancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancel.ImageOptions.Image")));
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
@@ -51,6 +52,7 @@ namespace MyAccounts.Forms.Home
             // btn_Restore
             // 
             resources.ApplyResources(this.btn_Restore, "btn_Restore");
+            this.btn_Restore.AllowFocus = false;
             this.btn_Restore.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Restore.ImageOptions.Image")));
             this.btn_Restore.Name = "btn_Restore";
             this.btn_Restore.Click += new System.EventHandler(this.btn_Restore_Click);

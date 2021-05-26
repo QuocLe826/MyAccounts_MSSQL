@@ -26,7 +26,7 @@ namespace MyAccounts.Forms
             }
             else
             {
-                Application.Run(new frm_SystemInitialization());
+                Application.Run(new frm_ChooseConfig());
             }
         }
     }

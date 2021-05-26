@@ -324,6 +324,7 @@ namespace MyAccounts.Forms.Categories
             // btn_Search
             // 
             resources.ApplyResources(this.btn_Search, "btn_Search");
+            this.btn_Search.AllowFocus = false;
             this.btn_Search.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Search.ImageOptions.Image")));
             this.btn_Search.Name = "btn_Search";
             this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);

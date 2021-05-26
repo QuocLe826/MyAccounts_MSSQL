@@ -117,58 +117,63 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lbl_ServerPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 13</value>
+  </data>
+  <data name="lbl_ServerPassword.Text" xml:space="preserve">
+    <value>Mật khẩu</value>
+  </data>
+  <data name="lbl_ServerUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 13</value>
+  </data>
+  <data name="lbl_ServerUser.Text" xml:space="preserve">
+    <value>Tên đăng nhập</value>
+  </data>
+  <data name="labelControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="labelControl2.Text" xml:space="preserve">
+    <value>Loại xác thực</value>
+  </data>
+  <data name="labelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 13</value>
+  </data>
+  <data name="labelControl1.Text" xml:space="preserve">
+    <value>Tên máy chủ</value>
+  </data>
   <assembly alias="DevExpress.Data.v20.1" name="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
   <data name="pictureEdit1.EditValue" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIwLjEsIFZlcnNpb249MjAuMS4z
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
-        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAHEFAAAC77u/
-        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
-        IHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9y
-        Zy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpz
-        cGFjZT0icHJlc2VydmUiIGlkPSJDYXBhXzEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAw
-        IDUxMiA1MTIiPg0KICA8cGF0aCBkPSJNMjU2LDBjLTc2LjU0NCwwLjA5NC0xMzguNTczLDYyLjEyMi0x
-        MzguNjY3LDEzOC42NjdWMjI0YzAsNS44OTEsNC43NzYsMTAuNjY3LDEwLjY2NywxMC42NjdoNDIuNjY3
-        ICBjNS44OTEsMCwxMC42NjctNC43NzYsMTAuNjY3LTEwLjY2N3YtODUuMzMzQzE4MS4zMzMsOTcuNDI5
-        LDIxNC43NjMsNjQsMjU2LDY0czc0LjY2NywzMy40MjksNzQuNjY3LDc0LjY2N1YyMjQgIGMwLDUuODkx
-        LDQuNzc2LDEwLjY2NywxMC42NjcsMTAuNjY3SDM4NGM1Ljg5MSwwLDEwLjY2Ny00Ljc3NiwxMC42Njct
-        MTAuNjY3di04NS4zMzNDMzk0LjU3Myw2Mi4xMjIsMzMyLjU0NCwwLjA5NCwyNTYsMHoiIHN0eWxlPSJm
-        aWxsOiM0NTVBNjQiIC8+DQogIDxwYXRoIGQ9Ik0xMjgsMjEzLjMzM2gyNTZjMjkuNDU1LDAsNTMuMzMz
-        LDIzLjg3OCw1My4zMzMsNTMuMzMzdjE5MkM0MzcuMzMzLDQ4OC4xMjIsNDEzLjQ1NSw1MTIsMzg0LDUx
-        MkgxMjggIGMtMjkuNDU1LDAtNTMuMzMzLTIzLjg3OC01My4zMzMtNTMuMzMzdi0xOTJDNzQuNjY3LDIz
-        Ny4yMTEsOTguNTQ1LDIxMy4zMzMsMTI4LDIxMy4zMzN6IiBzdHlsZT0iZmlsbDojRkZDMTA3IiAvPg0K
-        ICA8cGF0aCBkPSJNMzA5LjMzMywzMzAuNjY3YzAuMTI0LTI5LjQ1NS0yMy42NTMtNTMuNDM0LTUzLjEw
-        OC01My41NTggIGMtMjkuNDU1LTAuMTI0LTUzLjQzNCwyMy42NTMtNTMuNTU4LDUzLjEwOGMtMC4wODYs
-        MjAuMzYsMTEuNDI3LDM4Ljk5MiwyOS42NzQsNDguMDIzbC04LjIzNSw1Ny42ICBjLTAuODI1LDUuODMz
-        LDMuMjM1LDExLjIzLDkuMDY4LDEyLjA1NWMwLjQ5NCwwLjA3LDAuOTkzLDAuMTA1LDEuNDkyLDAuMTA1
-        aDQyLjY2N2M1Ljg5MSwwLjA2LDEwLjcxNS00LjY2NywxMC43NzQtMTAuNTU4ICBjMC4wMDUtMC41NDMt
-        MC4wMy0xLjA4Ni0wLjEwOC0xLjYyM2wtOC4yMzUtNTcuNkMyOTcuNzg4LDM2OS4xOTksMzA5LjIxNiwz
-        NTAuODIsMzA5LjMzMywzMzAuNjY3eiIgc3R5bGU9ImZpbGw6IzQ1NUE2NCIgLz4NCiAgPGcgLz4NCiAg
-        PGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4N
-        CiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcg
-        Lz4NCjwvc3ZnPgs=
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAPoDAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgd2lkdGg9IjUxMnB0IiBo
+        ZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgdmVyc2lvbj0iMS4wIiB4bWxucz0iaHR0
+        cDovL3d3dy53My5vcmcvMjAwMC9zdmciPg0KICA8ZyBmaWxsPSIjMDAwMDAwIiB0cmFuc2Zvcm09InRy
+        YW5zbGF0ZSgwLCA1MTIpIHNjYWxlKDAuMSwgLTAuMSkiIHN0cm9rZT0ibm9uZSI+DQogICAgPHBhdGgg
+        ZD0iTTI2NTAgNDczNSBjLTUwMiAtNjUgLTk1NiAtMjkzIC0xMzAxIC02NTMgLTM3MSAtMzg2IC01ODAg
+        LTg2NiAtNjE1IC0xNDE0IGwtNiAtMTA4IC0zNjIgMCAtMzYxIDAgNDg1IC00ODUgNDg1IC00ODUgNDgz
+        IDQ4MiA0ODIgNDgzIC0zNjEgMyAtMzYyIDIgNiAxMDggYzE3IDMwMyAxMjkgNjI0IDMwNCA4NzIgMTAw
+        IDE0MiAzMDIgMzM5IDQ0MyA0MzIgNTI4IDM1MSAxMTczIDM5MSAxNzMwIDEwOCA0NjYgLTIzOCA3ODgg
+        LTY2MiA5MDEgLTExOTAgMjAgLTkyIDIzIC0xMzQgMjMgLTMzMCAwIC0xOTYgLTMgLTIzOCAtMjMgLTMz
+        MCAtMTEyIC01MjMgLTQzMiAtOTQ4IC04OTEgLTExODQgLTYzNSAtMzI3IC0xMzcxIC0yMzQgLTE5MTYg
+        MjQxIGwtNzYgNjYgLTE3MSAtMTcyIC0xNzIgLTE3MiA2NSAtNjAgYzM0NiAtMzIwIDc4MyAtNTE4IDEy
+        NTggLTU2OSAxNTYgLTE3IDQ1MiAtOCA2MDIgMTkgNDU3IDgxIDg0NiAyODUgMTE3NiA2MTUgMzEzIDMx
+        NCA1MTIgNjg0IDU5OCAxMTExIDE5OCA5NzcgLTI5MiAxOTcwIC0xMTg3IDI0MDUgLTIyNSAxMDkgLTQ0
+        MiAxNzQgLTY4MCAyMDUgLTE0MCAxOCAtNDIxIDE4IC01NTcgMHoiIC8+DQogICAgPHBhdGggZD0iTTI2
+        ODIgMjkyMyBsMyAtNjA3IDE3MCAtMTAyIGM5NCAtNTUgMzI2IC0xOTMgNTE3IC0zMDYgbDM0NyAtMjA2
+        IDkyIDE1NSBjNTIgODcgODggMTU3IDgzIDE2MiAtNSA0IC0xOTcgMTE5IC00MjYgMjU2IGwtNDE4IDI0
+        NyAwIDUwNCAwIDUwNCAtMTg1IDAgLTE4NSAwIDIgLTYwN3oiIC8+DQogIDwvZz4NCjwvc3ZnPgs=
 </value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="labelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 13</value>
-  </data>
-  <data name="labelControl1.Text" xml:space="preserve">
-    <value>Mật khẩu hiện tại</value>
-  </data>
-  <data name="labelControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 13</value>
-  </data>
-  <data name="labelControl2.Text" xml:space="preserve">
-    <value>Mật khẩu mới</value>
-  </data>
   <data name="labelControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 13</value>
+    <value>71, 13</value>
   </data>
   <data name="labelControl3.Text" xml:space="preserve">
-    <value>Xác nhận</value>
+    <value>Cơ sở dữ liệu</value>
   </data>
-  <data name="btn_Accept.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_OK.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACF0RVh0VGl0
         bGUAQXBwbHk7T0s7Q2hlY2s7QmFycztSaWJib247ZGPIaAAAA6ZJREFUOE9Nk31Q03Ucx3+iqwzOhE6t
@@ -190,7 +195,7 @@
         IjxB8Ph/fceYhPoHAkQRj5PgdPMAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btn_Accept.Text" xml:space="preserve">
+  <data name="btn_OK.Text" xml:space="preserve">
     <value>Đồng ý</value>
   </data>
   <data name="btn_Cancel.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -216,40 +221,57 @@
 </value>
   </data>
   <data name="btn_Cancel.Text" xml:space="preserve">
-    <value>Hủy bỏ</value>
+    <value>Thoát</value>
   </data>
-  <data name="frm_ChangePassword.IconOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="frm_SystemRestore.IconOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIwLjEsIFZlcnNpb249MjAuMS4z
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
-        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAHEFAAAC77u/
-        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
-        IHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9y
-        Zy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpz
-        cGFjZT0icHJlc2VydmUiIGlkPSJDYXBhXzEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAw
-        IDUxMiA1MTIiPg0KICA8cGF0aCBkPSJNMjU2LDBjLTc2LjU0NCwwLjA5NC0xMzguNTczLDYyLjEyMi0x
-        MzguNjY3LDEzOC42NjdWMjI0YzAsNS44OTEsNC43NzYsMTAuNjY3LDEwLjY2NywxMC42NjdoNDIuNjY3
-        ICBjNS44OTEsMCwxMC42NjctNC43NzYsMTAuNjY3LTEwLjY2N3YtODUuMzMzQzE4MS4zMzMsOTcuNDI5
-        LDIxNC43NjMsNjQsMjU2LDY0czc0LjY2NywzMy40MjksNzQuNjY3LDc0LjY2N1YyMjQgIGMwLDUuODkx
-        LDQuNzc2LDEwLjY2NywxMC42NjcsMTAuNjY3SDM4NGM1Ljg5MSwwLDEwLjY2Ny00Ljc3NiwxMC42Njct
-        MTAuNjY3di04NS4zMzNDMzk0LjU3Myw2Mi4xMjIsMzMyLjU0NCwwLjA5NCwyNTYsMHoiIHN0eWxlPSJm
-        aWxsOiM0NTVBNjQiIC8+DQogIDxwYXRoIGQ9Ik0xMjgsMjEzLjMzM2gyNTZjMjkuNDU1LDAsNTMuMzMz
-        LDIzLjg3OCw1My4zMzMsNTMuMzMzdjE5MkM0MzcuMzMzLDQ4OC4xMjIsNDEzLjQ1NSw1MTIsMzg0LDUx
-        MkgxMjggIGMtMjkuNDU1LDAtNTMuMzMzLTIzLjg3OC01My4zMzMtNTMuMzMzdi0xOTJDNzQuNjY3LDIz
-        Ny4yMTEsOTguNTQ1LDIxMy4zMzMsMTI4LDIxMy4zMzN6IiBzdHlsZT0iZmlsbDojRkZDMTA3IiAvPg0K
-        ICA8cGF0aCBkPSJNMzA5LjMzMywzMzAuNjY3YzAuMTI0LTI5LjQ1NS0yMy42NTMtNTMuNDM0LTUzLjEw
-        OC01My41NTggIGMtMjkuNDU1LTAuMTI0LTUzLjQzNCwyMy42NTMtNTMuNTU4LDUzLjEwOGMtMC4wODYs
-        MjAuMzYsMTEuNDI3LDM4Ljk5MiwyOS42NzQsNDguMDIzbC04LjIzNSw1Ny42ICBjLTAuODI1LDUuODMz
-        LDMuMjM1LDExLjIzLDkuMDY4LDEyLjA1NWMwLjQ5NCwwLjA3LDAuOTkzLDAuMTA1LDEuNDkyLDAuMTA1
-        aDQyLjY2N2M1Ljg5MSwwLjA2LDEwLjcxNS00LjY2NywxMC43NzQtMTAuNTU4ICBjMC4wMDUtMC41NDMt
-        MC4wMy0xLjA4Ni0wLjEwOC0xLjYyM2wtOC4yMzUtNTcuNkMyOTcuNzg4LDM2OS4xOTksMzA5LjIxNiwz
-        NTAuODIsMzA5LjMzMywzMzAuNjY3eiIgc3R5bGU9ImZpbGw6IzQ1NUE2NCIgLz4NCiAgPGcgLz4NCiAg
-        PGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4N
-        CiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcg
-        Lz4NCjwvc3ZnPgs=
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAPoDAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgd2lkdGg9IjUxMnB0IiBo
+        ZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgdmVyc2lvbj0iMS4wIiB4bWxucz0iaHR0
+        cDovL3d3dy53My5vcmcvMjAwMC9zdmciPg0KICA8ZyBmaWxsPSIjMDAwMDAwIiB0cmFuc2Zvcm09InRy
+        YW5zbGF0ZSgwLCA1MTIpIHNjYWxlKDAuMSwgLTAuMSkiIHN0cm9rZT0ibm9uZSI+DQogICAgPHBhdGgg
+        ZD0iTTI2NTAgNDczNSBjLTUwMiAtNjUgLTk1NiAtMjkzIC0xMzAxIC02NTMgLTM3MSAtMzg2IC01ODAg
+        LTg2NiAtNjE1IC0xNDE0IGwtNiAtMTA4IC0zNjIgMCAtMzYxIDAgNDg1IC00ODUgNDg1IC00ODUgNDgz
+        IDQ4MiA0ODIgNDgzIC0zNjEgMyAtMzYyIDIgNiAxMDggYzE3IDMwMyAxMjkgNjI0IDMwNCA4NzIgMTAw
+        IDE0MiAzMDIgMzM5IDQ0MyA0MzIgNTI4IDM1MSAxMTczIDM5MSAxNzMwIDEwOCA0NjYgLTIzOCA3ODgg
+        LTY2MiA5MDEgLTExOTAgMjAgLTkyIDIzIC0xMzQgMjMgLTMzMCAwIC0xOTYgLTMgLTIzOCAtMjMgLTMz
+        MCAtMTEyIC01MjMgLTQzMiAtOTQ4IC04OTEgLTExODQgLTYzNSAtMzI3IC0xMzcxIC0yMzQgLTE5MTYg
+        MjQxIGwtNzYgNjYgLTE3MSAtMTcyIC0xNzIgLTE3MiA2NSAtNjAgYzM0NiAtMzIwIDc4MyAtNTE4IDEy
+        NTggLTU2OSAxNTYgLTE3IDQ1MiAtOCA2MDIgMTkgNDU3IDgxIDg0NiAyODUgMTE3NiA2MTUgMzEzIDMx
+        NCA1MTIgNjg0IDU5OCAxMTExIDE5OCA5NzcgLTI5MiAxOTcwIC0xMTg3IDI0MDUgLTIyNSAxMDkgLTQ0
+        MiAxNzQgLTY4MCAyMDUgLTE0MCAxOCAtNDIxIDE4IC01NTcgMHoiIC8+DQogICAgPHBhdGggZD0iTTI2
+        ODIgMjkyMyBsMyAtNjA3IDE3MCAtMTAyIGM5NCAtNTUgMzI2IC0xOTMgNTE3IC0zMDYgbDM0NyAtMjA2
+        IDkyIDE1NSBjNTIgODcgODggMTU3IDgzIDE2MiAtNSA0IC0xOTcgMTE5IC00MjYgMjU2IGwtNDE4IDI0
+        NyAwIDUwNCAwIDUwNCAtMTg1IDAgLTE4NSAwIDIgLTYwN3oiIC8+DQogIDwvZz4NCjwvc3ZnPgs=
 </value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Thay đổi mật khẩu</value>
+    <value>Khôi phục hệ thống</value>
+  </data>
+  <data name="PleaseChooseAuthentication" xml:space="preserve">
+    <value>Vui lòng chọn Loại xác thực!</value>
+  </data>
+  <data name="RestoreFailed" xml:space="preserve">
+    <value>Phục hồi hệ thống thất bại!</value>
+  </data>
+  <data name="RestoreSuccessfully" xml:space="preserve">
+    <value>Phục hồi hệ thống thành công</value>
+  </data>
+  <data name="SelectDatabaseBackup" xml:space="preserve">
+    <value>Vui lòng chọn Cơ sở dữ liệu đã sao lưu!</value>
+  </data>
+  <data name="ServerNameCannotBeEmptyValue" xml:space="preserve">
+    <value>Tên máy chủ không được để trống!</value>
+  </data>
+  <data name="ServerPasswordCannotBeEmptyValue" xml:space="preserve">
+    <value>Mật khẩu không được để trống!</value>
+  </data>
+  <data name="ServerUsernameCannotBeEmptyValue" xml:space="preserve">
+    <value>Tên đăng nhập không được để trống!</value>
+  </data>
+  <data name="WriteConfigFailed" xml:space="preserve">
+    <value>Tạo thiết lập máy chủ thất bại!</value>
   </data>
 </root>

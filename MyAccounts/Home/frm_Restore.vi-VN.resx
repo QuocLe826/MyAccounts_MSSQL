@@ -224,16 +224,4 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Phục hồi dữ liệu</value>
   </data>
-  <data name="PleaseChooseRestoreFile" xml:space="preserve">
-    <value>Vui lòng chọn tập tin khôi phục</value>
-  </data>
-  <data name="RestoreFailed" xml:space="preserve">
-    <value>Khôi phục thất bại!</value>
-  </data>
-  <data name="RestoreSuccessfully" xml:space="preserve">
-    <value>Khôi phục thành công</value>
-  </data>
-  <data name="AreYouSureToRestoreSystem" xml:space="preserve">
-    <value>Bạn có chắc chắn muốn khôi phục lại hệ thống?</value>
-  </data>
 </root>

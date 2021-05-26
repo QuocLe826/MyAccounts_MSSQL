@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lbl_Username.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 44</value>
+  </data>
   <data name="lbl_Username.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 13</value>
   </data>
@@ -299,49 +302,32 @@
   <data name="gc_Type.Caption" xml:space="preserve">
     <value>Loại tài khoản</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="gc_Type.VisibleIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
   <data name="gc_Status.Caption" xml:space="preserve">
     <value>Trạng thái</value>
-  </data>
-  <data name="gc_Status.VisibleIndex" type="System.Int32, mscorlib">
-    <value>5</value>
   </data>
   <data name="gc_Desc.Caption" xml:space="preserve">
     <value>Chú thích</value>
   </data>
-  <data name="gc_Desc.VisibleIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="lk_AccType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>661, 41</value>
   </data>
-  <data name="gv_AccManagement.GroupFormat" xml:space="preserve">
-    <value>{1}</value>
+  <data name="lk_AccGroups.Location" type="System.Drawing.Point, System.Drawing">
+    <value>375, 41</value>
   </data>
-  <data name="btn_Search.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAABJ0RVh0VGl0bGUARmluZDtTZWFyY2g7rQePYgAAAY1JREFUOE+lkUtLAlEUx/0U
-        zmgT4yOFaN/WXbQINBodH/nKR8w3iNxE6cK+Sish0BxnnIdtArE+QSEtyjZCYJuB07njhA5qJP3gDJd7
-        7v93H+MAgH/V9GOxVdJCvqLWwHr1FlRSDU9eC1ltGwuCQEmrBMo6BE97cFgbQORqAP5SDzw5FdisUjEX
-        zWETkJ0DJR3C1QEMP75wagoZH1z0gc10gcl2962sCbZnAtxJ3xHubeEfnt8mECyqwKSlWytrgq2ZwFfU
-        x4nrJ7J+KdHaIzApeWRlTXB6TlDQxvH6agGHV2NSndUCz4mqbws6vLxPyHob5Ar+ggLu5C9XIL+KzWsG
-        ebDhaO4Rcbx3/gAbyQ64klLVyppgeyYgsNnuGf4u8OYUiFz2IYzFpmUMyyQMroRkuHmRNxcjCwICk+ns
-        bqaVJnMsj91pLDy2OyHVMYwCPEW8Y1CWZKlgFTTfFjAMNC8CzYkGxYn8WgICzbUFKtYCKiYCddT8XFtA
-        cEbvylSsOXZyrRub4D+1dPLvBY5vGoEc6Ii8o88AAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btn_Search.Text" xml:space="preserve">
-    <value>Tìm kiếm</value>
+  <data name="labelControl3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>589, 44</value>
   </data>
   <data name="labelControl3.Text" xml:space="preserve">
     <value>Loại tài khoản</value>
   </data>
   <data name="txt_Username.Location" type="System.Drawing.Point, System.Drawing">
-    <value>91, 42</value>
+    <value>91, 40</value>
   </data>
   <data name="txt_Username.Size" type="System.Drawing.Size, System.Drawing">
     <value>177, 20</value>
+  </data>
+  <data name="lbl_AccGroups.Location" type="System.Drawing.Point, System.Drawing">
+    <value>295, 44</value>
   </data>
   <data name="lbl_AccGroups.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 13</value>

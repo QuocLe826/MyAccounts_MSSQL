@@ -99,6 +99,7 @@ namespace MyAccounts.Forms.Home
             // btn_Accept
             // 
             resources.ApplyResources(this.btn_Accept, "btn_Accept");
+            this.btn_Accept.AllowFocus = false;
             this.btn_Accept.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Accept.ImageOptions.Image")));
             this.btn_Accept.Name = "btn_Accept";
             this.btn_Accept.Click += new System.EventHandler(this.btn_Accept_Click);
@@ -106,6 +107,7 @@ namespace MyAccounts.Forms.Home
             // btn_Cancel
             // 
             resources.ApplyResources(this.btn_Cancel, "btn_Cancel");
+            this.btn_Cancel.AllowFocus = false;
             this.btn_Cancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancel.ImageOptions.Image")));
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);

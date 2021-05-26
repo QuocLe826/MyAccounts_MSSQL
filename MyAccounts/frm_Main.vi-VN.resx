@@ -417,10 +417,4 @@
         Zz4L
 </value>
   </data>
-  <data name="Server" xml:space="preserve">
-    <value>Máy chủ:</value>
-  </data>
-  <data name="User" xml:space="preserve">
-    <value>Người dùng:</value>
-  </data>
 </root>

@@ -120,8 +120,8 @@
   <data name="&gt;&gt;txt_BackupName.Name" xml:space="preserve">
     <value>txt_BackupName</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Backup Data</value>
+  <data name="btn_Backup.Text" xml:space="preserve">
+    <value>OK</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
@@ -211,9 +211,6 @@
   <data name="&gt;&gt;pictureEdit1.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.PictureEdit, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="lbl_BackupName.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
   <data name="&gt;&gt;btn_Backup.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
@@ -273,32 +270,23 @@
   <data name="btn_Backup.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="pictureEdit1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 2</value>
-  </data>
-  <data name="btn_Cancel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>
   </data>
-  <data name="btn_Backup.Text" xml:space="preserve">
-    <value>OK</value>
+  <data name="btn_Cancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
   </data>
   <data name="lbl_BackupName.Text" xml:space="preserve">
     <value>Backup Name</value>
   </data>
-  <data name="&gt;&gt;xtraSaveFileDialog.Name" xml:space="preserve">
-    <value>xtraSaveFileDialog</value>
+  <data name="lbl_BackupName.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;pictureEdit1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbl_BackupName.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btn_Cancel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="btn_Cancel.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -328,6 +316,9 @@
   </data>
   <data name="&gt;&gt;lbl_BackupName.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btn_Backup.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="btn_Backup.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -415,8 +406,11 @@
         NzQtMS45NzgtMi40MDYtMy43OTF6IiAvPg0KICAgIDwvZz4NCiAgPC9nPg0KPC9zdmc+Cw==
 </value>
   </data>
-  <data name="&gt;&gt;pictureEdit1.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="txt_BackupName.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;xtraSaveFileDialog.Name" xml:space="preserve">
+    <value>xtraSaveFileDialog</value>
   </data>
   <data name="btn_Cancel.Location" type="System.Drawing.Point, System.Drawing">
     <value>400, 111</value>
@@ -424,14 +418,17 @@
   <data name="btn_Cancel.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="txt_BackupName.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="pictureEdit1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 2</value>
   </data>
   <data name="&gt;&gt;btn_Cancel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="&gt;&gt;btn_Backup.Name" xml:space="preserve">
     <value>btn_Backup</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="BackupSuccessfully" xml:space="preserve">
     <value>Backup successfully</value>
@@ -445,25 +442,28 @@
   <data name="BackupFailed" xml:space="preserve">
     <value>Backup failed!</value>
   </data>
-  <data name="&gt;&gt;btn_Backup.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_Cancel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="txt_BackupName.Size" type="System.Drawing.Size, System.Drawing">
     <value>281, 20</value>
   </data>
+  <data name="&gt;&gt;pictureEdit1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="btn_Cancel.Text" xml:space="preserve">
     <value>Cancel</value>
   </data>
-  <data name="&gt;&gt;btn_Cancel.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Backup Data</value>
   </data>
-  <data name="xtraSaveFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing">
+  <metadata name="xtraSaveFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
-  </data>
-  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </data>
-  <data name="$this.Language" type="System.Globalization.CultureInfo, mscorlib">
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>vi-VN</value>
-  </data>
+  </metadata>
 </root>

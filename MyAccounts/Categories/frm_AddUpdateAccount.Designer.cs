@@ -31,11 +31,11 @@ namespace MyAccounts.Forms.Categories
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_AddUpdateAccount));
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
             this.lbl_Code = new DevExpress.XtraEditors.LabelControl();
             this.txt_Code = new DevExpress.XtraEditors.TextEdit();
             this.lbl_Name = new DevExpress.XtraEditors.LabelControl();
@@ -177,6 +177,7 @@ namespace MyAccounts.Forms.Categories
             // 
             // btn_OK
             // 
+            this.btn_OK.AllowFocus = false;
             this.btn_OK.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_OK.ImageOptions.Image")));
             resources.ApplyResources(this.btn_OK, "btn_OK");
             this.btn_OK.Name = "btn_OK";
@@ -184,6 +185,7 @@ namespace MyAccounts.Forms.Categories
             // 
             // btn_Cancel
             // 
+            this.btn_Cancel.AllowFocus = false;
             this.btn_Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btn_Cancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancel.ImageOptions.Image")));
             resources.ApplyResources(this.btn_Cancel, "btn_Cancel");
@@ -194,11 +196,11 @@ namespace MyAccounts.Forms.Categories
             // 
             resources.ApplyResources(this.txt_Password, "txt_Password");
             this.txt_Password.Name = "txt_Password";
-            editorButtonImageOptions2.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
-            resources.ApplyResources(editorButtonImageOptions2, "editorButtonImageOptions2");
-            editorButtonImageOptions2.SvgImageSize = new System.Drawing.Size(16, 16);
+            editorButtonImageOptions1.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            resources.ApplyResources(editorButtonImageOptions1, "editorButtonImageOptions1");
+            editorButtonImageOptions1.SvgImageSize = new System.Drawing.Size(16, 16);
             this.txt_Password.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txt_Password.Properties.Buttons"))), resources.GetString("txt_Password.Properties.Buttons1"), ((int)(resources.GetObject("txt_Password.Properties.Buttons2"))), ((bool)(resources.GetObject("txt_Password.Properties.Buttons3"))), ((bool)(resources.GetObject("txt_Password.Properties.Buttons4"))), ((bool)(resources.GetObject("txt_Password.Properties.Buttons5"))), editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, resources.GetString("txt_Password.Properties.Buttons6"), ((object)(resources.GetObject("txt_Password.Properties.Buttons7"))), ((DevExpress.Utils.SuperToolTip)(resources.GetObject("txt_Password.Properties.Buttons8"))), ((DevExpress.Utils.ToolTipAnchor)(resources.GetObject("txt_Password.Properties.Buttons9"))))});
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txt_Password.Properties.Buttons"))), resources.GetString("txt_Password.Properties.Buttons1"), ((int)(resources.GetObject("txt_Password.Properties.Buttons2"))), ((bool)(resources.GetObject("txt_Password.Properties.Buttons3"))), ((bool)(resources.GetObject("txt_Password.Properties.Buttons4"))), ((bool)(resources.GetObject("txt_Password.Properties.Buttons5"))), editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, resources.GetString("txt_Password.Properties.Buttons6"), ((object)(resources.GetObject("txt_Password.Properties.Buttons7"))), ((DevExpress.Utils.SuperToolTip)(resources.GetObject("txt_Password.Properties.Buttons8"))), ((DevExpress.Utils.ToolTipAnchor)(resources.GetObject("txt_Password.Properties.Buttons9"))))});
             this.txt_Password.Properties.UseSystemPasswordChar = true;
             this.txt_Password.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.txt_Password_ButtonClick);
             // 

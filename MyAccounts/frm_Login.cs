@@ -142,7 +142,7 @@ namespace MyAccounts.Forms
         {
             try
             {
-                var dbExists = File.Exists("System//config//initserver");
+                var dbExists = File.Exists( Application.StartupPath + "//" + "System//config//initserver");
                 for (int i = 0; i < 50; i++)
                 {
                     Thread.Sleep(50);

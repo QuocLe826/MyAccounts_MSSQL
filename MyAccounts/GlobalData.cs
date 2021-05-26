@@ -1,11 +1,12 @@
 ﻿using MyAccounts.Libraries.Enums;
+using System.Windows.Forms;
 
 namespace MyAccounts.Forms
 {
     public static class GlobalData
     {
-        public static string CONFIG_FILE = "serverconfig.json";
-        public static string CONFIG_PATH = "System//config//" + CONFIG_FILE;
+        public const string CONFIG_FILE = @"serverconfig.json";
+        public static string CONFIG_PATH = Application.StartupPath + @"\\" + @"System\\config\\" + CONFIG_FILE;
 
         /// <summary>
         /// Biến lưu Server kết nối hệ thống
@@ -66,10 +67,5 @@ namespace MyAccounts.Forms
         /// Biến lưu server authentication
         /// </summary>
         public static string ServerAuthentication = string.Empty;
-
-        /// <summary>
-        /// Biến lưu Culture Info của hệ thống
-        /// </summary>
-        public static string CutureInfo = string.Empty;
     }
 }

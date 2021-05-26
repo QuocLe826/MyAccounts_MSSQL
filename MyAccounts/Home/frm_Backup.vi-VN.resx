@@ -320,10 +320,4 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Sao lưu dữ liệu</value>
   </data>
-  <data name="BackupFailed" xml:space="preserve">
-    <value>Sao lưu thất bại!</value>
-  </data>
-  <data name="BackupSuccessfully" xml:space="preserve">
-    <value>Sao lưu thành công</value>
-  </data>
 </root>

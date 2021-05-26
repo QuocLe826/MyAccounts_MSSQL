@@ -101,6 +101,7 @@ namespace MyAccounts.Forms
             // btn_Login
             // 
             resources.ApplyResources(this.btn_Login, "btn_Login");
+            this.btn_Login.AllowFocus = false;
             this.btn_Login.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Login.ImageOptions.Image")));
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
@@ -108,6 +109,7 @@ namespace MyAccounts.Forms
             // btn_Exit
             // 
             resources.ApplyResources(this.btn_Exit, "btn_Exit");
+            this.btn_Exit.AllowFocus = false;
             this.btn_Exit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Exit.ImageOptions.Image")));
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);

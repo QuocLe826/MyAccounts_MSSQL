@@ -3,10 +3,15 @@ using DevExpress.XtraSplashScreen;
 using MyAccounts.Libraries.Enums;
 using MyAccounts.Libraries.Logging;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
+using System.IO;
 using System.Windows.Forms;
+using MyAccounts.Libraries.Helpers;
+using MyAccounts.Libraries.Security;
+using Newtonsoft.Json;
 
 namespace MyAccounts.Forms
 {
@@ -128,6 +133,45 @@ namespace MyAccounts.Forms
                 return true;
             }
             return false;
+        }
+
+        /// <summary>
+        /// Write configurations
+        /// </summary>
+        /// <param name="serverName"></param>
+        /// <param name="auth"></param>
+        /// <param name="username"></param>
+        /// <param name="password"></param>
+        /// <param name="databaseName"></param>
+        /// <param name="language"></param>
+        /// <returns></returns>
+        public static bool WriteConfiguration(string serverName, string auth, string username, string password, string databaseName, string language)
+        {
+            try
+            {
+                if (File.Exists(GlobalData.CONFIG_PATH))
+                {
+                    File.Delete(GlobalData.CONFIG_PATH);
+                }
+
+                var dicData = new Dictionary<string, string>();
+                dicData.Add("ServerName", RSASecurity.Encrypt(serverName));
+                dicData.Add("Authentication", RSASecurity.Encrypt(auth));
+                dicData.Add("ServerUser", RSASecurity.Encrypt(username));
+                dicData.Add("ServerPassword", RSASecurity.Encrypt(password));
+                dicData.Add("DatabaseProvider", RSASecurity.Encrypt("MSSQL"));
+                dicData.Add("DatabaseName", RSASecurity.Encrypt(databaseName));
+                dicData.Add("DefaultLanguage", RSASecurity.Encrypt(language));
+
+                var jsonData = JsonConvert.SerializeObject(dicData);
+                File.WriteAllText(GlobalData.CONFIG_PATH, jsonData);
+                return File.Exists(GlobalData.CONFIG_PATH);
+            }
+            catch (Exception ex)
+            {
+                Logging.Write(Logging.ERROR, new StackTrace(new StackFrame(0)).ToString().Substring(5, new StackTrace(new StackFrame(0)).ToString().Length - 5), ex.Message);
+                return false;
+            }
         }
     }
 }

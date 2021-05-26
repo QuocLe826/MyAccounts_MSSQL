@@ -1,7 +1,7 @@
 ﻿
 namespace MyAccounts.Forms
 {
-    partial class frm_SystemInitialization
+    partial class frm_CreateNewSystem
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace MyAccounts.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_SystemInitialization));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_CreateNewSystem));
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.txt_ServerName = new DevExpress.XtraEditors.TextEdit();
@@ -146,6 +146,7 @@ namespace MyAccounts.Forms
             // 
             // btn_OK
             // 
+            this.btn_OK.AllowFocus = false;
             resources.ApplyResources(this.btn_OK, "btn_OK");
             this.btn_OK.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_OK.ImageOptions.Image")));
             this.btn_OK.Name = "btn_OK";
@@ -153,6 +154,7 @@ namespace MyAccounts.Forms
             // 
             // btn_Cancel
             // 
+            this.btn_Cancel.AllowFocus = false;
             resources.ApplyResources(this.btn_Cancel, "btn_Cancel");
             this.btn_Cancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancel.ImageOptions.Image")));
             this.btn_Cancel.Name = "btn_Cancel";
@@ -214,7 +216,7 @@ namespace MyAccounts.Forms
             new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("rd_Languages.Properties.Items2"))), resources.GetString("rd_Languages.Properties.Items3"))});
             this.rd_Languages.SelectedIndexChanged += new System.EventHandler(this.rd_Languages_SelectedIndexChanged);
             // 
-            // frm_SystemInitialization
+            // frm_CreateNewSystem
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
@@ -241,9 +243,9 @@ namespace MyAccounts.Forms
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.pictureEdit1);
-            this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("frm_SystemInitialization.IconOptions.SvgImage")));
+            this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("frm_CreateNewSystem.IconOptions.SvgImage")));
             this.MaximizeBox = false;
-            this.Name = "frm_SystemInitialization";
+            this.Name = "frm_CreateNewSystem";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frm_SystemInitialization_FormClosing);
             this.Load += new System.EventHandler(this.frm_SystemInitialization_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();

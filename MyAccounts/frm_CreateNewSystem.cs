@@ -18,13 +18,13 @@ using System.Threading;
 
 namespace MyAccounts.Forms
 {
-    public partial class frm_SystemInitialization : XtraForm
+    public partial class frm_CreateNewSystem : XtraForm
     {
         private string _language = "en-US";
-        private readonly ResourceManager _resource = new ResourceManager(typeof(frm_SystemInitialization));
+        private readonly ResourceManager _resource = new ResourceManager(typeof(frm_CreateNewSystem));
 
         #region Constructor
-        public frm_SystemInitialization()
+        public frm_CreateNewSystem()
         {
             InitializeComponent();
             GlobalData.DefaultLanguage = "en-US";
@@ -70,7 +70,7 @@ namespace MyAccounts.Forms
                 this.Text = language == "en-US" ? "System Initialization" : "Khởi tạo hệ thống";
                 foreach (Control control in this.Controls)
                 {
-                    var resource = new ComponentResourceManager(typeof(frm_SystemInitialization));
+                    var resource = new ComponentResourceManager(typeof(frm_CreateNewSystem));
                     resource.ApplyResources(control, control.Name, new CultureInfo(language));
                 }
                 _language = language;
@@ -108,7 +108,9 @@ namespace MyAccounts.Forms
 
         private void btn_Cancel_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            var frm = new frm_ChooseConfig();
+            frm.Show();
         }
 
         private void btn_OK_Click(object sender, EventArgs e)

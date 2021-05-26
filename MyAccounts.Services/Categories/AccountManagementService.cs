@@ -90,30 +90,6 @@ namespace MyAccounts.Services.Categories
             }
         }
 
-        public DataTable SearchData(string username, string accGroup, string accType)
-        {
-            try
-            {
-                var query = "AccountManagement_SearchData";
-                var dt = ExecuteDataTable(query, CommandType.StoredProcedure, new SqlParameter("@username", username),
-                    new SqlParameter("@accGroup", accGroup), new SqlParameter("@accType", accType));
-                if (dt.Rows.Count > 0)
-                {
-                    foreach (DataRow row in dt.Rows)
-                    {
-                        row["Username"] = RSASecurity.Decrypt(Functions.ToString(row["Username"]) + "=");
-                        row["Password"] = RSASecurity.Decrypt(Functions.ToString(row["Password"]) + "=");
-                    }
-                    dt.AcceptChanges();
-                }
-                return dt;
-            }
-            catch (Exception e)
-            {
-                return new DataTable();
-            }
-        }
-
         public string ProcessData(Dictionary<string,string> dicData, string actionType)
         {
             try
